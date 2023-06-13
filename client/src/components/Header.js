@@ -25,7 +25,7 @@ function Header(props) {
                         {/* <img className="image-fluid icon" alt="" src={Icon} /> */}
                     </NavLink>
                     <NavLink onClick={handleHomeLink}>
-                        <div className="appTitle">Surf Weasel</div>
+                        <div className="appTitle">River Rat Marine Construction</div>
                     </NavLink>
                     
                     <div className="m-4"></div>
