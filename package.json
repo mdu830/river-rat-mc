@@ -1,4 +1,20 @@
 {
+  "name": "river-rat-marine-construction",
+  "version": "1.0.0",
+  "description": "This is a business website for river-rat-mc",
+  "main": "server.js",
+  "scripts": {
+    "start": "concurrently \"node server.js\" \"npm run client\"",
+    "client": "cd client && npm run start",
+    "install": "cd client && npm install",
+    "build": "cd client && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mdu830/river-rat-mc"
+  },
+  "author": "mdu830",
+  "license": "GPL-3.0 license",
   "dependencies": {
     "concurrently": "^8.2.0",
     "express": "^4.18.2",
