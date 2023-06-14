@@ -1,3 +1,4 @@
+# Rules from: /Users/mdu830/apps/river-rat-mc/client/.gitignore
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
@@ -34,3 +35,11 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
+.npmignore
+
+
+# npmignore - content above this line is automatically generated and modifications may be omitted
+# see npmjs.com/npmignore for more details.
+!build/
+src/
+test/
