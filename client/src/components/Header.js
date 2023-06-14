@@ -1,13 +1,13 @@
-// import '../assets/style.css'
-import React, { useState } from 'react';
-// import { useHistory } from "history";
+import '../assets/style.css'
+// import React, { useState } from 'react';
+// import { useHistory } from "react-router-dom";
 import { Navbar, NavLink } from 'reactstrap';
 
 
 
 function Header(props) {
 
-    const [isOpen, setIsOpen] = useState(false);
+    // const [isOpen, setIsOpen] = useState(false);
 
     // let history = useHistory();
 
