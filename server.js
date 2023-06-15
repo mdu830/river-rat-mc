@@ -1,4 +1,3 @@
-// Remember to change "nodemon" to "node" of npm start script(package.json) for Production
 const path = require('path');
 const express = require('express');
 const PORT = process.env.PORT || 3000;
@@ -12,7 +11,7 @@ app.use(express.static(path.resolve(
 )));
 
 app.get('/', (req,res) => {
-    res.sendFile(path.resolve(__dirname, './client/build', 'index.html'));
+    res.sendFile(path.resolve(__dirname, './client/build/index.html'));
 });
 
 app.get("/api", (req, res) => {
