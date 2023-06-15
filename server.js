@@ -1,12 +1,13 @@
 const path = require('path');
 const express = require('express');
 const PORT = process.env.PORT || 3000;
+const build = './client/build'
 
 const app = express();
 
 // dev routes for client
 app.use(express.static(path.resolve(
-    __dirname, './client/build/'
+    __dirname, build
 )));
 
 app.get('/', (req,res) => {
