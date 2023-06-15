@@ -14,9 +14,9 @@ app.get("/api", (req, res) => {
     res.json({ message: "hello from rrmc server "});
 });
 
-app.get('*', (req,res) => {
-    res.sendFile(path.resolve(
-        __dirname, './client/build', 'index.html'
+app.get('/', (req,res) => {
+    res.sendFile(path.join(
+        __dirname, './client/public', 'index.html'
         ));
         console.log(res)
 });
