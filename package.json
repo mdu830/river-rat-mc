@@ -4,8 +4,8 @@
   "description": "This is a business website for river-rat-mc",
   "main": "server.js",
   "scripts": {
-    "start": "cd client && npm run start",
-
+    "start": "node server.js",
+    "dev": "nodemon server.js",
     "client": "cd client && npm start",
     "install": "cd client && npm install",
     "build": "cd client && npm run build"
