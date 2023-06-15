@@ -4,15 +4,10 @@ const PORT = process.env.PORT || 3000;
 
 const app = express();
 
-app.use(express.json());
-
+// dev routes for client
 app.use(express.static(path.resolve(
     __dirname, './client/build/'
 )));
-
-app.get("/api", (req, res) => {
-    res.json({ message: "hello from rrmc server "});
-});
 
 app.get('/', (req,res) => {
     res.sendFile(path.resolve(
@@ -20,6 +15,7 @@ app.get('/', (req,res) => {
         ));
 });
 
+// server
 app.listen(PORT, () => {
     console.log(`Server listening on PORT ${PORT}`);
 });
