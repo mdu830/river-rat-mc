@@ -1,7 +1,7 @@
 // Remember to change "nodemon" to "node" of npm start script(package.json) for Production
 const path = require('path');
 const express = require('express');
-const PORT = process.env.PORT || 3090;
+const PORT = process.env.PORT || 3000;
 
 const app = express();
 
