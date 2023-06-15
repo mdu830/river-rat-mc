@@ -11,7 +11,7 @@ app.use(express.static(path.resolve(
 )));
 
 app.get('*', (req,res) => {
-    res.sendFile(path.resolve(__dirname, './client/build', 'index.html'));
+    res.sendFile(path.resolve(__dirname, './client/build'));
 });
 
 app.get("/api", (req, res) => {
