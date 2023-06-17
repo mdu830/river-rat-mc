@@ -10,15 +10,15 @@ app.use(express.static(path.resolve(
     __dirname, build
 )));
 
-app.get('/contact', (req,res) => {
-    res.sendFile(path.resolve(
-        __dirname, './client/build', 'index.html'
-        ));
-});
+// app.get('/contact', (req,res) => {
+//     res.sendFile(path.resolve(
+//         __dirname, './client/build', 'index.html'
+//         ));
+// });
 
-app.get('/about', (req,res) => {
+app.get('/api', (req,res) => {
     res.sendFile(path.resolve(
-        __dirname, './client/build', 'index.html'
+        console.log('hello from server')
         ));
 });
 
