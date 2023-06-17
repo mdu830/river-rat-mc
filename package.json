@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "This is a business website for river-rat-mc",
   "main": "server.js",
-  "homepage": "https://riverratmarineconstruction.cyclic.app/",
   "scripts": {
     "start": "npm run build && node server.js",
     "dev": "npm run build && nodemon server.js",
