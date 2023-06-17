@@ -35,13 +35,13 @@ var options = {
   maxAge: '1m',
   redirect: false
 }
-// app.use(express.static('./client/build', options.index))
+app.use(express.static('./client/build', options.index))
 
-// app.get('/*', function (req, res) {
-//     res.sendFile(path.join(__dirname, './client/build', 'index.html'));
-//   });
+app.get('/*', function (req, res) {
+    res.sendFile(path.join(__dirname, './client/build', 'index.html'));
+  });
 
-const port = process.env.PORT || 3001
+const port = process.env.PORT || 3000
 
 // console.log(process.env)
 
