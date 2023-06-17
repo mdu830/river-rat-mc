@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import Header from './components/header';
 import  HomePage from './routes/HomePage';
 import About from './routes/About';
+import Contact from './routes/Contact'
 
 import {
   createBrowserRouter,
@@ -19,8 +20,12 @@ const router = createBrowserRouter([
     // errorElement: <ErrorPage />,
     children: [
       {
-        path: "About/",
+        path: "about/",
         element: <About />,
+      },
+      {
+        path: "contact/",
+        element: <Contact />,
       },
     ],
   },
