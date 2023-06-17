@@ -10,15 +10,9 @@ app.use(express.static(path.resolve(
     __dirname, build
 )));
 
-// app.get('/contact', (req,res) => {
-//     res.sendFile(path.resolve(
-//         __dirname, './client/build', 'index.html'
-//         ));
-// });
-
-app.get('/api', (req, res) => {
-    res.send('hello world')
-});
+app.get('/*', function (req, res) {
+    res.sendFile(path.join(__dirname, build, 'index.html'));
+  });
 
 // server
 app.listen(PORT, (err) => {
