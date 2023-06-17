@@ -43,7 +43,10 @@ app.get('/*', function (req, res) {
 
 const port = process.env.PORT || 8080
 
+console.log(process.env)
+
 app.listen(port, () => {
+
   console.log(`React app listening at http://localhost:${port}`)
 })
 // 
