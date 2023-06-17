@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "description": "This is a business website for river-rat-mc",
   "main": "server.js",
+  "files": [
+    "/client/build"
+  ],
   "scripts": {
-    "start": "npm run build && node server.js",
+    "start": "node server.js",
     "dev": "npm run build && nodemon server.js",
     "client": "cd client && npm start",
     "install": "cd client && npm install",
@@ -22,4 +25,5 @@
     "express": "^4.18.2",
     "nodemon": "^2.0.22"
   }
+  
 }
