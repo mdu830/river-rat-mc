@@ -5,7 +5,7 @@ import './assets/style.css'
 import reportWebVitals from './reportWebVitals';
 
 import Root from './Root';
-import ErrorPage from './routes/errorPage';
+import ErrorPage from './routes/ErrorPage';
 import HomePage from './routes/HomePage';
 import About from './routes/About';
 import Contact from './routes/Contact'
