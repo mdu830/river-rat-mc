@@ -3,23 +3,25 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import './assets/style.css'
 import reportWebVitals from './reportWebVitals';
-// import Header from './components/header';
+
 import Root from './Root';
-// import  HomePage from './routes/HomePage';
+import ErrorPage from './routes/errorPage';
+import HomePage from './routes/HomePage';
 import About from './routes/About';
 import Contact from './routes/Contact'
 
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root />,
-    // errorElement: <ErrorPage />,
+    errorElement: <ErrorPage />,
     children: [
+      {
+        path: "/",
+        element: <HomePage />,
+      },
       {
         path: "about/",
         element: <About />,
