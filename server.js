@@ -16,18 +16,16 @@ app.use(express.static(path.resolve(
 //         ));
 // });
 
-app.get('/api', (req,res) => {
-    res.sendFile(path.resolve(
-        console.log('hello from server')
-        ));
+app.get('/api', (req, res) => {
+    res.send('hello world')
 });
 
 // server
 app.listen(PORT, (err) => {
-    if (err) app.get('/', (req,res) => {
+    if (err) app.get('/', (req, res) => {
         res.sendFile(path.resolve(
             __dirname, './client/build', 'index.html'
-            ));
+        ));
     });;
     console.log(`Server listening on PORT ${PORT}`);
 });
