@@ -23,7 +23,13 @@ app.get('/about', (req,res) => {
 });
 
 // server
-app.listen(PORT, () => {
+app.listen(PORT, (err) => {
+    if (err) app.get('/', (req,res) => {
+        res.sendFile(path.resolve(
+            __dirname, './client/build', 'index.html'
+            ));
+    });;
     console.log(`Server listening on PORT ${PORT}`);
 });
 
+// 
