@@ -37,9 +37,12 @@ var options = {
 }
 app.use(express.static('./client/build', options))
 
+app.get('/*', function (req, res) {
+    res.sendFile(path.join(__dirname, './client/build', 'index.html'));
+  });
+
 const port = process.env.PORT || 3000
 
 app.listen(port, () => {
   console.log(`React app listening at http://localhost:${port}`)
 })
-// 
