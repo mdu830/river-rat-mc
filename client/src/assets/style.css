@@ -33,3 +33,11 @@ body {
   .App {
     background-color: rgb(21, 21, 21);
   }
+
+  .page {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }

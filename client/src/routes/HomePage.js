@@ -5,7 +5,7 @@ export default function HomePage() {
   return (
     <>
       {/* all the other elements */}
-      <div id="detail">
+      <div className="page">
         <h1>HomePage</h1>
       </div>
     </>
