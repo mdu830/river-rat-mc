@@ -35,11 +35,11 @@ var options = {
   maxAge: '1m',
   redirect: false
 }
-app.use(express.static('client/public', options))
+// app.use(express.static('client/public', options))
 
-app.get('/*', function (req, res) {
-    res.sendFile(path.join(__dirname, 'client/public', 'index.html'));
-  });
+// app.get('/*', function (req, res) {
+//     res.sendFile(path.join(__dirname, 'client/public', 'index.html'));
+//   });
 
 const port = process.env.PORT || 3000
 
