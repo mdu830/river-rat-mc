@@ -35,7 +35,7 @@ var options = {
   maxAge: '1m',
   redirect: false
 }
-app.use(express.static('./client/build', options))
+app.use(express.static('client/build', options))
 
 app.get('/*', function (req, res) {
     res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
