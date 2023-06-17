@@ -1,12 +1,9 @@
 import React, { useState } from 'react';
-import { Navbar, NavLink,} from 'reactstrap';
-import { Outlet, Link } from "react-router-dom";
-
+import { Navbar } from 'reactstrap';
+import { Link, NavLink } from "react-router-dom";
 
 
 function Header(props) {
-
-    // const [isOpen, setIsOpen] = useState(false);
 
     return (
         <>

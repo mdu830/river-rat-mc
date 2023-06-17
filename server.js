@@ -15,6 +15,16 @@ app.get('/', (req,res) => {
         __dirname, './client/build', 'index.html'
         ));
 });
+app.get('/contact', (req,res) => {
+    res.sendFile(path.resolve(
+        __dirname, './client/build', 'index.html'
+        ));
+});
+app.get('/about', (req,res) => {
+    res.sendFile(path.resolve(
+        __dirname, './client/build', 'index.html'
+        ));
+});
 
 // server
 app.listen(PORT, () => {
