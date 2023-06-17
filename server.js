@@ -7,11 +7,11 @@ const app = express();
 
 // dev routes for client
 app.use(express.static(path.resolve(
-    __dirname, build
+    __dirname, './client/build'
 )));
 
 app.get('/*', function (req, res) {
-    res.sendFile(path.join(__dirname, build, 'index.html'));
+    res.sendFile(path.join(__dirname, './client/build', 'index.html'));
   });
 
 // server
