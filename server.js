@@ -38,7 +38,7 @@ var options = {
 app.use(express.static('client/public', options))
 
 app.get('/*', function (req, res) {
-    res.sendFile(path.join(__dirname, 'client/public', options));
+    res.sendFile(path.join(__dirname, 'client/public', 'index.html'));
   });
 
 const port = process.env.PORT || 3000
