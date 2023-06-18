@@ -1,31 +1,45 @@
 import React, { useState } from 'react';
-import { Navbar } from 'reactstrap';
-import { Link, NavLink } from "react-router-dom";
+import {
+    Collapse,
+    Navbar,
+    NavbarToggler,
+    Nav,
+    NavItem,
+    NavLink
+} from 'reactstrap';
+import { Link } from "react-router-dom";
 import logo from '../assets/images/logo.png'
+import '../assets/style.css'
 
 
 function Header(props) {
 
+    const [isOpen, setIsOpen] = useState(false);
+
+    const toggle = () => setIsOpen(!isOpen);
+
     return (
         <>
-            <div>
-                <Navbar className="titleBar" color="light" light expand="md" fixed="top">
+            <Navbar className="titleBar" color="dark" light expand="md" fixed="top">
 
+                <Link to={`/`}>
+                    <img className="image-fluid icon" alt="" src={logo} />
+                </Link>
 
-                    <div className='logoTitle col-auto'>
-                        <img className="image-fluid icon" alt="" src={logo} />
+                <NavbarToggler className='toggler' onClick={toggle} />
 
-                    </div>
-                    <div className="name col-auto">River Rat Marine Construction</div>
-                    <Link to={`/`}>Home</Link>
-                    <Link to={`contact/`}>Contact Us</Link>
-                    <Link to={`about/`}>About Us</Link>
-
-
-
-                    <div className="m-4"></div>
-                </Navbar>
-            </div>
+                <Collapse isOpen={isOpen} navbar>
+                    <Nav className="me-auto" navbar>
+                        <NavItem className='p-2'>
+                            <Link className=""to={`about/`}>About Us</Link>
+                        </NavItem>
+                        <NavItem className='p-2'>
+                            <Link to={`contact/`}>Contact Us</Link>
+                        </NavItem>
+                    </Nav>
+                </Collapse>
+                
+            </Navbar>
         </>
     )
 }
