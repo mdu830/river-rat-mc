@@ -4,7 +4,7 @@
   "description": "This is a business website for river-rat-mc",
   "main": "server.js",
   "scripts": {
-    "start": "node server",
+    "start": "node server.js",
     "server": "node server.js",
     "dev": "concurrently \"nodemon run server\" \"npm run client\" "
   },
