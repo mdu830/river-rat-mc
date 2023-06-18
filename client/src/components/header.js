@@ -31,9 +31,11 @@ function Header(props) {
                 <NavbarToggler onClick={toggleNavbar} className="toggler justify-content-end col-auto" />
                 <Collapse isOpen={!collapsed} onClick={handleClick} className='justify-content-end' navbar>
 
-                    <Link className="row m-3" to={`about/`}>About Us</Link>
+                <Link className="link row m-3" to={`gallery/`}>Gallery</Link>
 
-                    <Link className="row m-3" to={`contact/`}>Contact Us</Link>
+                    <Link className="link row m-3" to={`about/`}>About Us</Link>
+
+                    <Link className="link row m-3" to={`contact/`}>Contact Us</Link>
 
                 </Collapse>
             </Navbar>

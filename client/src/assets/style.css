@@ -22,16 +22,16 @@ body {
   bottom: 0;
 }
 
-/* Header */
+/* Header -------------------------------*/
 
 .titleBar {
-  border: rgb(0, 0, 0) 1px solid;
+  /* border: rgb(0, 0, 0) 0px solid; */
   /* height: 200px; */
   z-index: +2;
-  /* box-shadow:
+  box-shadow:
     -1px -1px 0 rgba(255, 255, 255, 0),
     1px 1px 0 rgba(0, 0, 0, .25),
-    3px 3px 3px rgba(0, 0, 0, .25); */
+    3px 3px 3px rgba(0, 0, 0, .25);
 
 }
 
@@ -53,6 +53,10 @@ body {
   height: auto;
 }
 
+.link {
+  color: rgb(134, 124, 68);
+  font-size: larger;
+}
 
 
 @media screen and (max-width: 652px) {
@@ -76,7 +80,7 @@ body {
   }
 
   .iconSmall {
-    width: 30px;
+    width: 0px;
     height: auto;
   }
 }
@@ -85,7 +89,7 @@ body {
   .logoTitle {
     align-self: center;
     width: auto;
-    height: 20px;
+    height: 26px;
   }
 
   .iconSmall {
@@ -98,7 +102,8 @@ body {
   color: aliceblue;
 }
 
-/* error page style */
+/* error page style ------------------*/
+
 #err {
   margin-left: 40%;
 }
