@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import { Collapse, Navbar, NavbarToggler } from 'reactstrap';
 import { Link } from "react-router-dom";
-// import logo from '../assets/images/logo.png'
+import logo from '../assets/images/logo.png'
 import logoTxt from '../assets/images/logoTxt.png'
 import '../assets/style.css'
+
 
 
 function Header(props) {
@@ -12,28 +13,34 @@ function Header(props) {
 
     const toggleNavbar = () => setCollapsed(!collapsed);
 
+    const handleClick = () => {
+        setCollapsed(true);
+    }
+
+
+
+    console.log(collapsed)
     return (
         <>
             <Navbar className="titleBar" color="faded" expand="lg" dark>
+
                 <Link className="" to={`/`} >
-
-
+                    <img className="iconSmall" alt="" src={logo} />
                     <img className="logoTitle" alt="" src={logoTxt} />
-
                 </Link>
+                <NavbarToggler onClick={toggleNavbar} className="toggler justify-content-end col-auto" />
+                <Collapse isOpen={!collapsed} onClick={handleClick} className='justify-content-end' navbar>
 
-                <NavbarToggler onClick={toggleNavbar} className="toggler col-auto" />
+                    <Link className="row m-3" to={`about/`}>About Us</Link>
 
-                <Collapse isOpen={!collapsed} className='justify-content-end col-auto' navbar>
-
-                    <Link className="align-self-end m-3" to={`about/`}>About Us</Link>
-
-                    <Link className="align-self-end m-3" to={`contact/`}>Contact Us</Link>
+                    <Link className="row m-3" to={`contact/`}>Contact Us</Link>
 
                 </Collapse>
             </Navbar>
         </>
     )
 }
+
+console.log(Header)
 
 export default Header;

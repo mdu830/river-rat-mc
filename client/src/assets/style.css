@@ -14,7 +14,7 @@ body {
 }
 
 .page {
-  /* background-image: url(./images/logo.png); */
+  z-index: -2;
   position: absolute;
   top: 100px;
   left: 0;
@@ -28,10 +28,10 @@ body {
   border: rgb(0, 0, 0) 1px solid;
   /* height: 200px; */
   z-index: +2;
-  box-shadow:
+  /* box-shadow:
     -1px -1px 0 rgba(255, 255, 255, 0),
     1px 1px 0 rgba(0, 0, 0, .25),
-    3px 3px 3px rgba(0, 0, 0, .25);
+    3px 3px 3px rgba(0, 0, 0, .25); */
 
 }
 
@@ -41,10 +41,19 @@ body {
   height: 70px;
 }
 
+.iconSmall {
+
+  width: 50px;
+  height: auto;
+}
+
 .icon {
+
   width: 30%;
   height: auto;
 }
+
+
 
 @media screen and (max-width: 652px) {
   .logoTitle {
@@ -59,15 +68,28 @@ body {
   }
 }
 
-@media screen and (max-width: 381px) {
+@media screen and (max-width: 426px) {
   .logoTitle {
     align-self: center;
     width: auto;
-    height: 35px;
+    height: 30px;
   }
 
-  .icon {
-    width: 30%;
+  .iconSmall {
+    width: 30px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 334px) {
+  .logoTitle {
+    align-self: center;
+    width: auto;
+    height: 20px;
+  }
+
+  .iconSmall {
+    width: 0px;
     height: auto;
   }
 }
