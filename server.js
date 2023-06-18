@@ -28,6 +28,8 @@ const dotenv = require("dotenv");
 
 dotenv.config();
 
+console.log(dotenv.config(process.env))
+
 // This configures static hosting for files in /public that have the extensions
 // listed in the array.
 var options = {
