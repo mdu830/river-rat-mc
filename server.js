@@ -24,11 +24,9 @@
 const express = require('express')
 const path = require("path");
 const app = express();
-// const dotenv = require("dotenv");
+const dotenv = require("dotenv");
 
-// dotenv.config();
-
-// console.log(dotenv.config())
+dotenv.config();
 
 // This configures static hosting for files in /public that have the extensions
 // listed in the array.
@@ -40,13 +38,15 @@ var options = {
   maxAge: '1m',
   redirect: false
 }
-app.use(express.static('./client/build', options.index))
+app.use(express.static('client/build', options.index))
+
+console.log(app.use(express.static('client/build', options.index)))
 
 app.get('*', function (req, res) {
-  res.sendFile(path.join(__dirname, './client/build', 'index.html'));
+  res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
 });
 
-const port = process.env.PORT || 3000
+const port = process.env.PORT
 
 app.listen(port, () => {
 
