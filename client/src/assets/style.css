@@ -41,3 +41,7 @@ body {
     right: 0;
     bottom: 0;
   }
+  /* error page style */
+  #err {
+    margin-left: 40%;
+  }
