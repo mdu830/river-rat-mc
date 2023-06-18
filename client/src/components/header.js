@@ -1,44 +1,37 @@
 import React, { useState } from 'react';
-import {
-    Collapse,
-    Navbar,
-    NavbarToggler,
-    Nav,
-    NavItem,
-    NavLink
-} from 'reactstrap';
+import { Collapse, Navbar, NavbarToggler } from 'reactstrap';
 import { Link } from "react-router-dom";
 import logo from '../assets/images/logo.png'
+import logoTxt from '../assets/images/logoTxt.png'
 import '../assets/style.css'
 
 
 function Header(props) {
 
-    const [isOpen, setIsOpen] = useState(false);
+    const [collapsed, setCollapsed] = useState(true);
 
-    const toggle = () => setIsOpen(!isOpen);
+    const toggleNavbar = () => setCollapsed(!collapsed);
 
     return (
         <>
-            <Navbar className="titleBar" color="dark" light expand="md" fixed="top">
+            <Navbar className="titleBar" color="faded" expand="lg" dark>
+                <Link className="" to={`/`} >
 
-                <Link to={`/`}>
-                    <img className="image-fluid icon" alt="" src={logo} />
+                    <img className="icon" alt="" src={logo} />
+
+                    <img className="logoTitle" alt="" src={logoTxt} />
+
                 </Link>
 
-                <NavbarToggler className='toggler' onClick={toggle} />
+                <NavbarToggler onClick={toggleNavbar} className="toggler col-auto" />
 
-                <Collapse isOpen={isOpen} navbar>
-                    <Nav className="me-auto" navbar>
-                        <NavItem className='p-2'>
-                            <Link className=""to={`about/`}>About Us</Link>
-                        </NavItem>
-                        <NavItem className='p-2'>
-                            <Link to={`contact/`}>Contact Us</Link>
-                        </NavItem>
-                    </Nav>
+                <Collapse isOpen={!collapsed} className='justify-content-end col-auto' navbar>
+
+                    <Link className="align-self-end m-3" to={`about/`}>About Us</Link>
+
+                    <Link className="align-self-end m-3" to={`contact/`}>Contact Us</Link>
+
                 </Collapse>
-                
             </Navbar>
         </>
     )

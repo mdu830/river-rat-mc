@@ -33,11 +33,14 @@ body {
 }
 
 .logoTitle {
-  float: left;
+  /* float: left; */
+  align-self: center;
+  width: auto;
+  height: 70px;
 }
 
 .icon {
-  width: 7%;
+  width: 55px;
   height: auto;
   /* position: relative; */
 }
