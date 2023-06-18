@@ -40,7 +40,7 @@ var options = {
 }
 app.use(express.static('client/build', options.index))
 
-console.log(app.use(express.static('client/build', options.index)))
+// console.log(app.use(express.static('client/build', options.index)))
 
 app.get('*', function (req, res) {
   res.sendFile(path.join(__dirname, 'client/build/index.html'));
