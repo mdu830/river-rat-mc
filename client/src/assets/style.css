@@ -1,10 +1,12 @@
+
+@import "bootstrap/dist/css/bootstrap.min.css";
+
 body {
-  /* background-image: url(../assets/images/background.jpg); */
+  /* background-image: url(); */
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  background-color: rgb(13, 30, 82);
-  /* overflow: hidden; */
+  background-color: rgb(68, 76, 106);
 }
 
 .App {
