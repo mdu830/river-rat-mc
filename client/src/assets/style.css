@@ -76,7 +76,20 @@ body {
   .logoTitle {
     align-self: center;
     width: auto;
-    height: 30px;
+    height: 40px;
+  }
+
+  .iconSmall {
+    width: 0px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .logoTitle {
+    align-self: center;
+    width: auto;
+    height: 34px;
   }
 
   .iconSmall {
@@ -89,7 +102,7 @@ body {
   .logoTitle {
     align-self: center;
     width: auto;
-    height: 26px;
+    height: 27px;
   }
 
   .iconSmall {
