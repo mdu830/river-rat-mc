@@ -47,7 +47,7 @@ app.use(express.static('./client/build', options.index))
 // });
 
 app.get('*', function (req, res) {
-  const index = path.join(__dirname, 'build', 'index.html');
+  const index = path.join(__dirname, 'client/build', 'index.html');
   res.sendFile(index);
 });
 
@@ -57,4 +57,4 @@ app.listen(port, () => {
 
   console.log(`Server listening at http://localhost:${port}`)
 })
-// 
+
