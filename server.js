@@ -28,7 +28,7 @@ const dotenv = require("dotenv");
 
 dotenv.config();
 
-console.log(dotenv.config(process.env))
+// console.log(dotenv.config())
 
 // This configures static hosting for files in /public that have the extensions
 // listed in the array.
