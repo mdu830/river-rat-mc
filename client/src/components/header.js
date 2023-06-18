@@ -17,7 +17,6 @@ function Header(props) {
             <Navbar className="titleBar" color="faded" expand="lg" dark>
                 <Link className="" to={`/`} >
 
-                    <img className="icon" alt="" src={logo} />
 
                     <img className="logoTitle" alt="" src={logoTxt} />
 
