@@ -58,9 +58,13 @@ h2 {
 }
 
 .icon {
-
+  position: absolute;
+  z-index: 5;
   width: 30%;
   height: auto;
+  top: 0;
+  left: 0;
+  margin-left: 37%;
 }
 
 .link {
@@ -68,7 +72,24 @@ h2 {
   font-size: larger;
 }
 
+.name {
+  color: aliceblue;
+}
 
+/* error page style ------------------*/
+
+#err {
+  margin-left: 40%;
+}
+
+.carousel {
+  z-index: 0;
+  max-width: 100%;
+  height: auto;
+  
+}
+
+/* media queries */
 @media screen and (max-width: 652px) {
   .page {
     z-index: -2;
@@ -86,8 +107,13 @@ h2 {
   }
 
   .icon {
-    width: 50%;
+    position: absolute;
+    z-index: 5;
+    width: 25%;
     height: auto;
+    top: 0;
+    left: 0;
+    margin-left: 37%;
   }
 }
 
@@ -137,20 +163,4 @@ h2 {
     width: 0px;
     height: auto;
   }
-}
-
-.name {
-  color: aliceblue;
-}
-
-/* error page style ------------------*/
-
-#err {
-  margin-left: 40%;
-}
-
-.carousel {
-  max-width: 100%;
-  height: auto;
-  
 }

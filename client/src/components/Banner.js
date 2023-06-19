@@ -1,4 +1,4 @@
-// this needs useRef unless the 
+// this needs useRef unless the error is inside of carousel
 
 import React, { useState } from 'react';
 import {
@@ -8,6 +8,7 @@ import {
 import imgTwo from '../assets/images/94.png'
 import imgThree from '../assets/images/95.png'
 import imgFour from '../assets/images/96.png'
+import logo from '../assets/images/logo.png'
 
 
 
@@ -32,7 +33,7 @@ const items = [
     },
 ];
 
-export default function Banner(args) {
+export default function Banner() {
     const [activeIndex, setActiveIndex] = useState(0);
     const [animating, setAnimating] = useState(false);
 
@@ -60,7 +61,7 @@ export default function Banner(args) {
     return (
         <>
             <style>
-                {`.carousel { width: 100%; height: auto; background: black; `}
+                {`.carousel { width: 100%; height: auto; position: relative; `}
             </style>
             <Carousel
                 activeIndex={activeIndex}
@@ -72,6 +73,8 @@ export default function Banner(args) {
                 className='carousel'>
                 {slides}
             </Carousel>
+            <img className="icon" alt="" src={logo} />
+
         </>
 
     );
