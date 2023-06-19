@@ -5,35 +5,13 @@ import {
     Carousel,
     CarouselItem,
 } from 'reactstrap';
-import imgTwo from '../assets/images/94.png'
-import imgThree from '../assets/images/95.png'
-import imgFour from '../assets/images/96.png'
 import logo from '../assets/images/logo.png'
+import items from './images'
 
-
-
-const items = [
-    {
-        src: imgTwo,
-        altText: '',
-        caption: '',
-        key: 3,
-    },
-    {
-        src: imgThree,
-        altText: '',
-        caption: '',
-        key: 3,
-    },
-    {
-        src: imgFour,
-        altText: '',
-        caption: '',
-        key: 3,
-    },
-];
 
 export default function Banner() {
+    const imgLong = items.long;
+    const imgShort = items.short
     const [activeIndex, setActiveIndex] = useState(0);
     const [animating, setAnimating] = useState(false);
 
@@ -49,7 +27,7 @@ export default function Banner() {
         setActiveIndex(nextIndex);
     };
 
-    const slides = items.map((item) => {
+    const slides = imgLong.map((item) => {
         return (
 
             <CarouselItem className='carousel' key={item.src}>
