@@ -16,7 +16,7 @@ body {
 .page {
   z-index: -2;
   position: absolute;
-  top: 100px;
+  top: 88px;
   left: 0;
   right: 0;
   bottom: 0;
@@ -34,9 +34,10 @@ h2 {
 /* Header -------------------------------*/
 
 .titleBar {
+  background-color: rgb(21, 20, 20);
   /* border: rgb(0, 0, 0) 0px solid; */
   /* height: 200px; */
-  z-index: +2;
+  z-index: +3;
   box-shadow:
     -1px -1px 0 rgba(255, 255, 255, 0),
     1px 1px 0 rgba(0, 0, 0, .25),
@@ -69,6 +70,15 @@ h2 {
 
 
 @media screen and (max-width: 652px) {
+  .page {
+    z-index: -2;
+    position: absolute;
+    top: 67px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
   .logoTitle {
     align-self: center;
     width: auto;
@@ -82,6 +92,15 @@ h2 {
 }
 
 @media screen and (max-width: 426px) {
+  .page {
+    z-index: -2;
+    position: absolute;
+    top: 56px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
   .logoTitle {
     align-self: center;
     width: auto;
@@ -128,4 +147,10 @@ h2 {
 
 #err {
   margin-left: 40%;
+}
+
+.carousel {
+  max-width: 100%;
+  height: auto;
+  
 }

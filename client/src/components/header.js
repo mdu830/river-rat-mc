@@ -19,7 +19,7 @@ function Header(props) {
 
     return (
         <>
-            <Navbar className="titleBar" color="faded" expand="lg" dark>
+            <Navbar className="titleBar" color="faded" expand="lg" dark fixed="top">
 
                 <Link className="" to={`/`} >
                     <img className="iconSmall" alt="" src={logo} />
