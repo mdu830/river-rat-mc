@@ -7,6 +7,7 @@ import reportWebVitals from './reportWebVitals';
 import Root from './Root';
 import ErrorPage from './routes/ErrorPage';
 import HomePage from './routes/HomePage';
+import Testimonials from './routes/Testimonials';
 import Gallery from './routes/Gallery'
 import About from './routes/About';
 import Contact from './routes/Contact'
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <HomePage />,
+      },
+      {
+        path: "/testimonials",
+        element: <Testimonials />,
       },
       {
         path: "/gallery",

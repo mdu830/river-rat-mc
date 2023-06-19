@@ -9,7 +9,6 @@ class Root extends Component {
     return (
       <div className="App">
         <Header />
-        
         <Outlet />
       </div>
     )
