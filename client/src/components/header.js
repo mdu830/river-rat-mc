@@ -17,9 +17,6 @@ function Header(props) {
         setCollapsed(true);
     }
 
-
-
-    console.log(collapsed)
     return (
         <>
             <Navbar className="titleBar" color="faded" expand="lg" dark>
