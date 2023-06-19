@@ -6,12 +6,12 @@ import {
     CarouselItem,
 } from 'reactstrap';
 import logo from '../assets/images/logo.png'
-import items from './images'
+import items from './Images'
 
 
 export default function Banner() {
-    const imgLong = items.long;
-    const imgShort = items.short
+    const imgLong = items;
+    // const imgShort = items.short
     const [activeIndex, setActiveIndex] = useState(0);
     const [animating, setAnimating] = useState(false);
 
