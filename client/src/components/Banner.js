@@ -1,24 +1,31 @@
+// this needs useRef unless the 
+
 import React, { useState } from 'react';
 import {
     Carousel,
     CarouselItem,
 } from 'reactstrap';
+import imgTwo from '../assets/images/94.png'
+import imgThree from '../assets/images/95.png'
+import imgFour from '../assets/images/96.png'
+
+
 
 const items = [
     {
-        src: 'https://picsum.photos/id/123/1200/400',
+        src: imgTwo,
         altText: '',
         caption: '',
-        key: 1,
+        key: 3,
     },
     {
-        src: 'https://picsum.photos/id/456/1200/400',
+        src: imgThree,
         altText: '',
         caption: '',
-        key: 2,
+        key: 3,
     },
     {
-        src: 'https://picsum.photos/id/678/1200/400',
+        src: imgFour,
         altText: '',
         caption: '',
         key: 3,
@@ -39,11 +46,6 @@ export default function Banner(args) {
         if (animating) return;
         const nextIndex = activeIndex === 0 ? items.length - 1 : activeIndex - 1;
         setActiveIndex(nextIndex);
-    };
-
-    const goToIndex = (newIndex) => {
-        if (animating) return;
-        setActiveIndex(newIndex);
     };
 
     const slides = items.map((item) => {
