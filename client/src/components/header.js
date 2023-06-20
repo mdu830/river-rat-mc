@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Collapse, Navbar, NavbarToggler } from 'reactstrap';
+import { Collapse, Navbar, NavbarToggler, Button } from 'reactstrap';
 import { Link } from "react-router-dom";
 import logo from '../assets/images/logo.png'
 import logoTxt from '../assets/images/logoTxt.png'
@@ -27,8 +27,12 @@ function Header(props) {
                 </Link>
                 <NavbarToggler onClick={toggleNavbar} className="toggler justify-content-end col-auto" />
                 <Collapse isOpen={!collapsed} onClick={handleClick} className='justify-content-end' navbar>
-
-                    <Link className="link row m-3" to={`testimonials/`}>Testimonials</Link>
+                        <Link className="link row m-3" to={`testimonials/`}>
+                        {/* <Button active={false} outline size='sm'> */}
+                            Testimonials
+                        {/* </Button> */}
+                        </Link>
+                    
 
                     <Link className="link row m-3" to={`gallery/`}>Gallery</Link>
 

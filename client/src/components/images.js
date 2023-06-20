@@ -1,6 +1,6 @@
-import imgTwo from '../assets/images/long/94.png'
-import imgThree from '../assets/images/long/95.png'
-import imgFour from '../assets/images/long/96.png'
+import imgTwo from '../assets/images/short/1.png'
+import imgThree from '../assets/images/short/3.png'
+import imgFour from '../assets/images/short/4.png'
 
 
 const items = [

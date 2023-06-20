@@ -16,7 +16,7 @@ body {
 .page {
   z-index: -2;
   position: absolute;
-  top: 88px;
+  top: 0;
   left: 0;
   right: 0;
   bottom: 0;
@@ -62,17 +62,35 @@ h2 {
 .icon {
   position: absolute;
   z-index: 5;
-  width: 30%;
+  width: 40%;
   height: auto;
   top: 0;
   left: 0;
-  margin-left: 37%;
+  margin-left: 29%;
+  margin-top: 8%;
+  
 }
 
 .link {
-  color: rgb(134, 124, 68);
+  color: rgb(195, 195, 195);
+  text-decoration: none;
+  font-family: Abel;
   font-size: larger;
 }
+.link:hover {
+  color: rgb(195, 195, 195);
+  text-decoration:underline;
+  font-family: Abel;
+  font-size: larger;
+}
+.link:active {
+  color: rgb(89, 91, 156);
+  text-decoration:underline;
+  font-family: Abel;
+  font-size: larger;
+}
+
+
 
 .name {
   color: aliceblue;
@@ -119,11 +137,40 @@ h2 {
   .icon {
     position: absolute;
     z-index: 5;
-    width: 25%;
+    width: 45%;
     height: auto;
     top: 0;
     left: 0;
-    margin-left: 37%;
+    margin-left: 27%;
+    margin-top: 6%;
+  }
+}
+
+@media screen and (max-width: 1007px) {
+  .iconSmall {
+    width: 0px;
+    height: auto;
+  }
+  .page {
+    z-index: -2;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+@media screen and (max-width: 585px) {
+  .icon {
+    position: absolute;
+    z-index: 5;
+    width: 45%;
+    height: auto;
+    top: 0;
+    left: 0;
+    margin-left: 27%;
+    margin-top: 10%;
   }
 }
 
@@ -131,7 +178,7 @@ h2 {
   .page {
     z-index: -2;
     position: absolute;
-    top: 56px;
+    top: 0px;
     left: 0;
     right: 0;
     bottom: 0;
@@ -166,17 +213,39 @@ h2 {
     width: 0px;
     height: auto;
   }
+
+  .icon {
+    position: absolute;
+    z-index: 5;
+    width: 45%;
+    height: auto;
+    top: 0;
+    left: 0;
+    margin-left: 27%;
+    margin-top: 11%;
+  }
 }
 
 @media screen and (max-width: 334px) {
   .logoTitle {
     align-self: center;
     width: auto;
-    height: 27px;
+    height: 28px;
   }
 
   .iconSmall {
     width: 0px;
     height: auto;
+  }
+
+  .icon {
+    position: absolute;
+    z-index: 5;
+    width: 40%;
+    height: auto;
+    top: 0;
+    left: 0;
+    margin-left: 27%;
+    margin-top: 15%;
   }
 }
