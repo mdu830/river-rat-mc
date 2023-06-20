@@ -22,6 +22,10 @@ body {
   bottom: 0;
 }
 
+h1 {
+  margin-top: 20%;
+}
+
 h2 {
   font-size: 25px;
   font-family: Abel;
@@ -50,7 +54,7 @@ h2 {
 .logoTitle {
   align-self: center;
   width: auto;
-  height: 70px;
+  height: 60px;
 }
 
 .iconSmall {
@@ -111,14 +115,35 @@ h2 {
 }
 
 .carousel {
-  z-index: 0;
   max-width: 100%;
   height: auto;
   
 }
 
+@media screen and (max-width: 1101px) {
+  .iconSmall {
+    width: 0px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 1007px) {
+  .iconSmall {
+    width: 0px;
+    height: auto;
+  }
+  .page {
+    z-index: -2;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
 /* media queries */
-@media screen and (max-width: 652px) {
+/* @media screen and (max-width: 652px) {
   .page {
     z-index: -2;
     position: absolute;
@@ -144,33 +169,33 @@ h2 {
     margin-left: 27%;
     margin-top: 6%;
   }
-}
+} */
 
-@media screen and (max-width: 1007px) {
-  .iconSmall {
-    width: 0px;
-    height: auto;
-  }
+@media screen and (max-width: 585px) {
   .page {
     z-index: -2;
     position: absolute;
-    top: 0px;
+    top: 20px;
     left: 0;
     right: 0;
     bottom: 0;
   }
-}
 
-@media screen and (max-width: 585px) {
   .icon {
     position: absolute;
     z-index: 5;
-    width: 45%;
+    width: 40%;
     height: auto;
     top: 0;
     left: 0;
     margin-left: 27%;
-    margin-top: 10%;
+    margin-top: 7%;
+  }
+
+  .logoTitle {
+    align-self: center;
+    width: auto;
+    height: 35px;
   }
 }
 
@@ -178,7 +203,7 @@ h2 {
   .page {
     z-index: -2;
     position: absolute;
-    top: 0px;
+    top: 20px;
     left: 0;
     right: 0;
     bottom: 0;
@@ -193,16 +218,38 @@ h2 {
   .logoTitle {
     align-self: center;
     width: auto;
-    height: 40px;
+    height: 30px;
   }
 
   .iconSmall {
     width: 0px;
     height: auto;
   }
+
+  .icon {
+    position: absolute;
+    z-index: 5;
+    width: 45%;
+    height: auto;
+    top: 0;
+    left: 0;
+    margin-left: 27%;
+    margin-top: 7%;
+  }
+  
 }
 
 @media screen and (max-width: 376px) {
+
+  .page {
+    z-index: -2;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
   .logoTitle {
     align-self: center;
     width: auto;
@@ -222,7 +269,7 @@ h2 {
     top: 0;
     left: 0;
     margin-left: 27%;
-    margin-top: 11%;
+    /* margin-top: ; */
   }
 }
 
@@ -246,6 +293,6 @@ h2 {
     top: 0;
     left: 0;
     margin-left: 27%;
-    margin-top: 15%;
+    margin-top: 6%;
   }
 }
