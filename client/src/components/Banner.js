@@ -45,7 +45,7 @@ export default function Banner() {
                 activeIndex={activeIndex}
                 next={next}
                 previous={previous}
-                ride='carousel'
+                // ride='carousel'
                 interval={3500}
                 fade={true}
                 className='carousel'>
