@@ -26,7 +26,7 @@ function Header(props) {
                     <img className="logoTitle" alt="" src={logoTxt} />
                 </Link>
                 <NavbarToggler onClick={toggleNavbar} className="toggler justify-content-end col-auto" />
-                <Collapse isOpen={!collapsed} onClick={handleClick} className='' navbar>
+                <Collapse isOpen={!collapsed} onClick={handleClick} className='justify-content-end' navbar>
 
                 <Link className="link row m-3" to={`services/`}>Services</Link>
 
