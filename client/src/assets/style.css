@@ -27,7 +27,12 @@ h1 {
 }
 
 h2 {
-  font-size: 25px;
+  /* font-size: 25px; */
+  font-family: Abel;
+  color: rgb(159, 165, 165);
+}
+
+h3 {
   font-family: Abel;
   color: rgb(159, 165, 165);
 }

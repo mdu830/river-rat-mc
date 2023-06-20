@@ -16,7 +16,8 @@ export default function HomePage() {
         <Banner />
         <Row>
           <Container className="bg-dark p-2 customContainer ">
-            <h2>Welcome to River Rat Marine Construction! Our website is under development. </h2>
+            <h2>Welcome to River Rat Marine Construction</h2>
+            <h3>Our website is currently under development.</h3>
           </Container>
         </Row>
 
