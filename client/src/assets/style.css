@@ -1,6 +1,6 @@
 
 @import "bootstrap/dist/css/bootstrap.min.css";
-
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
 body {
   /* background-image: url(./images/logo.png); */
   background-repeat: no-repeat;
@@ -23,6 +23,8 @@ body {
 }
 
 h2 {
+  font-size: 25px;
+  font-family: Abel;
   color: rgb(159, 165, 165);
 }
 
@@ -76,6 +78,14 @@ h2 {
   color: aliceblue;
 }
 
+.customContainer {
+  /* border-radius: 10px; */
+  box-shadow:
+  -1px -1px 0 rgba(255, 255, 255, 0),
+  1px 1px 0 rgba(0, 0, 0, .25),
+  3px 3px 3px rgba(0, 0, 0, .25);
+}
+
 /* error page style ------------------*/
 
 #err {
@@ -125,6 +135,12 @@ h2 {
     left: 0;
     right: 0;
     bottom: 0;
+  }
+
+  h2 {
+    font-size: 15px;
+    font-family: Abel;
+    color: rgb(159, 165, 165);
   }
   
   .logoTitle {
