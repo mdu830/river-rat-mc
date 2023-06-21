@@ -1,6 +1,6 @@
-
 @import "bootstrap/dist/css/bootstrap.min.css";
 @import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
 body {
   /* background-image: url(./images/logo.png); */
   background-repeat: no-repeat;
@@ -23,7 +23,14 @@ body {
 }
 
 h1 {
-  margin-top: 20%;
+  margin-top: 10%;
+  font-family: Abel;
+  color: rgb(159, 165, 165);
+  text-shadow:
+  -1px -1px 0 rgba(255, 255, 255, 0),
+  1px 1px 0 rgba(0, 0, 0, .25),
+  3px 3px 3px rgba(0, 0, 0, .25);
+
 }
 
 h2 {
@@ -77,7 +84,7 @@ h3 {
   left: 0;
   margin-left: 36%;
   margin-top: 6%;
-  
+
 }
 
 .link {
@@ -86,15 +93,38 @@ h3 {
   font-family: Abel;
   font-size: larger;
 }
+
 .link:hover {
   color: rgb(195, 195, 195);
-  text-decoration:underline;
+  text-decoration: underline;
   font-family: Abel;
   font-size: larger;
 }
+
 .link:active {
   color: rgb(89, 91, 156);
-  text-decoration:underline;
+  text-decoration: underline;
+  font-family: Abel;
+  font-size: larger;
+}
+
+.btnLink {
+  color: rgb(195, 195, 195);
+  text-decoration: none;
+  font-family: Abel;
+  font-size: larger;
+}
+
+.btnLink:hover {
+  color: rgb(195, 195, 195);
+  text-decoration: none;
+  font-family: Abel;
+  font-size: larger;
+}
+
+.btnLink:active {
+  color: rgb(89, 91, 156);
+  text-decoration: none;
   font-family: Abel;
   font-size: larger;
 }
@@ -106,9 +136,9 @@ h3 {
 .customContainer {
   /* border-radius: 10px; */
   box-shadow:
-  -1px -1px 0 rgba(255, 255, 255, 0),
-  1px 1px 0 rgba(0, 0, 0, .25),
-  3px 3px 3px rgba(0, 0, 0, .25);
+    -1px -1px 0 rgba(255, 255, 255, 0),
+    1px 1px 0 rgba(0, 0, 0, .25),
+    3px 3px 3px rgba(0, 0, 0, .25);
 }
 
 /* error page style ------------------*/
@@ -120,7 +150,7 @@ h3 {
 .carousel {
   max-width: 100%;
   height: auto;
-  
+
 }
 
 /* Transitions */
@@ -130,21 +160,34 @@ h3 {
   transform: translate(0, 25px);
   z-index: 1;
 }
+
 .fade-enter.fade-enter-active {
   opacity: 1;
   transform: translate(0, 0);
 
   transition: opacity 250ms ease-out, transform 300ms ease;
 }
+
 .fade-exit {
   opacity: 1;
   transform: translate(0, 0);
 }
+
 .fade-exit.fade-exit-active {
   opacity: 0;
   transform: translate(0, 30px);
 
   transition: opacity 250ms ease-out, transform 300ms ease;
+}
+
+/* Footer */
+.footer {
+  background-color: rgb(62, 62, 62);
+}
+
+.footerText {
+  font-family: Abel;
+  color: rgb(159, 165, 165);
 }
 
 /* Media Queries */
@@ -161,6 +204,7 @@ h3 {
     width: 0px;
     height: auto;
   }
+
   .page {
     z-index: -2;
     position: absolute;
@@ -214,7 +258,7 @@ h3 {
     font-family: Abel;
     color: rgb(159, 165, 165);
   }
-  
+
   .logoTitle {
     align-self: center;
     width: auto;
@@ -236,7 +280,7 @@ h3 {
     margin-left: 27%;
     margin-top: 2%;
   }
-  
+
 }
 
 @media screen and (max-width: 376px) {

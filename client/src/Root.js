@@ -3,7 +3,7 @@ import './App.css';
 import { Routes, Route, useLocation, Router } from "react-router-dom";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 import Header from './components/Header'
-// import ErrorPage from './routes/ErrorPage';
+import Faq from './routes/Faq';
 import HomePage from './routes/HomePage';
 import Services from './routes/Services';
 import Testimonials from './routes/Testimonials';
@@ -27,6 +27,7 @@ export default function Root() {
             <Route path="/gallery" element={<Gallery />} />
             <Route path="about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/faq" element={<Faq />} />
           </Routes>
         </CSSTransition>
       </TransitionGroup>
