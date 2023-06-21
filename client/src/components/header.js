@@ -44,6 +44,4 @@ function Header(props) {
     )
 }
 
-console.log(Header)
-
 export default Header;

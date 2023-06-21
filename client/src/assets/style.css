@@ -71,7 +71,7 @@ h3 {
 .icon {
   position: absolute;
   z-index: 5;
-  width: 40%;
+  width: 35%;
   height: auto;
   top: 0;
   left: 0;
@@ -121,6 +121,30 @@ h3 {
   max-width: 100%;
   height: auto;
   
+}
+
+/* Transitions */
+
+.fade-enter {
+  opacity: 0;
+  transform: translate(0, 25px);
+  z-index: 1;
+}
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transform: translate(0, 0);
+
+  transition: opacity 250ms ease-out, transform 300ms ease;
+}
+.fade-exit {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+.fade-exit.fade-exit-active {
+  opacity: 0;
+  transform: translate(0, 30px);
+
+  transition: opacity 250ms ease-out, transform 300ms ease;
 }
 
 /* Media Queries */
