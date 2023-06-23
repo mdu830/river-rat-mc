@@ -14,7 +14,7 @@ export default function HomePage() {
   return (
     <>
       {/* all the other elements */}
-      <div id='HomePage' className="bg-dark page">
+      <div className="bg-dark page">
         <Banner />
 
 

@@ -18,16 +18,14 @@ const Contact = () => {
   return (
 
     <div className="page">
-      <Container fluid className='bg-dark pt-2  pb-5 customContainer'>
+      <Container fluid className='bg-dark pt-2  pb-5 customContainer align-items-center'>
         <h1>Contact Us</h1>
-        <Row className='m-3'>
-          <Col sm md={{ size: 6, offset: 3 }} className='p-3'>
-            <h2 className=''>Phone: (919) 920-9213</h2>
-          </Col>
-          <Col md={{ size: 6, offset: 3 }} className='p-3'>
-            <h2>doug@riverratmarineconstruction.com</h2>
-          </Col>
-        </Row>
+        <div className='p-3'>
+          <h2 className=''>Phone: (919) 920-9213</h2>
+        </div>
+        <div className='p-3'>
+          <h2>doug@riverratmarineconstruction.com</h2>
+        </div>
         <Form>
           <Row className=''>
             <Col md={{ size: 8, offset: 2 }}>
