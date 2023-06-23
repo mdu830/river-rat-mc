@@ -1,5 +1,16 @@
 import React from 'react';
-import { Container, Form, Row, Col, FormGroup, Input, Label, Button } from 'reactstrap';
+import {
+  Container,
+  Form,
+  Row,
+  Col,
+  FormGroup,
+  Input,
+  Label,
+  Button
+} from 'reactstrap';
+import Footer from '../components/Footer';
+
 
 
 const Contact = () => {
@@ -7,12 +18,12 @@ const Contact = () => {
   return (
 
     <div className="page">
-      <Container>
+      <Container fluid className='vh-100 bg-dark pt-2 customContainer'>
         <h1>Contact Us</h1>
 
         <Form>
-          <Row>
-            <Col md={6}>
+          <Row className=''>
+            <Col md={{ size: 8, offset: 2 }}>
               <FormGroup>
                 <Label for="exampleEmail">
                   Email
@@ -20,98 +31,70 @@ const Contact = () => {
                 <Input
                   id="exampleEmail"
                   name="email"
-                  placeholder="with a placeholder"
+                  placeholder="Email Address"
                   type="email"
                 />
               </FormGroup>
             </Col>
-            <Col md={6}>
+          </Row>
+          <Row>
+            <Col md={{ size: 4, offset: 2 }}>
               <FormGroup>
-                <Label for="examplePassword">
-                  Password
+                <Label for="First Name">
+                  First Name
                 </Label>
                 <Input
                   id="examplePassword"
-                  name="password"
-                  placeholder="password placeholder"
-                  type="password"
-                />
-              </FormGroup>
-            </Col>
-          </Row>
-          <FormGroup>
-            <Label for="exampleAddress">
-              Address
-            </Label>
-            <Input
-              id="exampleAddress"
-              name="address"
-              placeholder="1234 Main St"
-            />
-          </FormGroup>
-          <FormGroup>
-            <Label for="exampleAddress2">
-              Address 2
-            </Label>
-            <Input
-              id="exampleAddress2"
-              name="address2"
-              placeholder="Apartment, studio, or floor"
-            />
-          </FormGroup>
-          <Row>
-            <Col md={6}>
-              <FormGroup>
-                <Label for="exampleCity">
-                  City
-                </Label>
-                <Input
-                  id="exampleCity"
-                  name="city"
+                  name="First Name"
+                  placeholder="First Name"
+                  type=""
                 />
               </FormGroup>
             </Col>
             <Col md={4}>
               <FormGroup>
-                <Label for="exampleState">
-                  State
+                <Label for="last name">
+                  Last Name
                 </Label>
                 <Input
-                  id="exampleState"
-                  name="state"
-                />
-              </FormGroup>
-            </Col>
-            <Col md={2}>
-              <FormGroup>
-                <Label for="exampleZip">
-                  Zip
-                </Label>
-                <Input
-                  id="exampleZip"
-                  name="zip"
+                  id="examplePassword"
+                  name="Last Name"
+                  placeholder="Last Name"
+                  type=""
                 />
               </FormGroup>
             </Col>
           </Row>
-          <FormGroup check>
-            <Input
-              id="exampleCheck"
-              name="check"
-              type="checkbox"
-            />
-            <Label
-              check
-              for="exampleCheck"
-            >
-              Check me out
-            </Label>
-          </FormGroup>
+          <Row>
+            <Col md={{ size: 8, offset: 2 }}>
+              <FormGroup>
+                <Label for="last name">
+                  Last Name
+                </Label>
+                <Label
+                  for="exampleText"
+                  sm={2}
+                >
+                  Text Area
+                </Label>
+                  <Input
+                    id="exampleText"
+                    name="Message"
+                    placeholder="Message"
+                    type="textarea"
+                  />
+              </FormGroup>
+            </Col>
+          </Row>
+
+
+
           <Button>
-            Sign in
+            Submit
           </Button>
         </Form>
       </Container>
+      <Footer />
     </div>
   );
 }

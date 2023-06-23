@@ -183,6 +183,13 @@ h3 {
   transition: opacity 250ms ease-out, transform 300ms ease;
 }
 
+/* contact page */
+
+/* .centerRow {
+  display: flex;
+  align-items: center;
+} */
+
 /* Footer */
 .footer {
   bottom: 0;
@@ -199,14 +206,14 @@ h3 {
 
 /* Media Queries */
 
-@media screen and (max-width: 1101px) {
+/* @media screen and (max-width: 1101px) {
   .footer {
     bottom: 0;
     width: 100%;
     background-color: rgb(62, 62, 62);
     position: absolute;
   }
-}
+} */
 
 @media screen and (max-width: 1101px) {
   .iconSmall {

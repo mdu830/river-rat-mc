@@ -18,7 +18,7 @@ export default function HomePage() {
         <Banner />
 
 
-        <Container fluid className="bg-dark customContainer">
+        <Container fluid className="vh-100 bg-dark border-top customContainer pt-2">
           <Button size='md' color="primary" outline className='m-4'>
             <Link className="btnLink" to={`faq/`}>FAQ</Link>
           </Button>
