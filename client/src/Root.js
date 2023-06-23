@@ -10,6 +10,7 @@ import Testimonials from './routes/Testimonials';
 import Gallery from './routes/Gallery'
 import About from './routes/About';
 import Contact from './routes/Contact'
+import Footer from './components/Footer';
 
 export default function Root() {
 
@@ -31,6 +32,7 @@ export default function Root() {
           </Routes>
         </CSSTransition>
       </TransitionGroup>
+      <Footer />
     </div>
   )
 

@@ -18,20 +18,17 @@ export default function HomePage() {
         <Banner />
 
 
-        <Container fluid className="vh-100 bg-dark border-top customContainer pt-2">
-          <Button size='md' color="primary" outline className='m-4'>
-            <Link className="btnLink" to={`faq/`}>FAQ</Link>
-          </Button>
+        <Container fluid className=" bg-dark border-top pt-2">
+            <Button size='md' color="primary" outline className='m-4'>
+              <Link className="btnLink" to={`faq/`}>FAQ</Link>
+            </Button>
 
-          <Button size='md' className='m-4'>
-            <Link className="btnLink" to={`contact/`}>Contact Us</Link>
-          </Button>
-          <h3 className=''>Welcome to River Rat Marine Construction</h3>
-          <h2>Our website is currently under development.</h2>
+            <Button size='md' className='m-4'>
+              <Link className="btnLink" to={`contact/`}>Contact Us</Link>
+            </Button>
+            <h3 className=''>Welcome to River Rat Marine Construction</h3>
+            <h2>Our website is currently under development.</h2>
         </Container>
-
-
-        <Footer />
       </div>
     </>
   )

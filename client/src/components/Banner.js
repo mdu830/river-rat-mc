@@ -52,7 +52,6 @@ export default function Banner() {
                 {slides}
             </Carousel>
             <img className="icon" alt="" src={logo} />
-
         </>
 
     );
