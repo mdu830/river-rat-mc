@@ -19,11 +19,11 @@ export default function HomePage() {
 
 
         <Container fluid className="bg-dark customContainer">
-          <Button size='xl' color='primary' className='m-4'>
+          <Button size='md' color="primary" outline className='m-4'>
             <Link className="btnLink" to={`faq/`}>FAQ</Link>
           </Button>
 
-          <Button size='xl' className='m-4'>
+          <Button size='md' className='m-4'>
             <Link className="btnLink" to={`contact/`}>Contact Us</Link>
           </Button>
           <h3 className=''>Welcome to River Rat Marine Construction</h3>
