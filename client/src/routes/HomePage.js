@@ -14,35 +14,22 @@ export default function HomePage() {
   return (
     <>
       {/* all the other elements */}
-      <div id='HomePage' className="page">
+      <div id='HomePage' className="bg-dark page">
         <Banner />
 
-        <Row>
-          <Container className="bg-dark  p-2 customContainer ">
-            <Row>
-              <h3>Welcome to River Rat Marine Construction</h3>
-            </Row>
-            <Row className=''>
-              <Col>
-                <Button size='sm' color='primary' className=' m-3'>
-                  <Link className="btnLink" to={`faq/`}>FAQ</Link>
-                </Button>
 
-                <Button size='sm' className=' m-3'>
-                  <Link className="btnLink" to={`contact/`}>Contact Us</Link>
-                </Button>
-              </Col>
+        <Container fluid className="bg-dark customContainer">
+          <Button size='xl' color='primary' className='m-4'>
+            <Link className="btnLink" to={`faq/`}>FAQ</Link>
+          </Button>
 
-            </Row>
-            <Row>
-            </Row>
-          </Container>
-          <Container className="bg-dark  p-2 customContainer ">
-            <Row className=''>
-              <h2>Our website is currently under development.</h2>
-            </Row>
-          </Container>
-        </Row>
+          <Button size='xl' className='m-4'>
+            <Link className="btnLink" to={`contact/`}>Contact Us</Link>
+          </Button>
+          <h3 className=''>Welcome to River Rat Marine Construction</h3>
+          <h2>Our website is currently under development.</h2>
+        </Container>
+
 
         <Footer />
       </div>
