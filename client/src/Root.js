@@ -21,13 +21,13 @@ export default function Root() {
       <TransitionGroup component={null}>
         <CSSTransition key={location.key} classNames="fade" timeout={300}>
           <Routes location={location}>
-            <Route path="#/" element={<HomePage />} />
-            <Route path="#/services" element={<Services />} />
-            <Route path="3/testimonials" element={<Testimonials />} />
-            <Route path="#/gallery" element={<Gallery />} />
-            <Route path="#/about" element={<About />} />
-            <Route path="#/contact" element={<Contact />} />
-            <Route path="#/faq" element={<Faq />} />
+            <Route path="/" element={<HomePage />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="testimonials" element={<Testimonials />} />
+            <Route path="/gallery" element={<Gallery />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/faq" element={<Faq />} />
           </Routes>
         </CSSTransition>
       </TransitionGroup>
