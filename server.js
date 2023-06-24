@@ -20,6 +20,11 @@ app.get('/', function (req, res) {
   res.sendFile(index);
 });
 
+app.get('*', function (req, res) {
+  const index = path.join(__dirname, 'client/build', 'index.html');
+  res.sendFile(index);
+});
+
 const port = process.env.PORT
 
 app.listen(port, () => {
