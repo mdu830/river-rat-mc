@@ -23,7 +23,7 @@ const Contact = () => {
         <h1>Contact Us</h1>
         <h2
           className='linkLarge'
-          onClick={() => window.open = 'tel: +19199209213'}
+          onClick={() => window.location = 'tel:9199209213'}
         >Phone: (919) 920-9213
         </h2>
         <h2
