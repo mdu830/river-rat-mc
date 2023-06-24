@@ -1,8 +1,7 @@
-// import { Component } from 'react';
 import './App.css';
 import { Routes, Route, useLocation, Router } from "react-router-dom";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
-import Header from './components/Header'
+import Header from './components/header'
 import Faq from './routes/Faq';
 import HomePage from './routes/HomePage';
 import Services from './routes/Services';

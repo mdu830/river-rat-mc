@@ -9,6 +9,7 @@ import {
   Label,
   Button
 } from 'reactstrap';
+import { Link } from 'react-router-dom';
 import Footer from '../components/Footer';
 
 
@@ -23,9 +24,11 @@ const Contact = () => {
         <div className='p-3'>
           <h2 className=''>Phone: (919) 920-9213</h2>
         </div>
-        <div className='p-3'>
-          <h2>doug@riverratmarineconstruction.com</h2>
-        </div>
+          <h2 
+          className='linkLarge' 
+          onClick={() => window.location = 'mailto:pam@riverratmarineconstruction.com'}
+          >pam@riverratmarineconstruction.com
+          </h2>
         <Form>
           <Row className=''>
             <Col md={{ size: 8, offset: 2 }}>

@@ -100,6 +100,13 @@ h4 {
   font-size: larger;
 }
 
+.linkLarge {
+  color: rgb(195, 195, 195);
+  text-decoration: none;
+  font-family: Abel;
+  /* font-size: larger; */
+}
+
 .link:hover {
   color: rgb(195, 195, 195);
   text-decoration: underline;
@@ -112,6 +119,20 @@ h4 {
   text-decoration: underline;
   font-family: Abel;
   font-size: larger;
+}
+
+.linkLarge:hover {
+  color: rgb(195, 195, 195);
+  text-decoration: underline;
+  font-family: Abel;
+  /* font-size: larger; */
+}
+
+.linkLarge:active {
+  color: rgb(89, 91, 156);
+  text-decoration: underline;
+  font-family: Abel;
+  /* font-size: larger; */
 }
 
 .btnLink {
@@ -261,7 +282,20 @@ h4 {
     right: 0;
     bottom: 0;
   }
+  
+  .icon {
+    position: absolute;
+    z-index: 5;
+    width: 30%;
+    height: auto;
+    top: 0;
+    left: 0;
+    margin-left: 35%;
+    margin-top: 10%;
+  }
 }
+
+
 
 @media screen and (max-width: 585px) {
   .page {
@@ -276,12 +310,12 @@ h4 {
   .icon {
     position: absolute;
     z-index: 5;
-    width: 25%;
+    width: 30%;
     height: auto;
     top: 0;
     left: 0;
-    margin-left: 38%;
-    margin-top: 5%;
+    margin-left: 35%;
+    margin-top: 10%;
   }
 
   .logoTitle {
@@ -321,11 +355,11 @@ h4 {
   .icon {
     position: absolute;
     z-index: 5;
-    width: 30%;
+    width: 40%;
     height: auto;
     top: 0;
     left: 0;
-    margin-left: 35%;
+    margin-left: 30%;
     margin-top: 2%;
   }
 
@@ -352,17 +386,7 @@ h4 {
     width: 0px;
     height: auto;
   }
-
-  /* .icon {
-    position: absolute;
-    z-index: 5;
-    width: 45%;
-    height: auto;
-    top: 0;
-    left: 0;
-    margin-left: 27%;
-    margin-top: 1%;
-  } */
+  
 }
 
 @media screen and (max-width: 334px) {
@@ -377,14 +401,4 @@ h4 {
     height: auto;
   }
 
-  /* .icon {
-    position: absolute;
-    z-index: 5;
-    width: 40%;
-    height: auto;
-    top: 0;
-    left: 0;
-    margin-left: 27%;
-    margin-top: 6%;
-  } */
 }

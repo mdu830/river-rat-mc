@@ -1,17 +1,30 @@
 // this needs useRef unless the error is inside of carousel
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
     Carousel,
     CarouselItem,
 } from 'reactstrap';
 import logo from '../assets/images/logo.png'
-import items from './Images'
+import imgLong from './ImgLong'
+import imgShort from './ImgShort';
+
+import { useMediaQuery } from 'usehooks-ts'
+
 
 
 export default function Banner() {
-    const imgLong = items;
-    // const imgShort = items.short
+
+    // changfe picture size based on screen size
+    const matches = useMediaQuery('(min-width: 992px)')
+
+    const [items, setItems] = useState(imgShort)
+
+    useEffect(() => {
+        matches ? setItems(imgLong) : setItems(imgShort)
+    }, [matches]);
+
+    // animations
     const [activeIndex, setActiveIndex] = useState(0);
     const [animating, setAnimating] = useState(false);
 
@@ -27,7 +40,7 @@ export default function Banner() {
         setActiveIndex(nextIndex);
     };
 
-    const slides = imgLong.map((item) => {
+    const slides = items.map((item) => {
         return (
 
             <CarouselItem className='carousel' key={item.src}>
