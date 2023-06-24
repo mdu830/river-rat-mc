@@ -21,14 +21,16 @@ const Contact = () => {
     <div className="page">
       <Container fluid className='bg-dark pt-2  pb-5 customContainer align-items-center'>
         <h1>Contact Us</h1>
-        <div className='p-3'>
-          <h2 className=''>Phone: (919) 920-9213</h2>
-        </div>
-          <h2 
-          className='linkLarge' 
+        <h2
+          className='linkLarge'
+          onClick={() => window.open = 'tel: +19199209213'}
+        >Phone: (919) 920-9213
+        </h2>
+        <h2
+          className='linkLarge'
           onClick={() => window.location = 'mailto:pam@riverratmarineconstruction.com'}
-          >pam@riverratmarineconstruction.com
-          </h2>
+        >pam@riverratmarineconstruction.com
+        </h2>
         <Form>
           <Row className=''>
             <Col md={{ size: 8, offset: 2 }}>
