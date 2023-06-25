@@ -15,7 +15,12 @@ var options = {
 }
 app.use(express.static('./client/build', options.index))
 
-app.get('/*', function (req, res) {
+app.get('/', function (req, res) {
+  const index = path.join(__dirname, 'client/build', 'index.html');
+  res.sendFile(index);
+});
+
+app.get('*', function (req, res) {
   const index = path.join(__dirname, 'client/build', 'index.html');
   res.sendFile(index);
 });
