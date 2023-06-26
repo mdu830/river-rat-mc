@@ -23,7 +23,7 @@ export default function Root() {
           <Routes location={location}>
             <Route path="/" element={<HomePage />} />
             <Route path="/services" element={<Services />} />
-            <Route path="testimonials" element={<Testimonials />} />
+            <Route path="/testimonials" element={<Testimonials />} />
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />

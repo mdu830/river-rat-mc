@@ -10,7 +10,7 @@ const Services = () => {
     <div className="page">
 
       <Container fluid className='bg-dark pt-2 pb-5'>
-        <h1>Services</h1>
+        <h1 className='mb-3'>Services</h1>
         <Card color='dark' className='m-3'>
           <CardHeader className='cardHeader'>
             <h3>Sea walls</h3>

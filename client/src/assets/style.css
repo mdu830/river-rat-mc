@@ -268,7 +268,7 @@ h4 {
   }
 }
 
-@media screen and (max-width: 1007px) {
+@media screen and (max-width: 991px) {
   .iconSmall {
     width: 0px;
     height: auto;
