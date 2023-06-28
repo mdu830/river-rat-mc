@@ -1,10 +1,7 @@
 import React from 'react';
 import '../assets/style.css'
-import logo from '../assets/images/logo.png'
-import { Spinner, Container, Row, Col, Button } from 'reactstrap';
-import { Component, useEffect, useState } from 'react';
+import {Container, Button } from 'reactstrap';
 import Banner from '../components/Banner';
-import Footer from '../components/Footer';
 import { Link } from "react-router-dom";
 
 

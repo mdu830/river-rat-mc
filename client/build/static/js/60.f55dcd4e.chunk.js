@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkclient=self.webpackChunkclient||[]).push([[60],{60:function(e,n,s){s.r(n);s(791);var c=s(823),t=s(184);n.default=function(){return(0,t.jsx)("div",{className:"page",children:(0,t.jsx)(c.Z,{fluid:!0,className:"bg-dark pt-2  pb-5 customContainer align-items-center",children:(0,t.jsx)("h1",{children:"About Us"})})})}}}]);
+//# sourceMappingURL=60.f55dcd4e.chunk.js.map

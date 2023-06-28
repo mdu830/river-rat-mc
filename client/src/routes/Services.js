@@ -1,6 +1,5 @@
 import React from 'react';
 import { Card, CardHeader, Container, ListGroup, ListGroupItem } from 'reactstrap';
-import Footer from '../components/Footer';
 
 
 const Services = () => {

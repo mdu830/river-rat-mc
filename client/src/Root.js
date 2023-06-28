@@ -1,15 +1,18 @@
 import './App.css';
-import { Routes, Route, useLocation, Router } from "react-router-dom";
+import React from 'react';
+import { Routes, Route, useLocation } from "react-router-dom";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
-import Header from './components/header'
-import Faq from './routes/Faq';
-import HomePage from './routes/HomePage';
-import Services from './routes/Services';
-import Testimonials from './routes/Testimonials';
-import Gallery from './routes/Gallery'
-import About from './routes/About';
-import Contact from './routes/Contact'
+import Header from './components/Header'
 import Footer from './components/Footer';
+import HomePage from './routes/HomePage';
+import loadable from '@loadable/component';
+
+const Faq = loadable(() => import('./routes/Faq'));  
+const Services = loadable(() => import('./routes/Services'));  
+const Testimonials = loadable(() => import('./routes/Testimonials'));  
+const Gallery = loadable(() => import('./routes/Gallery'));  
+const About = loadable(() => import('./routes/About'));  
+const Contact = loadable(() => import('./routes/Contact'));  
 
 export default function Root() {
 
@@ -21,7 +24,7 @@ export default function Root() {
       <TransitionGroup component={null}>
         <CSSTransition key={location.key} classNames="fade" timeout={300}>
           <Routes location={location}>
-            <Route path="/" element={<HomePage />} />
+            <Route index path="/" element={<HomePage />} />
             <Route path="/services" element={<Services />} />
             <Route path="/testimonials" element={<Testimonials />} />
             <Route path="/gallery" element={<Gallery />} />
