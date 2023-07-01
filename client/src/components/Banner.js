@@ -9,6 +9,10 @@ import logo from '../assets/images/logo.png'
 import imgLong from './ImgLong'
 import imgShort from './ImgShort';
 import { useMediaQuery } from 'usehooks-ts'
+import { LazyLoadImage, placeholder } from 'react-lazy-load-image-component'
+import 'react-lazy-load-image-component/src/effects/blur.css'
+
+
 
 
 
