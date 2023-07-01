@@ -5,8 +5,6 @@ import logo from '../assets/images/logo.png'
 import logoTxt from '../assets/images/logoTxt.png'
 import '../assets/style.css'
 
-
-
 function Header(props) {
 
     const [collapsed, setCollapsed] = useState(true);

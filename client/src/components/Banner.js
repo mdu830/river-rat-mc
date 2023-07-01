@@ -8,7 +8,6 @@ import {
 import logo from '../assets/images/logo.png'
 import imgLong from './ImgLong'
 import imgShort from './ImgShort';
-
 import { useMediaQuery } from 'usehooks-ts'
 
 
@@ -44,7 +43,7 @@ export default function Banner() {
         return (
 
             <CarouselItem className='carousel' key={item.src}>
-                <img className='carousel' src={item.src} alt={item.altText} />
+                <img className='carousel' src={item.src} alt={item.altText} effect='blur'/>
             </CarouselItem>
         );
     });
@@ -61,7 +60,8 @@ export default function Banner() {
                 ride='carousel'
                 interval={3500}
                 fade={true}
-                className='carousel'>
+                className='carousel'
+                >
                 {slides}
             </Carousel>
             <img className="icon" alt="" src={logo} />

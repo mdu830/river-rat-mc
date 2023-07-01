@@ -4,8 +4,6 @@ import {Container, Button } from 'reactstrap';
 import Banner from '../components/Banner';
 import { Link } from "react-router-dom";
 
-
-
 export default function HomePage() {
 
   return (
@@ -13,8 +11,6 @@ export default function HomePage() {
       {/* all the other elements */}
       <div className="bg-dark page">
         <Banner />
-
-
         <Container fluid className=" bg-dark border-top pt-2">
             <Button size='md' color="primary" outline className='m-4'>
               <Link className="btnLink" to={`faq/`}>FAQ</Link>
