@@ -11,14 +11,6 @@ import Gallery from './routes/Gallery';
 import About from './routes/About'
 import Contact from './routes/Contact'
 import Faq from './routes/Faq'
-// import loadable from '@loadable/component';
-
-// const Faq = loadable(() => import('./routes/Faq'));  
-// const Services = loadable(() => import('./routes/Services'));  
-// const Testimonials = loadable(() => import('./routes/Testimonials'));  
-// const Gallery = loadable(() => import('./routes/Gallery'));  
-// const About = loadable(() => import('./routes/About'));  
-// const Contact = loadable(() => import('./routes/Contact'));  
 
 export default function Root() {
 

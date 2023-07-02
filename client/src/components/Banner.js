@@ -1,16 +1,12 @@
 // this needs useRef unless the error is inside of carousel
 
-import React, { useState, useEffect } from 'react';
-import {
-    Carousel,
-    CarouselItem,
-} from 'reactstrap';
+import React, { useState, useEffect, lazy, Suspense } from 'react';
+import { Carousel, CarouselItem, Spinner } from 'reactstrap';
 import logo from '../assets/images/logo.png'
 import imgLong from './ImgLong'
 import imgShort from './ImgShort';
 import { useMediaQuery } from 'usehooks-ts'
-import { LazyLoadImage, placeholder } from 'react-lazy-load-image-component'
-import 'react-lazy-load-image-component/src/effects/blur.css'
+import { motion, useAnimate, usePresence } from 'framer-motion'
 
 
 
@@ -18,16 +14,17 @@ import 'react-lazy-load-image-component/src/effects/blur.css'
 
 export default function Banner() {
 
-    // changfe picture size based on screen size
+    // change picture size based on screen size
     const matches = useMediaQuery('(min-width: 992px)')
 
+    // images for desktop and mobile
     const [items, setItems] = useState(imgShort)
 
     useEffect(() => {
-        matches ? setItems(imgLong) : setItems(imgShort)
+        matches ? setItems( imgLong) : setItems(imgShort)
     }, [matches]);
 
-    // animations
+    // carousel animations
     const [activeIndex, setActiveIndex] = useState(0);
     const [animating, setAnimating] = useState(false);
 
@@ -45,31 +42,45 @@ export default function Banner() {
 
     const slides = items.map((item) => {
         return (
-
             <CarouselItem className='carousel' key={item.src}>
-                <img className='carousel' src={item.src} alt={item.altText} effect='blur'/>
+                <img className='carousel' src={item.src} alt={item.altText} effect='blur' />
             </CarouselItem>
         );
     });
 
-    return (
-        <>
-            <style>
-                {`.carousel { width: 100%; height: auto; position: relative; `}
-            </style>
-            <Carousel
-                activeIndex={activeIndex}
-                next={next}
-                previous={previous}
-                ride='carousel'
-                interval={3500}
-                fade={true}
-                className='carousel'
-                >
-                {slides}
-            </Carousel>
-            <img className="icon" alt="" src={logo} />
-        </>
 
-    );
+    return (
+        <>  
+            <motion.div
+                transition={{ delay: 0.6 }}
+                initial={{ opacity: 0, y: 0 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -20 }}
+                key={'AnimCar'}
+            >
+                <style>
+                    {`.carousel { width: 100%; height: auto; position: relative; `}
+                </style>
+                <Carousel
+                    activeIndex={activeIndex}
+                    next={next}
+                    previous={previous}
+                    ride='carousel'
+                    interval={3500}
+                    fade={true}
+                    className='carousel'
+                >
+                    {slides}
+                </Carousel>
+                <img
+                    className={'icon'}
+                    alt=""
+                    src={logo}
+                />
+            </motion.div >
+
+        </>
+    )
+
+
 }

@@ -7,7 +7,7 @@ import 'react-lazy-load-image-component/src/effects/blur.css'
 
 
 const Gallery = () => {
-  
+
 
   return (
     <>
@@ -19,11 +19,10 @@ const Gallery = () => {
             {GalleryImg.map((img) => {
 
               return (
-                <Col md="4">
+                <Col md="4" key={img.key}>
                   <div className='m-3 p-1'>
                     <LazyLoadImage
                       className='galImg boxShadow'
-                      key={img.key}
                       alt="Card image cap"
                       src={img.src}
                       style={{ height: 'auto ' }}
@@ -33,7 +32,8 @@ const Gallery = () => {
                     />
                   </div>
                 </Col>
-              )})}
+              )
+            })}
           </Row>
         </Container>
       </div>
