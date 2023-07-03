@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect, lazy, Suspense } from 'react';
 import { Carousel, CarouselItem, Spinner } from 'reactstrap';
-import logo from '../assets/images/logo.png'
+import logo from '../assets/images/logo512.png'
 import imgLong from './ImgLong'
 import imgShort from './ImgShort';
 import { useMediaQuery } from 'usehooks-ts'

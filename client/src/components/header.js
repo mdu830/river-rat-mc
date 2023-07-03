@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Collapse, Navbar, NavbarToggler } from 'reactstrap';
 import { Link } from "react-router-dom";
-import logo from '../assets/images/logo.png'
+import logo from '../assets/images/logo192.png'
 import logoTxt from '../assets/images/logoTxt.png'
 import '../assets/style.css'
 
