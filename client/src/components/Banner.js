@@ -1,6 +1,6 @@
 // this needs useRef unless the error is inside of carousel
 
-import React, { useState, useEffect, lazy, Suspense } from 'react';
+import React, { useState, useEffect, lazy, Suspense, useRef } from 'react';
 import { Carousel, CarouselItem, Spinner } from 'reactstrap';
 import logo from '../assets/images/logo512.png'
 import imgLong from './ImgLong'
@@ -52,7 +52,7 @@ export default function Banner() {
     return (
         <>  
             <motion.div
-                transition={{ delay: 0.6 }}
+                transition={{ delay: 0.7 }}
                 initial={{ opacity: 0, y: 0 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -20 }}

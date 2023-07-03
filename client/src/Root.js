@@ -1,7 +1,8 @@
 import './App.css';
 import React from 'react';
 import { Routes, Route, useLocation } from "react-router-dom";
-import { TransitionGroup, CSSTransition } from "react-transition-group";
+import { AnimatePresence, motion } from 'framer-motion';
+// import { TransitionGroup, CSSTransition } from "react-transition-group";
 import Header from './components/Header'
 import Footer from './components/Footer';
 import HomePage from './routes/HomePage';
@@ -19,19 +20,15 @@ export default function Root() {
   return (
     <div className="App">
       <Header />
-      <TransitionGroup component={null}>
-        <CSSTransition key={location.key} classNames="fade" timeout={300}>
-          <Routes location={location}>
-            <Route index path="/" element={<HomePage />} />
-            <Route path="/services" element={<Services />} />
-            <Route path="/testimonials" element={<Testimonials />} />
-            <Route path="/gallery" element={<Gallery />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/faq" element={<Faq />} />
-          </Routes>
-        </CSSTransition>
-      </TransitionGroup>
+        <Routes location={location} key={location.pathname}>
+          <Route ref='home' index path="/" element={<HomePage />} />
+          <Route ref='serv' path="/services" element={<Services />} />
+          <Route ref='test' path="/testimonials" element={<Testimonials />} />
+          <Route ref='gall' path="/gallery" element={<Gallery />} />
+          <Route ref='abou' path="/about" element={<About />} />
+          <Route ref='cont' path="/contact" element={<Contact />} />
+          <Route ref='faq' path="/faq" element={<Faq />} />
+        </Routes>
       <Footer />
     </div>
   )

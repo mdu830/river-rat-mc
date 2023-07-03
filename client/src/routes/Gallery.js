@@ -5,6 +5,8 @@ import GalleryImg from '../components/ImgGallery';
 import { LazyLoadImage, placeholder } from 'react-lazy-load-image-component'
 import 'react-lazy-load-image-component/src/effects/blur.css'
 
+import {motion} from 'framer-motion'
+
 
 const Gallery = () => {
 
@@ -12,8 +14,15 @@ const Gallery = () => {
   return (
     <>
 
-      <div className="page">
-        <Container fluid className='bg-dark pt-2  pb-5 customContainer align-items-center'>
+      <motion.div
+        className='page'
+        transition={{ delay: 0.1 }}
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: 20 }}
+        key={'animGall'}
+      >       
+       <Container fluid className='bg-dark pt-2  pb-5 customContainer align-items-center'>
           <h1 className='mb-3'>Gallery</h1>
           <Row>
             {GalleryImg.map((img) => {
@@ -36,7 +45,7 @@ const Gallery = () => {
             })}
           </Row>
         </Container>
-      </div>
+      </motion.div>
     </>
   );
 }

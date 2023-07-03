@@ -9,6 +9,7 @@ import {
   Label,
   Button
 } from 'reactstrap';
+import { motion } from 'framer-motion'
 
 
 
@@ -16,7 +17,14 @@ const Contact = () => {
 
   return (
 
-    <div className="page">
+    <motion.div
+      className='page'
+      transition={{ delay: 0.1 }}
+      initial={{ opacity: 0, y: -20 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: 20 }}
+      key={'animCont'}
+    >
       <Container fluid className='bg-dark pt-2  pb-5 customContainer align-items-center'>
         <h1>Contact Us</h1>
         <h2
@@ -102,7 +110,7 @@ const Contact = () => {
           </Button>
         </Form>
       </Container>
-    </div>
+    </motion.div>
   );
 }
 
