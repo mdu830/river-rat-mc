@@ -25,9 +25,9 @@ const Services = () => {
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: 0 }}
+                key={data.title}
               >
-                <Col key={data.title}
-                >
+                <Col>
                   <Card color='dark ' className='m-3 boxShadow'>
                     <CardHeader className='cardHeader p-2'>
                       <h2>{data.title}</h2>
@@ -38,7 +38,6 @@ const Services = () => {
                 </Col>
               </motion.div>
             )
-
           })}
         </Row>
       </Container>

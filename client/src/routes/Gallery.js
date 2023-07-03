@@ -1,15 +1,26 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import '../assets/style.css'
-import { Container, Col, Row } from 'reactstrap';
-import GalleryImg from '../components/ImgGallery';
-import { LazyLoadImage, placeholder } from 'react-lazy-load-image-component'
-import 'react-lazy-load-image-component/src/effects/blur.css'
-
+import { Container, Card, Col, Row } from 'reactstrap';
+import { Blurhash } from "react-blurhash";
 import { motion } from 'framer-motion'
 
 
-const Gallery = () => {
+const Gallery = (props) => {
 
+  const [isloaded, setLoaded] = useState(false)
+  const imgAry = props.data
+
+  useEffect(() => {
+    imgAry.map((data) => {
+      const img = new Image()
+
+      img.src = data.src
+      img.key = data.key
+      return img.onload = () => {
+        setLoaded(true)
+      }
+    })
+  }, [imgAry])
 
   return (
     <motion.div
@@ -20,25 +31,47 @@ const Gallery = () => {
       exit={{ opacity: 0, y: 20 }}
       key={'animGall'}
     >
-      <Container fluid className='pt-2  pb-5 align-items-center'>
+      <Container fluid className='pt-2  pb-5 '>
         <h1 className='mb-3'>Gallery</h1>
         <Row>
-          {GalleryImg.map((img, index) => {
+          {imgAry.map((img, index) => {
 
             return (
-              <Col md="4" key={img.key}>
-                <div className='m-3 p-1'>
-                  <LazyLoadImage
-                    className='galImg boxShadow'
-                    alt="Card image cap"
-                    src={img.src}
-                    style={{ height: 'auto ' }}
-                    placeholder={placeholder}
-                    width="100%"
-                    effect='blur'
-                  />
-                </div>
+              <Col  lg='4' className='mb-5' key={img.key}>
+
+                <motion.div
+                  transition={{ delay: 0.3 * index, }}
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  key={img.key}
+                >
+                  {
+                    !isloaded
+                      ?
+                      // <div className='galImg boxShadow h-auto'>
+                      <Blurhash
+                        delay={0.9 * index}
+                        hash={img.hash}
+                        width={300}
+                        height={img.height}
+                        resolutionX={32}
+                        resolutionY={32}
+                        punch={1}
+                      />
+                      // </div>
+
+                      :
+                      <img
+                        className='boxShadow'
+                        src={img.src}
+                        width={300}
+                        height={img.height}
+                        alt={img.alt} />
+                  }
+                </motion.div>
               </Col>
+
             )
           })}
         </Row>
