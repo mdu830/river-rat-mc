@@ -11,12 +11,14 @@ const Gallery = (props) => {
   const imgAry = props.data
 
   useEffect(() => {
-    imgAry.map((data) => {
+    imgAry.map((data, i) => {
       const img = new Image()
 
       img.src = data.src
       img.key = data.key
+      // img.id.onload
       return img.onload = () => {
+        // setLoaded([...img.id: true])
         setLoaded(true)
       }
     })
@@ -37,7 +39,7 @@ const Gallery = (props) => {
           {imgAry.map((img, index) => {
 
             return (
-              <Col  lg='4' className='mb-5' key={img.key}>
+              <Col lg='4' className='mb-5' key={img.key}>
 
                 <motion.div
                   transition={{ delay: 0.3 * index, }}
@@ -49,9 +51,8 @@ const Gallery = (props) => {
                   {
                     !isloaded
                       ?
-                      // <div className='galImg boxShadow h-auto'>
                       <Blurhash
-                        delay={0.9 * index}
+                        className='boxShadow'
                         hash={img.hash}
                         width={300}
                         height={img.height}
@@ -59,8 +60,6 @@ const Gallery = (props) => {
                         resolutionY={32}
                         punch={1}
                       />
-                      // </div>
-
                       :
                       <img
                         className='boxShadow'

@@ -7,9 +7,6 @@ import imgSix from '../assets/images/gallery/6000.png'
 import imgSeven from '../assets/images/gallery/7000.png'
 import imgEight from '../assets/images/gallery/8000.png'
 import imgNine from '../assets/images/gallery/9000.png'
-// import imgTen from '../assets/images/gallery/10000.png'
-
-
 
 const GalleryImg = [
     {
