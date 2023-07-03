@@ -1,78 +1,49 @@
 import React from 'react';
-import { Card, CardHeader, Container, ListGroup, ListGroupItem } from 'reactstrap';
+import { Card, Row, Col, CardHeader, Container, ListGroup, ListGroupItem } from 'reactstrap';
+import ServiceData from '../components/ServiceData';
 import { motion } from 'framer-motion';
 
 const Services = () => {
 
-  return (
+  const data = ServiceData;
 
+  return (
     <motion.div
       className='page'
-      transition={{ delay: 0.1 }}
+      transition={{ delay: 0.2, }}
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
-      exit={{ opacity: 0, y: 20 }}
-      key={'animGall'}
+      exit={{ opacity: 0, y: 0 }}
     >
       <Container fluid className='bg-dark pt-2 pb-5'>
         <h1 className='mb-3'>Services</h1>
-        <Card color='dark' className='m-3'>
-          <CardHeader className='cardHeader'>
-            <h3>Sea walls</h3>
-          </CardHeader>
-          <ListGroup flush >
-            <ListGroupItem className='bg-dark description'>
-              <h4>Service Description -
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              </h4>
-            </ListGroupItem>
-          </ListGroup>
-        </Card>
+        <Row>
+          {data.map((data, index) => {
+            return (
+              <motion.div
+                transition={{ delay: 0.3 * index, }}
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: 0 }}
+              >
+                <Col key={data.title}
+                >
+                  <Card color='dark ' className='m-3 boxShadow'>
+                    <CardHeader className='cardHeader p-2'>
+                      <h2>{data.title}</h2>
+                    </CardHeader >
+                    <h4 className='p-3'>{data.description}</h4>
+                  </Card>
 
-        <Card color='dark' className='m-3'>
-          <CardHeader className='cardHeader'>
-            <h3>Docks</h3>
-          </CardHeader>
-          <ListGroup flush >
-            <ListGroupItem className='bg-dark description'>
-              <h4>Service Description -
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              </h4>
-            </ListGroupItem>
-          </ListGroup>
-        </Card>
+                </Col>
+              </motion.div>
+            )
 
-        <Card color='dark' className='m-3'>
-          <CardHeader className='cardHeader'>
-            <h3>Boat Lifts</h3>
-          </CardHeader>
-          <ListGroup flush >
-            <ListGroupItem className='bg-dark description'>
-              <h4>Service Description -
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              </h4>
-            </ListGroupItem>
-          </ListGroup>
-        </Card>
-
-        <Card color='dark' className='m-3'>
-          <CardHeader className='cardHeader'>
-            <h3>Boat Lifts</h3>
-          </CardHeader>
-          <ListGroup flush >
-            <ListGroupItem className='bg-dark description'>
-              <h4>Service Description -
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              </h4>
-            </ListGroupItem>
-          </ListGroup>
-        </Card>
+          })}
+        </Row>
       </Container>
     </motion.div>
+
   );
 }
 

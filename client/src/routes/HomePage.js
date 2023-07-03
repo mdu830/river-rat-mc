@@ -10,13 +10,12 @@ import { motion } from 'framer-motion'
 
 export default function HomePage() {
 
-  const [isLoading, setLoaded] = useState(true)
+  // const [isLoading, setLoaded] = useState(true)
 
 
-  useEffect(() => {
-    console.log(isLoading)
+  // useEffect(() => {
 
-  }, [isLoading])
+  // }, [isLoading])
 
   return (
     <>
@@ -26,7 +25,7 @@ export default function HomePage() {
         <Banner />
 
         <motion.div
-          transition={{ delay: 0.7 }}
+          transition={{ delay: 0.5, duration: 0.5 }}
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: 20 }}

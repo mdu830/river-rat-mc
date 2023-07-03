@@ -28,7 +28,7 @@ function Header(props) {
 
                 <Link className="link row m-3" to={`services/`}>Services</Link>
 
-                    <Link className="link row m-3" to={`testimonials/`}>Testimonials</Link>
+                    {/* <Link className="link row m-3" to={`testimonials/`}>Testimonials</Link> */}
 
                     <Link className="link row m-3" to={`gallery/`}>Gallery</Link>
 
