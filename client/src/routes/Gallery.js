@@ -5,7 +5,7 @@ import { Blurhash } from "react-blurhash";
 import { motion } from 'framer-motion'
 
 
-const Gallery = (props) => {
+const Gallery = React.memo(props => {
 
   const [isloaded, setLoaded] = useState(false)
   const imgAry = props.data
@@ -55,9 +55,24 @@ const Gallery = (props) => {
                   {
                     !isloaded
                       ?
-                      <Blurhash className='boxShadow' hash={img.hash} width={300} height={img.height} resolutionX={32} resolutionY={32} punch={1} />
+                      <Blurhash 
+                      className='boxShadow' 
+                      hash={img.hash} 
+                      width={300} 
+                      height={img.height} 
+                      resolutionX={32} 
+                      resolutionY={32} 
+                      punch={1} 
+                      />
                       :
-                      <img className='boxShadow' src={img.src} id={img.id} width={300} height={img.height} alt='thumbnail' />
+                      <img 
+                      className='boxShadow' 
+                      src={img.src} 
+                      id={img.id} 
+                      width={300} 
+                      height={img.height} 
+                      alt='thumbnail' 
+                      />
                   }
                 </motion.div>
               </Col>
@@ -67,6 +82,6 @@ const Gallery = (props) => {
       </Container>
     </motion.div>
   );
-}
+})
 
 export default Gallery;
