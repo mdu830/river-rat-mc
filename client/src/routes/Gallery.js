@@ -7,7 +7,17 @@ import { motion } from 'framer-motion'
 
 const Gallery = (props) => {
 
-  const [isloaded, setLoaded] = useState(false)
+  const [isloaded, setLoaded] = useState({
+    'one': false, 
+    'two': false, 
+    'three': false, 
+    'four': false, 
+    'five': false,
+    'six': false, 
+    'seven': false, 
+    'eight': false, 
+    'nine': false
+})
   const imgAry = props.data
 
   useEffect(() => {
@@ -16,12 +26,15 @@ const Gallery = (props) => {
 
       img.src = data.src
       img.key = data.key
-      // img.id.onload
-      return img.onload = () => {
-        // setLoaded([...img.id: true])
-        setLoaded(true)
+      img.id = data.id
+
+      img.onload = () => {
+        let load = { [img.id]: true }
+        let newObj = {...isloaded, ...load}        
+        setLoaded(newObj)
       }
     })
+
   }, [imgAry])
 
   return (
@@ -39,8 +52,8 @@ const Gallery = (props) => {
           {imgAry.map((img, index) => {
 
             return (
-              <Col lg='4' className='mb-5' key={img.key}>
 
+              <Col lg='4' className='mb-5' key={img.key}>
                 <motion.div
                   transition={{ delay: 0.3 * index, }}
                   initial={{ opacity: 0 }}
@@ -49,7 +62,7 @@ const Gallery = (props) => {
                   key={img.key}
                 >
                   {
-                    !isloaded
+                    !isloaded.nine
                       ?
                       <Blurhash
                         className='boxShadow'
@@ -64,13 +77,13 @@ const Gallery = (props) => {
                       <img
                         className='boxShadow'
                         src={img.src}
+                        id={img.id}
                         width={300}
                         height={img.height}
-                        alt={img.alt} />
+                        alt='thumbnail' />
                   }
                 </motion.div>
               </Col>
-
             )
           })}
         </Row>
