@@ -11,6 +11,7 @@ import GalleryImg from './components/ImgGallery';
 import About from './routes/About'
 import Contact from './routes/Contact'
 import Faq from './routes/Faq'
+import ScrollReset from './components/ScrollReset';
 
 export default function Root() {
 
@@ -18,6 +19,7 @@ export default function Root() {
 
   return (
     <div className="App">
+      <ScrollReset />
       <Header />
         <Routes location={location} key={location.pathname}>
           <Route ref='home' index path="/" element={<HomePage />} />
