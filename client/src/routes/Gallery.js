@@ -28,7 +28,7 @@ const Gallery = (props) => {
       img.key = data.key
       img.id = data.id
 
-      img.onload = () => {
+      return img.onload = () => {
         let load = { [img.id]: true }
         let newObj = {...isloaded, ...load}        
         setLoaded(newObj)
