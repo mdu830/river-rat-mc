@@ -49,15 +49,15 @@ const Gallery = (props) => {
                   transition={{ delay: 0.3 * index, }}
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
-                  exit={{ opacity: 0 }}
+                  exit={{ opacity: 1 }}
                   key={img.key}
                 >
                   {
                     !isloaded
                       ?
-                      <Blurhash className='boxShadow' hash={img.hash} width={300} height={img.height} resolutionX={32} resolutionY={32} punch={1} />
+                      <Blurhash hash={img.hash} width={300} height={img.height} resolutionX={32} resolutionY={32} punch={1} />
                       :
-                      <img className='boxShadow' src={img.src} id={img.id} width={300} height={img.height} alt='thumbnail' />
+                      <img src={img.src} id={img.id} width={300} height={img.height} alt='thumbnail' />
                   }
                 </motion.div>
               </Col>
