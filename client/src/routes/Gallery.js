@@ -10,8 +10,9 @@ const Gallery = (props) => {
   const [isloaded, setLoaded] = useState(false)
   const imgAry = props.data
 
+
   useEffect(() => {
-    imgAry.map((data, i) => {
+    imgAry.map((data) => {
       const img = new Image()
 
       img.src = data.src
@@ -19,9 +20,9 @@ const Gallery = (props) => {
       img.id = data.id
       img.val = data.value
 
-      return img.onload = () => {
-        if(img.val = 'isloaded')
-         setLoaded(true)
+      img.onload = () => {
+        if (img.val = 'isloaded')
+          setLoaded(true)
       }
     })
 
@@ -54,23 +55,9 @@ const Gallery = (props) => {
                   {
                     !isloaded
                       ?
-                      <Blurhash
-                        className='boxShadow'
-                        hash={img.hash}
-                        width={300}
-                        height={img.height}
-                        resolutionX={32}
-                        resolutionY={32}
-                        punch={1}
-                      />
+                      <Blurhash className='boxShadow' hash={img.hash} width={300} height={img.height} resolutionX={32} resolutionY={32} punch={1} />
                       :
-                      <img
-                        className='boxShadow'
-                        src={img.src}
-                        id={img.id}
-                        width={300}
-                        height={img.height}
-                        alt='thumbnail' />
+                      <img className='boxShadow' src={img.src} id={img.id} width={300} height={img.height} alt='thumbnail' />
                   }
                 </motion.div>
               </Col>
