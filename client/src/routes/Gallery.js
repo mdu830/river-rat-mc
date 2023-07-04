@@ -55,9 +55,9 @@ const Gallery = (props) => {
                   {
                     !isloaded
                       ?
-                      <Blurhash hash={img.hash} width={300} height={img.height} resolutionX={32} resolutionY={32} punch={1} />
+                      <Blurhash className='boxShadow' hash={img.hash} width={300} height={img.height} resolutionX={32} resolutionY={32} punch={1} />
                       :
-                      <img src={img.src} id={img.id} width={300} height={img.height} alt='thumbnail' />
+                      <img className='boxShadow' src={img.src} id={img.id} width={300} height={img.height} alt='thumbnail' />
                   }
                 </motion.div>
               </Col>
