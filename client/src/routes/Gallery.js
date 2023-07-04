@@ -7,17 +7,7 @@ import { motion } from 'framer-motion'
 
 const Gallery = (props) => {
 
-  const [isloaded, setLoaded] = useState({
-    'one': false, 
-    'two': false, 
-    'three': false, 
-    'four': false, 
-    'five': false,
-    'six': false, 
-    'seven': false, 
-    'eight': false, 
-    'nine': false
-})
+  const [isloaded, setLoaded] = useState(false)
   const imgAry = props.data
 
   useEffect(() => {
@@ -27,11 +17,11 @@ const Gallery = (props) => {
       img.src = data.src
       img.key = data.key
       img.id = data.id
+      img.val = data.value
 
       return img.onload = () => {
-        let load = { [img.id]: true }
-        let newObj = {...isloaded, ...load}        
-        setLoaded(newObj)
+        if(img.val = 'isloaded')
+         setLoaded(true)
       }
     })
 
@@ -62,7 +52,7 @@ const Gallery = (props) => {
                   key={img.key}
                 >
                   {
-                    !isloaded.nine
+                    !isloaded
                       ?
                       <Blurhash
                         className='boxShadow'

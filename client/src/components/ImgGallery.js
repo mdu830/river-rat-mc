@@ -14,63 +14,73 @@ const GalleryImg = [
         id: 'one',
         height: 225,
         key: 109009098098,
-        hash: 'L4CsdSVYXDw]_LV?N3MwxSMxNKI9'
+        hash: 'L4CsdSVYXDw]_LV?N3MwxSMxNKI9',
+        value: ''
+    
     },
     {
         src: imgTwo,
         id: 'two',
         height: 225,
         key: 2876876876,
-        hash: 'LoD-2KtQo$ax.Tbdt6oLovf5adj]'
+        hash: 'LoD-2KtQo$ax.Tbdt6oLovf5adj]',
+        value: ''
     },
     {
         src: imgThree,
         id: 'three',
         height: 225,
         key: 198798667575,
-        hash: 'LNF=~@%MIU?c?aa#a$xt.Ao#Rj%M'
+        hash: 'LNF=~@%MIU?c?aa#a$xt.Ao#Rj%M',
+        value: ''
     },
     {
         src: imgFour,
         id: 'four',
         height: 169,
         key: 45646345354,
-        hash: 'L7G8$Q~B%h8_:|%34nxa5sNfxuD$'
+        hash: 'L7G8$Q~B%h8_:|%34nxa5sNfxuD$',
+        value: ''
     },    
     {
         src: imgFive,
         id: 'five',
         height: 169,
         key: 8765455677878,
-        hash: 'LeDv4aR+R.Rj~UM}R+a|=^RlWBWX'
+        hash: 'LeDv4aR+R.Rj~UM}R+a|=^RlWBWX',
+        value: ''
     },
     {
         src: imgSix,
         id: 'six',
         height: 132,
         key: 6876543453232,
-        hash: 'LMFFy]MvH=tT%%V?r;o#0.aJ$ekX'
+        hash: 'LMFFy]MvH=tT%%V?r;o#0.aJ$ekX',
+        value: ''
     },   
     {
         src: imgSeven,
         id: 'seven',
         height: 480,
         key: 987887765765,
-        hash: 'LQIOe4FgD*x]GKspxst7XoxUs+V['
+        hash: 'LQIOe4FgD*x]GKspxst7XoxUs+V[',
+        value: ''
     },
     {
         src: imgEight,
         id: 'eight',
         height: 400,
         key: 675563225435,
-        hash: 'LSFP%7M|IVo#~pRjRjogyEV@s:oL'
+        hash: 'LSFP%7M|IVo#~pRjRjogyEV@s:oL',
+        value: ''
     },    
     {
         src: imgNine,
         id: 'nine',
         height: 400,
         key: 98766565435,
-        hash: 'L,CH1|WAjXjYpMWBf4jYR;ofazax'
+        hash: 'L,CH1|WAjXjYpMWBf4jYR;ofazax',
+        value: 'isLoaded'
     },
     // {
     //     src: imgTen,
