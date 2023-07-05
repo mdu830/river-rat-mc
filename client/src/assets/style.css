@@ -231,7 +231,7 @@ h4 {
 /* Gallery */
 
 .galImg {
-  /* border-radius: 10px; */
+  border-radius: 10px;
   border: 2px rgb(232, 232, 232);
 }
 

@@ -15,7 +15,7 @@ const GalleryImg = [
         height: 225,
         key: 109009098098,
         hash: 'L4CsdSVYXDw]_LV?N3MwxSMxNKI9',
-        value: ''
+        value: null
     
     },
     {
@@ -24,7 +24,7 @@ const GalleryImg = [
         height: 225,
         key: 2876876876,
         hash: 'LoD-2KtQo$ax.Tbdt6oLovf5adj]',
-        value: ''
+        value: null
     },
     {
         src: imgThree,
@@ -32,7 +32,7 @@ const GalleryImg = [
         height: 225,
         key: 198798667575,
         hash: 'LNF=~@%MIU?c?aa#a$xt.Ao#Rj%M',
-        value: ''
+        value: null
     },
     {
         src: imgFour,
@@ -40,7 +40,7 @@ const GalleryImg = [
         height: 169,
         key: 45646345354,
         hash: 'L7G8$Q~B%h8_:|%34nxa5sNfxuD$',
-        value: ''
+        value: null
     },    
     {
         src: imgFive,
@@ -48,7 +48,7 @@ const GalleryImg = [
         height: 169,
         key: 8765455677878,
         hash: 'LeDv4aR+R.Rj~UM}R+a|=^RlWBWX',
-        value: ''
+        value: null
     },
     {
         src: imgSix,
@@ -56,7 +56,7 @@ const GalleryImg = [
         height: 132,
         key: 6876543453232,
         hash: 'LMFFy]MvH=tT%%V?r;o#0.aJ$ekX',
-        value: ''
+        value: null
     },   
     {
         src: imgSeven,
@@ -64,7 +64,7 @@ const GalleryImg = [
         height: 480,
         key: 987887765765,
         hash: 'LQIOe4FgD*x]GKspxst7XoxUs+V[',
-        value: ''
+        value: null
     },
     {
         src: imgEight,
@@ -72,7 +72,7 @@ const GalleryImg = [
         height: 400,
         key: 675563225435,
         hash: 'LSFP%7M|IVo#~pRjRjogyEV@s:oL',
-        value: ''
+        value: null
     },    
     {
         src: imgNine,
