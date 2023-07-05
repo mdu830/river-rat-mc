@@ -52,16 +52,16 @@ const Gallery = React.memo(props => {
               <Col lg='4' className='mb-5' key={img.key}>
                 <motion.div
                   transition={{ delay: 0.3 * index, }}
-                  initial={{ opacity: 0, y: 20 }}
+                  initial={{ opacity: 0, y: 0 }}
                   animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: 20 }}
+                  exit={{ opacity: 0, y: 0 }}
                   key={img.key}
                 >
                   <img
-                    className='boxShadow galImg'
+                    className='boxShadow galImg m-3'
                     src={img.src}
                     id={img.id}
-                    width={'80%'}
+                    width={'90%'}
                     height={'auto'}
                     alt='thumbnail'
                   />
