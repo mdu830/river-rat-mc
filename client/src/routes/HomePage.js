@@ -14,12 +14,21 @@ export default function HomePage() {
     <>
       {/* all the other elements */}
       <div className="bg-dark page" >
-        <Banner />
         <motion.div
-          transition={{ delay: 0.5, duration: 0.5 }}
-          initial={{ opacity: 0, y: -20 }}
+          transition={{ delay: 0.6 }}
+          initial={{ opacity: 0, y: 0 }}
           animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: 20 }}
+          exit={{ opacity: 0, y: 0 }}
+          key={'AnimCar'}
+        >
+          <Banner />
+        </motion.div>
+
+        <motion.div
+          transition={{ delay: 0.8 }}
+          initial={{ opacity: 0, y: 0 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: 0 }}
           key={'AnimCar'}
         >
           <Container fluid className=" bg-dark border-top pt-2">

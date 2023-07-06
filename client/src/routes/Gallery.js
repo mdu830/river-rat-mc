@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import '../assets/style.css'
 import { Container, Card, Col, Row, Spinner } from 'reactstrap';
-import { Blurhash } from "react-blurhash";
 import { motion } from 'framer-motion'
+
+
 
 
 const Gallery = React.memo(props => {
 
   const [isLoaded, setLoaded] = useState(false)
-
   const imgAry = props.data
 
   useEffect(() => {
@@ -24,8 +24,9 @@ const Gallery = React.memo(props => {
         if (img.val = 'isloaded')
           setLoaded(true)
       }
+      return
     })
-  }, [isLoaded])
+  }, [imgAry])
 
   return (
     <motion.div
@@ -43,13 +44,13 @@ const Gallery = React.memo(props => {
           !isLoaded
           ? 
           <Col className='pt-5'>
-            <Spinner color='light' size='md' />
+            <Spinner color='light' size={'sm'} />
           </Col>
           :
           imgAry.map((img, index) => {
 
             return (
-              <Col lg='4' className='mb-5' key={img.key}>
+              <Col md='4' className='mb-5' key={img.key}>
                 <motion.div
                   transition={{ delay: 0.3 * index, }}
                   initial={{ opacity: 0, y: 0 }}
@@ -58,7 +59,7 @@ const Gallery = React.memo(props => {
                   key={img.key}
                 >
                   <img
-                    className='boxShadow galImg m-3'
+                    className='boxShadow galImg'
                     src={img.src}
                     id={img.id}
                     width={'90%'}

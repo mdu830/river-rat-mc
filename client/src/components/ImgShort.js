@@ -6,19 +6,22 @@ const imgShort = [
     {
         src: imgTwo,
         altText: '',
-        caption: '',
+        value: '',
+        hash: '00Ci?m',
         key: 1,
     },
     {
         src: imgThree,
         altText: '',
-        caption: '',
+        value: '',
+        hash: '',
         key: 2,
     },
     {
         src: imgFour,
         altText: '',
-        caption: '',
+        value: 'loaded',
+        hash: '',
         key: 3,
     },
 ];
