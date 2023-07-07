@@ -52,7 +52,7 @@ const Gallery = React.memo(props => {
             return (
               <Col md='4' className='mb-5' key={img.key}>
                 <motion.div
-                  transition={{ delay: 0.2 * index, }}
+                  transition={{ delay: 0.3 * index, }}
                   initial={{ opacity: 0, y: 0 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: 0 }}

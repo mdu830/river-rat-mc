@@ -1,5 +1,4 @@
 import React from 'react';
-import AboutData from '../components/AboutData';
 import { Container, Card, CardBody, CardText, CardTitle, Col, Row } from 'reactstrap';
 import { motion } from 'framer-motion';
 

@@ -19,7 +19,7 @@ export default function HomePage() {
           initial={{ opacity: 0, y: 0 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: 0 }}
-          key={'AnimCar'}
+          key={'AnimHome'}
         >
           <Banner />
         </motion.div>
