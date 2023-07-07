@@ -163,6 +163,13 @@ h4 {
   color: aliceblue;
 }
 
+.textShadow {
+  text-shadow:
+  -1px -1px 0 rgba(255, 255, 255, 0),
+  1px 1px 0 rgba(0, 0, 0, .25),
+  3px 3px 3px rgba(0, 0, 0, .25);
+}
+
 .custainer {
   /* border-radius: 10px; */
   /* padding-bottom: 10%; */
@@ -226,8 +233,13 @@ h4 {
 /* Gallery */
 
 .galImg {
-  border-radius: 10px;
+  border-radius: 5px;
   border: 2px rgb(232, 232, 232);
+}
+
+.placeHolder {
+  border-radius: 5px;
+  background-color: rgb(65, 65, 65);
 }
 
 

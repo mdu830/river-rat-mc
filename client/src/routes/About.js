@@ -10,7 +10,7 @@ const About = () => {
 
     <motion.div
       className='page'
-      transition={{ delay: 0.1 }}
+      transition={{ delay: 0.2 }}
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: 20 }}
@@ -18,64 +18,83 @@ const About = () => {
     >
       <Container fluid className='bg-dark pt-2  pb-5'>
 
-        <h1>About Us</h1>
+        <h1 >About Us</h1>
 
-        <Row>
-          <Card body width={'100%'} color="dark" className='m-4'>
+        <motion.div
+          transition={{ delay: 0.3 }}
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: 20 }}
+          key={'about'}
+        >
+          <div className='m-4 pb-4'>
             <Row>
               <Col>
-                <CardBody className='' color="dark">
-                  <CardTitle className='name' tag="h4" color='dark'>
-                    River Rat Marine Construction
-                  </CardTitle>
-                  <CardText className='name'>
-                    Some quick example text to build on the card title and make up the bulk of the card‘s content.
-                  </CardText>
-                </CardBody>
+                <CardText className='name textShadow'>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </CardText>
               </Col>
             </Row>
-          </Card>
-        </Row>
+          </div>
+        </motion.div>
 
-        <Row>
-          <Card body width={'100%'} color="dark" className='m-4 '>
+        <motion.div
+          transition={{ delay: 0.4 }}
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: 20 }}
+          key={'doug'}
+        >
+          <div className='m-3 pb-3'>
             <Row>
-              <Col sm className=''>
-                <img className='float-left' width={'60%'} alt="Sample" src="https://picsum.photos/300/200" />
-              </Col>
-              <Col sm>
-                <CardBody className='' color="dark">
-                  <CardTitle className='name' tag="h4" color='dark'>
-                    Doug Whaley - Owner
-                  </CardTitle>
-                  <CardText className='name'>
-                    Some quick example text to build on the card title and make up the bulk of the card‘s content.
-                  </CardText>
-                </CardBody>
-              </Col>
+              <CardTitle className='name textShadow mb-4' tag="h4" color='dark'>
+                Doug Whaley - Owner
+              </CardTitle>
             </Row>
-          </Card>
-        </Row>
+            <Row >
+              <Col />
+              <Col sm>
+                <img className='boxShadow placeHolder' height={'75%'} alt="Sample" src="https://picsum.photos/300/200" />
+              </Col>
+              <Col sm='8'>
+                <CardText className='name textShadow'>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </CardText>
+              </Col>
+              <Col />
+            </Row>
+          </div>
+        </motion.div>
+        <motion.div
+          transition={{ delay: 0.4 }}
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: 20 }}
+          key={'hunter'}
+        >
+          <div className='m-3'>
+            <Row>
+            <CardTitle className='name textShadow mb-4' tag="h4" color='dark'>
+                  Hunter - Operations Manager
+                </CardTitle>
+            </Row>
+            <Row>
+              <Col />
+              <Col sm>
+                <img className='boxShadow placeHolder' height={'75%'} alt="Sample" src="https://picsum.photos/300/200" />
+              </Col>
+              <Col sm='8'>
+                <CardText className='name textShadow'>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.              </CardText>
+              </Col>
+              <Col />
+            </Row>
+          </div>
+        </motion.div>
 
-        <Row>
-          <Card body width={'100%'} color="dark" className='m-4'>
-            <Row>
-              <Col sm>
-                <img className='' width={'60%'} alt="Sample" src="https://picsum.photos/300/200" />
-              </Col>
-              <Col sm>
-                <CardBody className='' color="dark">
-                  <CardTitle className='name' tag="h4" color='dark'>
-                    Hunter - Operations Manager
-                  </CardTitle>
-                  <CardText className='name'>
-                    Some quick example text to build on the card title and make up the bulk of the card‘s content.
-                  </CardText>
-                </CardBody>
-              </Col>
-            </Row>
-          </Card>
-        </Row>
 
       </Container>
     </motion.div>

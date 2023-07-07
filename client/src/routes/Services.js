@@ -21,7 +21,7 @@ const Services = () => {
           {data.map((data, index) => {
             return (
               <motion.div
-                transition={{ delay: 0.3 * index, }}
+                transition={{ delay: 0.2 * index, }}
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: 0 }}
@@ -29,10 +29,10 @@ const Services = () => {
               >
                 <Col>
                   <Card color='dark ' className='m-3 boxShadow'>
-                    <CardHeader className='cardHeader p-2'>
+                    <CardHeader className='cardHeader textShadow p-2'>
                       <h2>{data.title}</h2>
                     </CardHeader >
-                    <h4 className='p-3'>{data.description}</h4>
+                    <h4 className='p-3 textShadow'>{data.description}</h4>
                   </Card>
 
                 </Col>

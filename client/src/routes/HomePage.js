@@ -33,13 +33,13 @@ export default function HomePage() {
         >
           <Container fluid className=" bg-dark border-top pt-2">
             <Button size='md' color="primary" outline className='m-4'>
-              <Link className="btnLink" to={'faq/'}>FAQ</Link>
+              <Link className="btnLink textShadow" to={'faq/'}>FAQ</Link>
             </Button>
 
             <Button size='md' className='m-4'>
-              <Link className="btnLink" to={`contact/`}>Contact Us</Link>
+              <Link className="btnLink textShadow" to={`contact/`}>Contact Us</Link>
             </Button>
-            <h3 className=''>Welcome to River Rat Marine Construction</h3>
+            <h3 className='textShadow'>Welcome to River Rat Marine Construction</h3>
             {/* <h2>Our website is currently under development.</h2> */}
           </Container>
 
