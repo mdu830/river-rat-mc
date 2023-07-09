@@ -280,6 +280,7 @@ h4 {
     margin-left: 35%;
     margin-top: 10%;
   }
+  
 }
 
 
@@ -314,6 +315,17 @@ h4 {
     width: auto;
     height: 40px;
   }
+
+  #family {
+    width: 7pc;
+    height: auto;
+  }
+  
+  #insured {
+    width: 7pc;
+    height: auto;
+  }
+  
 }
 
 @media screen and (max-width: 426px) {
@@ -352,6 +364,17 @@ h4 {
     margin-top: 2%;
   }
 
+  #family {
+    width: 7pc;
+    height: auto;
+  }
+  
+  #insured {
+    width: 7pc;
+    height: auto;
+  }
+  
+
 }
 
 @media screen and (max-width: 376px) {
@@ -373,6 +396,16 @@ h4 {
 
   .iconSmall {
     width: 0px;
+    height: auto;
+  }
+
+  #family {
+    width: 8pc;
+    height: auto;
+  }
+  
+  #insured {
+    width: 8pc;
     height: auto;
   }
   

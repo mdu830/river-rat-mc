@@ -45,8 +45,8 @@ export default function HomePage() {
             {/* <h2>Our website is currently under development.</h2> */}
 
             <Row className=''>
-
-              <Col fluid>
+              {/* <Col /> */}
+              <Col fluid sm={{ size: 4, offset: 2 }}>
                 <motion.div
                   transition={{ delay: 0.9 }}
                   initial={{ opacity: 0, y: 0 }}
@@ -54,11 +54,11 @@ export default function HomePage() {
                   exit={{ opacity: 0, y: 0 }}
                   key={'AnimBage1'}
                 >
-                  <img id='family' alt='' className='mt-3 p-1' src={familyOwned} />
+                  <img id='family' alt='' className='mt-4 p-1' src={familyOwned} />
                 </motion.div>
 
               </Col>
-              <Col fluid>
+              <Col fluid sm={{ size: 4, offset: 0 }}>
               <motion.div
                   transition={{ delay: 0.9 }}
                   initial={{ opacity: 0, y: 0 }}
@@ -66,10 +66,11 @@ export default function HomePage() {
                   exit={{ opacity: 0, y: 0 }}
                   key={'AnimBage1'}
                 >
-                <img id='insured' alt='' className='mt-3 p-1' src={fullyInsured} />
+                <img id='insured' alt='' className='mt-4 p-1' src={fullyInsured} />
                 </motion.div>
 
               </Col>
+              {/* <Col /> */}
             </Row>
           </Container>
 

@@ -79,7 +79,7 @@ const Contact = () => {
                   <h2 className='name textShadow pb-2'>
                     Send us a Message
                   </h2>
-                  <Row className='m-2'>
+                  <Row className='m-1'>
                     <Col md={{ size: 8, offset: 2 }}>
                       <FormGroup>
                         <Input
@@ -92,7 +92,7 @@ const Contact = () => {
                     </Col>
                   </Row>
 
-                  <Row className='m-2'>
+                  <Row className='m-1'>
                     <Col md={{ size: 8, offset: 2 }}>
                       <FormGroup>
                         <Input
@@ -105,7 +105,7 @@ const Contact = () => {
                     </Col>
                   </Row>
 
-                  <Row className='m-2'>
+                  <Row className='m-1'>
                     <Col md={{ size: 8, offset: 2 }}>
                       <FormGroup>
                         <Input
