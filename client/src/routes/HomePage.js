@@ -46,7 +46,7 @@ export default function HomePage() {
 
             <Row className=''>
 
-              <Col sm>
+              <Col fluid>
                 <motion.div
                   transition={{ delay: 0.9 }}
                   initial={{ opacity: 0, y: 0 }}
@@ -54,11 +54,11 @@ export default function HomePage() {
                   exit={{ opacity: 0, y: 0 }}
                   key={'AnimBage1'}
                 >
-                  <img id='family' alt='' className='mt-5 p-2' src={familyOwned} />
+                  <img id='family' alt='' className='mt-3 p-1' src={familyOwned} />
                 </motion.div>
 
               </Col>
-              <Col sm>
+              <Col fluid>
               <motion.div
                   transition={{ delay: 0.9 }}
                   initial={{ opacity: 0, y: 0 }}
@@ -66,7 +66,7 @@ export default function HomePage() {
                   exit={{ opacity: 0, y: 0 }}
                   key={'AnimBage1'}
                 >
-                <img id='insured' alt='' className='mt-5 p-2' src={fullyInsured} />
+                <img id='insured' alt='' className='mt-3 p-1' src={fullyInsured} />
                 </motion.div>
 
               </Col>
