@@ -171,16 +171,7 @@ h4 {
 }
 
 .custainer {
-  /* border-radius: 10px; */
-  /* padding-bottom: 10%; */
-  /* z-index: 2; */
-  /* width: 100%; */
-  /* box-shadow:
-    -1px -1px 0 rgba(255, 255, 255, 0),
-    1px 1px 0 rgba(0, 0, 0, .25),
-    3px 3px 3px rgba(0, 0, 0, .25); */
     background-color: rgba(33, 37, 41);
-
 }
 
 .boxShadow {
@@ -213,6 +204,18 @@ h4 {
 }
 
 /* contact page */
+
+/* badges */
+
+#family {
+  width: 7pc;
+  height: auto;
+}
+
+#insured {
+  width: 7pc;
+  height: auto;
+}
 
 /* Footer */
 .footer {

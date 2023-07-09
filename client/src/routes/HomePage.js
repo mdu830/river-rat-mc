@@ -1,9 +1,11 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React from 'react';
 import '../assets/style.css'
-import { Container, Button, Collapse, Card, CardBody } from 'reactstrap';
+import { Container, Button, Row, Col } from 'reactstrap';
 import Banner from '../components/Banner';
 import { Link } from "react-router-dom";
 import { motion } from 'framer-motion'
+import familyOwned from '../assets/images/badges/family-owned.webp'
+import fullyInsured from '../assets/images/badges/fully-insured.webp'
 
 
 
@@ -41,6 +43,34 @@ export default function HomePage() {
             </Button>
             <h3 className='textShadow'>Welcome to River Rat Marine Construction</h3>
             {/* <h2>Our website is currently under development.</h2> */}
+
+            <Row className=''>
+
+              <Col sm>
+                <motion.div
+                  transition={{ delay: 0.9 }}
+                  initial={{ opacity: 0, y: 0 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: 0 }}
+                  key={'AnimBage1'}
+                >
+                  <img id='family' alt='' className='mt-5 p-2' src={familyOwned} />
+                </motion.div>
+
+              </Col>
+              <Col sm>
+              <motion.div
+                  transition={{ delay: 0.9 }}
+                  initial={{ opacity: 0, y: 0 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: 0 }}
+                  key={'AnimBage1'}
+                >
+                <img id='insured' alt='' className='mt-5 p-2' src={fullyInsured} />
+                </motion.div>
+
+              </Col>
+            </Row>
           </Container>
 
         </motion.div>

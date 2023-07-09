@@ -1,13 +1,13 @@
 // this needs useRef unless the error is inside of carousel
 
-import React, { useState, useEffect, lazy, Suspense, useRef } from 'react';
-import { Carousel, CarouselItem, Spinner } from 'reactstrap';
+import React, { useState, useEffect, useRef } from 'react';
+import { Carousel, CarouselItem } from 'reactstrap';
 import logo from '../assets/images/logo512.png'
 import imgLong from './ImgLong'
 import imgShort from './ImgShort';
 import { useMediaQuery } from 'usehooks-ts'
-import { motion } from 'framer-motion'
-import { Blurhash } from "react-blurhash";
+// import { motion } from 'framer-motion'
+// import { Blurhash } from "react-blurhash";
 
 
 
@@ -60,10 +60,13 @@ const Banner = React.memo(props => {
         setActiveIndex(nextIndex);
     };
 
+    useRef(<CarouselItem />)
+
+
     const slides = items.map((item) => {
         return (
-            <CarouselItem className='carousel' key={item.src}>
-                <div>
+            <CarouselItem className='carousel' key={item.src} >
+                <div >
                     <img className='carousel' src={item.src} alt={item.altText} effect='blur' />
                     <img className={'icon'} alt="carImg" src={logo} />
                 </div>
@@ -81,17 +84,17 @@ const Banner = React.memo(props => {
                     }`}
             </style>
             <div className='carousel-inner'>
-                    <Carousel
-                        activeIndex={activeIndex}
-                        next={next}
-                        previous={previous}
-                        ride='carousel'
-                        interval={3500}
-                        fade={true}
-                        className='carousel carousel-inner'
-                    >
-                        {slides}
-                    </Carousel>
+                <Carousel
+                    activeIndex={activeIndex}
+                    next={next}
+                    previous={previous}
+                    ride='carousel'
+                    interval={3500}
+                    fade={true}
+                    className='carousel carousel-inner'
+                >
+                    {slides}
+                </Carousel>
             </ div>
         </div >
     )

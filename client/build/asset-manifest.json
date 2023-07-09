@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.dd1fbb59.css",
-    "main.js": "/static/js/main.3f3a507d.js",
+    "main.css": "/static/css/main.62f6d2bb.css",
+    "main.js": "/static/js/main.135efc78.js",
     "static/js/787.c4e7f8f9.chunk.js": "/static/js/787.c4e7f8f9.chunk.js",
     "static/media/95.png": "/static/media/95.dbe555893cd4c658aea6.png",
     "static/media/96.png": "/static/media/96.7f8796236855f0cbbca6.png",
@@ -20,14 +20,16 @@
     "static/media/3.png": "/static/media/3.a947e156923458e6fd72.png",
     "static/media/5000.png": "/static/media/5000.28e1f31ceab205e9ec69.png",
     "static/media/logo512.png": "/static/media/logo512.e70636c097bba5d27ac2.png",
+    "static/media/fully-insured.webp": "/static/media/fully-insured.4c9141d981db9a913a93.webp",
+    "static/media/family-owned.webp": "/static/media/family-owned.d31974432ea2189e4032.webp",
     "static/media/logo192.png": "/static/media/logo192.357f2c62adccd7d0a43a.png",
     "index.html": "/index.html",
-    "main.dd1fbb59.css.map": "/static/css/main.dd1fbb59.css.map",
-    "main.3f3a507d.js.map": "/static/js/main.3f3a507d.js.map",
+    "main.62f6d2bb.css.map": "/static/css/main.62f6d2bb.css.map",
+    "main.135efc78.js.map": "/static/js/main.135efc78.js.map",
     "787.c4e7f8f9.chunk.js.map": "/static/js/787.c4e7f8f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dd1fbb59.css",
-    "static/js/main.3f3a507d.js"
+    "static/css/main.62f6d2bb.css",
+    "static/js/main.135efc78.js"
   ]
 }

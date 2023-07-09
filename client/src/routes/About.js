@@ -67,7 +67,7 @@ const About = () => {
           </div>
         </motion.div>
         <motion.div
-          transition={{ delay: 0.4 }}
+          transition={{ delay: 0.5 }}
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: 20 }}
