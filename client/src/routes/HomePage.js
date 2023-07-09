@@ -45,8 +45,8 @@ export default function HomePage() {
             {/* <h2>Our website is currently under development.</h2> */}
 
             <Row className=''>
-              {/* <Col /> */}
-              <Col fluid sm={{ size: 4, offset: 2 }}>
+              <Col />
+              <Col fluid >
                 <motion.div
                   transition={{ delay: 0.9 }}
                   initial={{ opacity: 0, y: 0 }}
@@ -58,7 +58,7 @@ export default function HomePage() {
                 </motion.div>
 
               </Col>
-              <Col fluid sm={{ size: 4, offset: 0 }}>
+              <Col fluid >
               <motion.div
                   transition={{ delay: 0.9 }}
                   initial={{ opacity: 0, y: 0 }}
@@ -70,7 +70,7 @@ export default function HomePage() {
                 </motion.div>
 
               </Col>
-              {/* <Col /> */}
+              <Col />
             </Row>
           </Container>
 
