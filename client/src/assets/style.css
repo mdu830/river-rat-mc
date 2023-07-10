@@ -103,13 +103,18 @@ h4 {
     -6px -6px 12px -1px rgba(255, 255, 255, 0.019);
 }
 
+#conBtn {
+  background-color: rgba(59, 95, 113, 0.649);
+
+}
+
 #conBtn:hover {
   background-color: rgb(59, 95, 113);
 
 }
 
 #conBtn:active {
-  background-color: rgb(48, 78, 93);;
+  background-color: rgb(48, 78, 93);
   box-shadow:
     inset -4px -4px 6px -1px rgba(255, 255, 255, 0.094),
     inset 2px 2px 8px -1px rgba(0, 0, 0, 0.396);
@@ -117,14 +122,29 @@ h4 {
 
 #faqBtn:hover {
   background-color: rgba(19, 76, 142, 0.623);
-  
+
 }
 
 #faqBtn:active {
-  background-color: rgba(17, 63, 117, 0.623);
+  background-color: rgba(72, 93, 109, 0.623);
   box-shadow:
-  inset -4px -4px 6px -1px rgba(255, 255, 255, 0.094),
-  inset 2px 2px 8px -1px rgba(0, 0, 0, 0.396);
+    inset -4px -4px 6px -1px rgba(255, 255, 255, 0.094),
+    inset 2px 2px 8px -1px rgba(0, 0, 0, 0.396);
+}
+
+#submitBtn {
+  background-color: rgba(120, 120, 120, 0.623);
+}
+
+#submitBtn:hover {
+  background-color: rgba(24, 149, 62, 0.502);
+}
+
+#submitBtn:active {
+  background-color: rgba(24, 149, 62, 0.502);
+  box-shadow:
+    inset -4px -4px 6px -1px rgba(255, 255, 255, 0.094),
+    inset 2px 2px 8px -1px rgba(0, 0, 0, 0.396);
 }
 
 /* link animation */
@@ -208,10 +228,10 @@ h4 {
 }
 
 .boxShadow {
+  border: none;
   box-shadow:
-    -1px -1px 0 rgba(255, 255, 255, 0),
-    1px 1px 0 rgba(0, 0, 0, .25),
-    3px 3px 3px rgba(0, 0, 0, .25);
+    8px 8px 12px -2px rgba(0, 0, 0, 0.143),
+    -6px -6px 12px -1px rgba(255, 255, 255, 0.019);
 }
 
 /* error page style ------------------*/

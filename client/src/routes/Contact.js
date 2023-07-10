@@ -83,7 +83,7 @@ const Contact = () => {
                     <Col md={{ size: 8, offset: 2 }}>
                       <FormGroup>
                         <Input
-                          id="examplePassword"
+                          id="exampleName"
                           name="Name"
                           placeholder="Name"
                           type=""
@@ -117,7 +117,10 @@ const Contact = () => {
                       </FormGroup>
                     </Col>
                   </Row>
-                  <Button>
+                  <Button
+                  id='submitBtn'
+                  className='customButton'
+                  >
                     Submit
                   </Button>
                 </Form>

@@ -81,14 +81,7 @@ const GalleryImg = [
         key: 98766565435,
         hash: 'L,CH1|WAjXjYpMWBf4jYR;ofazax',
         value: 'isLoaded'
-    },
-    // {
-    //     src: imgTen,
-    //     id: '10',
-    //     width: '400',
-    //     height:'200',
-    //     key: 10898978897,
-    // },
+    }
 ];
 
 export default GalleryImg;
