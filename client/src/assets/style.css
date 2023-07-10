@@ -208,12 +208,17 @@ h4 {
 /* badges */
 
 #family {
-  width: 7pc;
+  width: 117px;
+  height: auto;
+}
+
+#service {
+  width: 123px;
   height: auto;
 }
 
 #insured {
-  width: 7pc;
+  width: 115px;
   height: auto;
 }
 
@@ -317,12 +322,17 @@ h4 {
   }
 
   #family {
-    width: 7pc;
+    width: 85px;
+    height: auto;
+  }
+  
+  #service {
+    width: 88px;
     height: auto;
   }
   
   #insured {
-    width: 7pc;
+    width: 80px;
     height: auto;
   }
   
@@ -364,17 +374,6 @@ h4 {
     margin-top: 2%;
   }
 
-  #family {
-    width: 6pc;
-    height: auto;
-  }
-  
-  #insured {
-    width: 6pc;
-    height: auto;
-  }
-  
-
 }
 
 @media screen and (max-width: 376px) {
@@ -399,16 +398,6 @@ h4 {
     height: auto;
   }
 
-  #family {
-    width: 5pc;
-    height: auto;
-  }
-  
-  #insured {
-    width: 5pc;
-    height: auto;
-  }
-  
 }
 
 @media screen and (max-width: 334px) {

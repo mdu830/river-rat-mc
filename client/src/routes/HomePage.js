@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { motion } from 'framer-motion'
 import familyOwned from '../assets/images/badges/family-owned.webp'
 import fullyInsured from '../assets/images/badges/fully-insured.webp'
+import excellentService from '../assets/images/badges/excellent-service.webp'
 
 
 
@@ -34,44 +35,49 @@ export default function HomePage() {
           key={'AnimCar'}
         >
           <Container fluid className=" bg-dark border-top pt-2">
-            <Button size='md' color="primary" outline className='m-4'>
-              <Link className="btnLink textShadow" to={'faq/'}>FAQ</Link>
-            </Button>
+            <Row className='m-3'>
+              <Col fluid className=''>
+                <Button size='md' color="primary" outline className='w-100 mb-4 mt-4'>
+                  <Link className="btnLink textShadow" to={'faq/'}>FAQ</Link>
+                </Button>
+              </Col>
+              <Col fluid className=''>
+                <Button size='md' className=' w-100 mb-4 mt-4'>
+                  <Link className="btnLink textShadow" to={`contact/`}>Contact Us</Link>
+                </Button>
+              </Col>
+              
+            </Row>
 
-            <Button size='md' className='m-4'>
-              <Link className="btnLink textShadow" to={`contact/`}>Contact Us</Link>
-            </Button>
+
+
             <h3 className='textShadow'>Welcome to River Rat Marine Construction</h3>
             {/* <h2>Our website is currently under development.</h2> */}
-
-            <Row className=''>
-              <Col />
-              <Col fluid >
-                <motion.div
-                  transition={{ delay: 0.9 }}
-                  initial={{ opacity: 0, y: 0 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: 0 }}
-                  key={'AnimBage1'}
-                >
+            <motion.div
+              transition={{ delay: 0.9 }}
+              initial={{ opacity: 0, y: 0 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: 0 }}
+              key={'AnimBage1'}
+            >
+              <Row className=''>
+                <Col fluid />
+                <Col fluid >
                   <img id='family' alt='' className='mt-4 p-1' src={familyOwned} />
-                </motion.div>
 
-              </Col>
-              <Col fluid >
-              <motion.div
-                  transition={{ delay: 0.9 }}
-                  initial={{ opacity: 0, y: 0 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: 0 }}
-                  key={'AnimBage1'}
-                >
-                <img id='insured' alt='' className='mt-4 p-1' src={fullyInsured} />
-                </motion.div>
+                </Col>
+                <Col fluid >
+                  <img id='service' alt='' className='mt-4 p-1' src={excellentService} />
 
-              </Col>
-              <Col />
-            </Row>
+                </Col>
+                <Col fluid >
+                  <img id='insured' alt='' className='mt-4 p-1' src={fullyInsured} />
+
+                </Col>
+                <Col fluid />
+
+              </Row>
+            </motion.div>
           </Container>
 
         </motion.div>
