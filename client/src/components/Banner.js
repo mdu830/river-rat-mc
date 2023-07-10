@@ -6,12 +6,6 @@ import logo from '../assets/images/logo512.png'
 import imgLong from './ImgLong'
 import imgShort from './ImgShort';
 import { useMediaQuery } from 'usehooks-ts'
-// import { motion } from 'framer-motion'
-// import { Blurhash } from "react-blurhash";
-
-
-
-
 
 const Banner = React.memo(props => {
 
