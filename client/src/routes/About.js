@@ -76,7 +76,7 @@ const About = () => {
           <div className='m-3 mt-5 pb-3 custainer'>
             <Row>
             <CardTitle className='name textShadow mt-4 mb-4 p-1' tag="h4" color='dark'>
-                  Hunter - Operations Manager
+                  Hunter Kunz - Operations Manager
                 </CardTitle>
             </Row>
             <Row>
