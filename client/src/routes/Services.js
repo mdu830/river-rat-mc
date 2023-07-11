@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Row, Col, CardHeader, Container, ListGroup, ListGroupItem } from 'reactstrap';
+import { Card, Row, Col, CardHeader, Container } from 'reactstrap';
 import ServiceData from '../components/ServiceData';
 import { motion } from 'framer-motion';
 

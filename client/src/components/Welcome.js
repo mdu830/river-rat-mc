@@ -15,20 +15,20 @@ export default function Welcome() {
     <Container fluid className=" bg-dark border-top pt-2">
 
       <Row className='m-3'>
-        {matches ? <Col fluid /> : ''}
-        <Col fluid className=''>
+        {matches ? <Col  /> : ''}
+        <Col  className=''>
           <Link className="btnLink textShadow" to={'faq/'}>
             <Button size='md' id='faqBtn' className='customButton w-100 mb-4 mt-4' >FAQ</Button>
           </Link>
 
         </Col>
-        <Col fluid className=''>
+        <Col  className=''>
           <Link className="btnLink textShadow" to={`contact/`}>
             <Button size='md' id='conBtn' className='customButton w-100 mb-4 mt-4'>Contact Us</Button>
           </Link>
 
         </Col>
-        {matches ? <Col fluid /> : ''}
+        {matches ? <Col  /> : ''}
       </Row>
 
       <h3 className='textShadow'>Welcome to River Rat Marine Construction</h3>
@@ -41,17 +41,17 @@ export default function Welcome() {
         key={'AnimBage1'}
       >
         <Row className=''>
-          <Col fluid />
-          <Col fluid >
+          <Col  />
+          <Col  >
             <img id='family' alt='' className='mt-4 p-1' src={familyOwned} />
           </Col>
-          <Col fluid >
+          <Col  >
             <img id='service' alt='' className='mt-4 p-1' src={excellentService} />
           </Col>
-          <Col fluid >
+          <Col  >
             <img id='insured' alt='' className='mt-4 p-1' src={fullyInsured} />
           </Col>
-          <Col fluid />
+          <Col  />
         </Row>
       </motion.div>
 

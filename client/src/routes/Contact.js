@@ -1,17 +1,9 @@
 import React from 'react';
-import {
-  Container,
-  Card,
-  Form,
-  Row,
-  Col,
-  FormGroup,
-  Input,
-  CardText,
-  Button
-} from 'reactstrap';
-import { motion } from 'framer-motion'
-
+import { Container, Card, Form, Row, Col, FormGroup, Input, Button } from 'reactstrap';
+import { motion } from 'framer-motion' 
+import phoneImg from '../assets/images/icons/phone.png'
+import emailImg from '../assets/images/icons/email.png'
+import facebookImg from '../assets/images/icons/facebook.png'
 
 
 const Contact = () => {
@@ -38,26 +30,46 @@ const Contact = () => {
               exit={{ opacity: 0, y: 20 }}
               key={'animPhone'}
             >
-              <h2
-                className='linkLarge pb-4'
+              <div
+                className='linkLarge btnLink pb-4 ml-5'
                 onClick={() => window.location = 'tel:+19199209213'}
-              >Phone: (919) 920-9213
-              </h2>
+              >
+                <img id='phoneIcon' alt='Call' src={phoneImg}></img>
+              </div>
             </motion.div>
           </Col>
+
           <Col>
             <motion.div
               transition={{ delay: 0.3 }}
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: 20 }}
+              key={'animPhone'}
+            >
+              <div
+                className='linkLarge pb-4'
+                onClick={() => window.location = 'https://www.facebook.com/riverratmarineconstruction/'}
+              >
+                <img id='facebookIcon' alt='Call' src={facebookImg}></img>
+              </div>
+            </motion.div>
+          </Col>
+
+          <Col>
+            <motion.div
+              transition={{ delay: 0.4 }}
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: 20 }}
               key={'animEmail'}
             >
-              <h2
+              <div
                 className='linkLarge pb-4'
                 onClick={() => window.location = 'mailto:pam@riverratmarineconstruction.com'}
-              >pam@riverratmarineconstruction.com
-              </h2>
+                >
+                  <img id='emailIcon' alt='Email' src={emailImg}></img>
+              </div>
             </motion.div>
           </Col>
         </Row>
@@ -67,7 +79,7 @@ const Contact = () => {
         <Row className='mt-3'>
           <Col md={{ size: 8, offset: 2 }}>
             <motion.div
-              transition={{ delay: 0.4 }}
+              transition={{ delay: 0.5 }}
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: 20 }}
@@ -76,9 +88,9 @@ const Contact = () => {
               <Card className='bg-dark custainer p-3 '>
 
                 <Form>
-                  <h2 className='name textShadow pb-2'>
+                  <div className='name textShadow pb-2'>
                     Send us a Message
-                  </h2>
+                  </div>
                   <Row className='m-1'>
                     <Col md={{ size: 8, offset: 2 }}>
                       <FormGroup>

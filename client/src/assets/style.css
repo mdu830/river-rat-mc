@@ -95,6 +95,21 @@ h4 {
 
 }
 
+#phoneIcon {
+  width: 10%;
+  height: auto;
+}
+
+#emailIcon {
+  width: 12%;
+  height: auto;
+}
+
+#facebookIcon {
+  width: 12%;
+  height: auto;
+}
+
 .spinner {
   /* padding-top: 100; */
   background-color: rgba(240, 248, 255, 0);
@@ -360,6 +375,21 @@ h4 {
     left: 0;
     margin-left: 35%;
     margin-top: 10%;
+  }
+
+  #phoneIcon {
+    width: 34%;
+    height: auto;
+  }
+  
+  #emailIcon {
+    width: 42%;
+    height: auto;
+  }
+  
+  #facebookIcon {
+    width: 42%;
+    height: auto;
   }
 
   .logoTitle {
