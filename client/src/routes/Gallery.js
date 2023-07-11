@@ -59,7 +59,7 @@ const Gallery = React.memo(props => {
                   key={img.key}
                 >
                   <img
-                    className='boxShadow galImg'
+                    className='custainer galImg'
                     src={img.src}
                     id={img.id}
                     width={'90%'}

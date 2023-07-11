@@ -73,7 +73,7 @@ const Contact = () => {
               exit={{ opacity: 0, y: 20 }}
               key={'animEmail'}
             >
-              <Card className='bg-dark boxShadow p-3 '>
+              <Card className='bg-dark custainer p-3 '>
 
                 <Form>
                   <h2 className='name textShadow pb-2'>
@@ -83,6 +83,7 @@ const Contact = () => {
                     <Col md={{ size: 8, offset: 2 }}>
                       <FormGroup>
                         <Input
+                          className='input'
                           id="exampleName"
                           name="Name"
                           placeholder="Name"
@@ -96,6 +97,7 @@ const Contact = () => {
                     <Col md={{ size: 8, offset: 2 }}>
                       <FormGroup>
                         <Input
+                          className='input'
                           id="exampleEmail"
                           name="email"
                           placeholder="Email Address"
@@ -109,6 +111,7 @@ const Contact = () => {
                     <Col md={{ size: 8, offset: 2 }}>
                       <FormGroup>
                         <Input
+                          className='input'
                           id="exampleText"
                           name="Message"
                           placeholder="Message"
@@ -118,8 +121,8 @@ const Contact = () => {
                     </Col>
                   </Row>
                   <Button
-                  id='submitBtn'
-                  className='customButton'
+                    id='submitBtn'
+                    className='customButton'
                   >
                     Submit
                   </Button>
