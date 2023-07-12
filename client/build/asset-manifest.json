@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.291b780c.css",
+    "main.css": "/static/css/main.9bdb82ed.css",
     "main.js": "/static/js/main.f59a0124.js",
     "static/js/787.c4e7f8f9.chunk.js": "/static/js/787.c4e7f8f9.chunk.js",
     "static/media/95.png": "/static/media/95.dbe555893cd4c658aea6.png",
@@ -25,12 +25,12 @@
     "static/media/logo192.png": "/static/media/logo192.9fc81347ece5d2f24a63.png",
     "static/media/fully-insured.webp": "/static/media/fully-insured.6664621475de5917824b.webp",
     "index.html": "/index.html",
-    "main.291b780c.css.map": "/static/css/main.291b780c.css.map",
+    "main.9bdb82ed.css.map": "/static/css/main.9bdb82ed.css.map",
     "main.f59a0124.js.map": "/static/js/main.f59a0124.js.map",
     "787.c4e7f8f9.chunk.js.map": "/static/js/787.c4e7f8f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.291b780c.css",
+    "static/css/main.9bdb82ed.css",
     "static/js/main.f59a0124.js"
   ]
 }
