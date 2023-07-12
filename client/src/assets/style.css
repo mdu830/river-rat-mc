@@ -6,6 +6,7 @@ body {
   background-size: cover;
   background-attachment: scroll;
   background-color: rgba(33, 37, 41);
+  overscroll-behavior-block: contain;
 }
 
 .App {
