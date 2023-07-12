@@ -73,7 +73,7 @@ const About = () => {
           exit={{ opacity: 0, y: 20 }}
           key={'hunter'}
         >
-          <div className='m-3 mt-5 pb-3 custainer'>
+          <div className='m-3 mt-5 mb-5 pb-3 custainer'>
             <Row>
             <CardTitle className='name textShadow mt-4 mb-4 p-1' tag="h4" color='dark'>
                   Hunter Kunz - Operations Manager

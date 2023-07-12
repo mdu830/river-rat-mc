@@ -40,7 +40,7 @@ export default function Welcome() {
         exit={{ opacity: 0, y: 0 }}
         key={'AnimBage1'}
       >
-        <Row className=''>
+        <Row className='mb-4'>
           <Col  />
           <Col  >
             <img id='family' alt='' className='mt-4 p-1' src={familyOwned} />

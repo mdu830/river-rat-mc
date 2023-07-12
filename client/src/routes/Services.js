@@ -17,7 +17,7 @@ const Services = () => {
     >
       <Container fluid className='bg-dark pt-2 pb-5'>
         <h1 className='mb-4'>Services</h1>
-        <Row>
+        <Row className='mb-4'>
           {data.map((data, index) => {
             return (
               <motion.div
