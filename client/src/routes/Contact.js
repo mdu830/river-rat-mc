@@ -21,7 +21,7 @@ const Contact = () => {
       <Container fluid className='bg-dark pt-2  pb-5 customContainer align-items-center'>
         <h1 className='mb-5'>Contact Us</h1>
 
-        <Row>
+        <Row className=''>
           <Col>
             <motion.div
               transition={{ delay: 0.2 }}

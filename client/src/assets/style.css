@@ -6,6 +6,8 @@ body {
   background-size: cover;
   background-attachment: scroll;
   background-color: rgba(33, 37, 41);
+  overflow: hidden;
+
 }
 
 .App {
@@ -19,6 +21,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
+  overflow: scroll;
 }
 
 .input { 
@@ -92,18 +95,35 @@ h4 {
 }
 
 #phoneIcon {
-  width: 10%;
+  margin-top: 6px;
+  width: 42px;
   height: auto;
-}
-
-#emailIcon {
-  width: 12%;
-  height: auto;
+  filter: drop-shadow(3px 7px 0px rgba(0, 0, 0, 0.25));
 }
 
 #facebookIcon {
-  width: 12%;
+  width: 54px;
   height: auto;
+  filter: drop-shadow(3px 7px 0px rgba(0, 0, 0, 0.25));
+}
+
+#emailIcon {
+  width: 60px;
+  height: auto;
+  filter: drop-shadow(3px 7px 0px rgba(0, 0, 0, 0.25));
+}
+
+#phoneIcon:active {
+  opacity: 50%;
+  filter: none;
+  }
+#facebookIcon:active {
+  opacity: 50%;
+  filter: none;
+  }
+#emailIcon:active {
+opacity: 50%;
+filter: none;
 }
 
 .spinner {
@@ -120,7 +140,7 @@ h4 {
 }
 
 #conBtn {
-  background-color: rgba(33, 37, 41);
+  background-color: rgba(42, 70, 81, 0);
 }
 
 #conBtn:active {
@@ -296,7 +316,7 @@ h4 {
   bottom: 0;
   width: 100%;
   background-color: rgb(62, 62, 62);
-
+  overflow: hidden;
 }
 
 .footerText {
@@ -356,7 +376,6 @@ h4 {
 }
 
 
-
 @media screen and (max-width: 585px) {
   .page {
     z-index: -2;
@@ -380,21 +399,6 @@ h4 {
     left: 0;
     margin-left: 35%;
     margin-top: 10%;
-  }
-
-  #phoneIcon {
-    width: 34%;
-    height: auto;
-  }
-  
-  #emailIcon {
-    width: 42%;
-    height: auto;
-  }
-  
-  #facebookIcon {
-    width: 42%;
-    height: auto;
   }
 
   .logoTitle {
