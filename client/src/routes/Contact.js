@@ -31,7 +31,7 @@ const Contact = () => {
               key={'animPhone'}
             >
               <div
-                className='linkLarge btnLink pb-4 ml-5'
+                className='linkLarge btnLink pb-4'
                 onClick={() => window.location = 'tel:+19199209213'}
               >
                 <img id='phoneIcon' alt='Call' src={phoneImg}></img>
