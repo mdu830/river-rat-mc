@@ -18,7 +18,7 @@ const Services = () => {
     >
       <Container fluid className='bg-dark pt-2 pb-5'>
         <h1 className='mb-4'>Services</h1>
-        <Row className='mb-4'>
+        <Row className='mb-4 cardRow'>
           {data.map((data, index) => {
             return (
               <motion.div
@@ -34,8 +34,8 @@ const Services = () => {
                       <h2 className='pt-2'>{data.title}</h2>
                     </CardHeader >
                     <CardHeader>
-                      <img className="sqImg" src={data.Img1} />
-                      <img className="sqImg" src={data.Img2} />
+                      <img alt='example' className="sqImg" src={data.Img1} />
+                      <img alt='example' className="sqImg" src={data.Img2} />
                     </CardHeader>
                     <h4 className='p-3 textShadow'>{data.description}</h4>
                   </Card>

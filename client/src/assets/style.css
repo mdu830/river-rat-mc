@@ -279,10 +279,15 @@ filter: none;
 
 .sqImg {
   object-fit: cover;
-  width: 300pt;
-  height: 170pt;
-  padding: 7pt;
+  width: 340pt;
+  height: 220pt;
+  padding: 1%;
   overflow: hidden;
+}
+
+.cardRow {
+  margin-left: 1%;
+  margin-right: 1%;
 }
 
 /* contact page */
