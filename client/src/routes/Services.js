@@ -1,4 +1,5 @@
 import React from 'react';
+import '../assets/style.css'
 import { Card, Row, Col, CardHeader, Container } from 'reactstrap';
 import ServiceData from '../components/ServiceData';
 import { motion } from 'framer-motion';
@@ -32,6 +33,10 @@ const Services = () => {
                     <CardHeader className=' textShadow p-2'>
                       <h2 className='pt-2'>{data.title}</h2>
                     </CardHeader >
+                    <CardHeader>
+                      <img className="sqImg" src={data.Img1} />
+                      <img className="sqImg" src={data.Img2} />
+                    </CardHeader>
                     <h4 className='p-3 textShadow'>{data.description}</h4>
                   </Card>
 

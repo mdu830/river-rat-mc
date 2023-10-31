@@ -277,6 +277,14 @@ filter: none;
   background-color: rgb(126, 126, 126);
 }
 
+.sqImg {
+  object-fit: cover;
+  width: 300pt;
+  height: 170pt;
+  padding: 7pt;
+  overflow: hidden;
+}
+
 /* contact page */
 
 /* badges */
@@ -373,6 +381,14 @@ filter: none;
     margin-top: 10%;
   }
 
+  .sqImg {
+    object-fit: cover;
+    width: 220pt;
+    height: 140pt;
+    padding: 7pt;
+    overflow: hidden;
+  }
+
 }
 
 
@@ -420,6 +436,14 @@ filter: none;
   #insured {
     width: 80px;
     height: auto;
+  }
+
+  .sqImg {
+    object-fit: cover;
+    width: 100pt;
+    height: 130pt;
+    padding: 5pt;
+    overflow: hidden;
   }
 
 }

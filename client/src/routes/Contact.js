@@ -89,7 +89,7 @@ const Contact = () => {
 
                 <Form>
                   <div className='name textShadow pb-2'>
-                    Send us a Message
+                    Send Us A Message
                   </div>
                   <Row className='m-1'>
                     <Col md={{ size: 8, offset: 2 }}>
