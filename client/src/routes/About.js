@@ -1,6 +1,7 @@
 import React from 'react';
-import { Container, Card, CardBody, CardText, CardTitle, Col, Row } from 'reactstrap';
+import { Container, CardText, CardTitle, Col, Row, CardHeader, Card } from 'reactstrap';
 import { motion } from 'framer-motion';
+import logo192 from '../assets/images/logo192.png'
 
 
 const About = () => {
@@ -26,75 +27,71 @@ const About = () => {
           exit={{ opacity: 0, y: 20 }}
           key={'about'}
         >
-          <div className='m-4 pb-4'>
-            <Row>
-              <Col>
-                <CardText className='name textShadow'>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </CardText>
-              </Col>
-            </Row>
+          <div className=' pb-4'>
+            <Card color='dark p-2' className='m-3 custainer'>
+              <Row>
+                <CardHeader>
+                  <Col>
+                    <CardText className='name textShadow m-3'>
+                      <h3>
+                        We are a family owned and operated marine construction company out of Mount Olive North Carolina.
+                        Proudly providing our services across most of Eastern North Carolina.
+                      </h3>
+                    </CardText>
+                  </Col>
+                </CardHeader>
+              </Row>
+
+              <Row>
+                <CardHeader>
+                  <Col>
+                    <CardText className='name textShadow m-3'>
+                      <h3 className=''>Counties We Serve</h3>
+                      <h4>
+                          <li className='float-l'>&#10041; Jones County</li>
+                          <li className='float-l'>&#10041; Pamlico County</li>
+                          <li className='float-l'>&#10041; Carteret County</li>
+                          <li className='float-l'>&#10041; Craven County</li>
+                          <li className='float-l'>&#10041; Onslow County</li>
+                          <li className='float-l'>&#10041; Pender County</li>
+                      </h4>
+                    </CardText>
+                  </Col>
+                </CardHeader>
+              </Row>
+
+              <motion.div
+                transition={{ delay: 0.4 }}
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: 20 }}
+                key={'doug'}
+              >
+                <Row>
+                  <CardTitle className='name textShadow mt-4 mb-3 p-1' color='dark'>
+                    <h3>Doug Whaley - Owner</h3>
+                  </CardTitle>
+                </Row>
+                <Row >
+                  <Col />
+                  <Col sm>
+                    <img className=' placeHolder' height={'75%'} alt="Sample" src={logo192} />
+                  </Col>
+                  <Col sm='8'>
+                    <CardText className='name textShadow m-1'>
+                      <h4>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      </h4>
+                    </CardText>
+                  </Col>
+                  <Col />
+                </Row>
+                {/* </div> */}
+              </motion.div>
+            </Card>
           </div>
         </motion.div>
-
-        <motion.div
-          transition={{ delay: 0.4 }}
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: 20 }}
-          key={'doug'}
-        >
-          <div className='m-3 pb-3 custainer'>
-            <Row>
-              <CardTitle className='name textShadow mt-4 mb-4 p-1' tag="h4" color='dark'>
-                Doug Whaley - Owner
-              </CardTitle>
-            </Row>
-            <Row >
-              <Col />
-              <Col sm>
-                <img className='custainer placeHolder' height={'75%'} alt="Sample" src="https://picsum.photos/300/200" />
-              </Col>
-              <Col sm='8'>
-                <CardText className='name textShadow p-1'>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </CardText>
-              </Col>
-              <Col />
-            </Row>
-          </div>
-        </motion.div>
-        <motion.div
-          transition={{ delay: 0.5 }}
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: 20 }}
-          key={'hunter'}
-        >
-          <div className='m-3 mt-5 mb-5 pb-3 custainer'>
-            <Row>
-            <CardTitle className='name textShadow mt-4 mb-4 p-1' tag="h4" color='dark'>
-                  Hunter Kunz - Operations Manager
-                </CardTitle>
-            </Row>
-            <Row>
-              <Col />
-              <Col sm>
-                <img className='custainer placeHolder' height={'75%'} alt="Sample" src="https://picsum.photos/300/200" />
-              </Col>
-              <Col sm='8'>
-                <CardText className='name textShadow p-1'>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.              </CardText>
-              </Col>
-              <Col />
-            </Row>
-          </div>
-        </motion.div>
-
-
       </Container>
     </motion.div>
   );
