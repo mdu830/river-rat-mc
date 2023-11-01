@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Card, Form, Row, Col, FormGroup, Input, Button } from 'reactstrap';
-import { motion } from 'framer-motion' 
+import { motion } from 'framer-motion'
 import phoneImg from '../assets/images/icons/phone.png'
 import emailImg from '../assets/images/icons/email.png'
 import facebookImg from '../assets/images/icons/facebook.png'
@@ -22,7 +22,7 @@ const Contact = () => {
         <h1 className='mb-5'>Contact Us</h1>
 
         <Row className=''>
-          <Col>
+          <Col className='m-2'>
             <motion.div
               transition={{ delay: 0.2 }}
               initial={{ opacity: 0, y: -20 }}
@@ -39,7 +39,7 @@ const Contact = () => {
             </motion.div>
           </Col>
 
-          <Col>
+          <Col className='m-2'>
             <motion.div
               transition={{ delay: 0.3 }}
               initial={{ opacity: 0, y: -20 }}
@@ -56,7 +56,7 @@ const Contact = () => {
             </motion.div>
           </Col>
 
-          <Col>
+          <Col className='m-2'>
             <motion.div
               transition={{ delay: 0.4 }}
               initial={{ opacity: 0, y: -20 }}
@@ -67,8 +67,8 @@ const Contact = () => {
               <div
                 className='linkLarge pb-4'
                 onClick={() => window.location = 'mailto:pam@riverratmarineconstruction.com'}
-                >
-                  <img id='emailIcon' alt='Email' src={emailImg}></img>
+              >
+                <img id='emailIcon' alt='Email' src={emailImg}></img>
               </div>
             </motion.div>
           </Col>
@@ -85,7 +85,7 @@ const Contact = () => {
               exit={{ opacity: 0, y: 20 }}
               key={'animEmail'}
             >
-              <Card className='bg-dark custainer p-3 '>
+              <Card className='bg-dark custainer p-3 mb-4'>
 
                 <Form>
                   <div className='name textShadow pb-2'>
@@ -143,6 +143,19 @@ const Contact = () => {
             </motion.div>
           </Col>
         </Row>
+        <div className='float-b'>
+          <Row>
+            <Col sm>
+              <p>Address: 202 Jeff Outlaw Rd Mount Olive, NC 28365</p>
+              <p>Phone: (919) 920- 9213</p>
+            </Col>
+            
+            <Col sm>
+              <p>Email: pam@riverratmarineconstruction.com</p>
+              <p>Facebook: https://www.facebook.com/riverratmarineconstruction</p>
+            </Col>
+          </Row>
+        </div>
       </Container>
     </motion.div>
   );

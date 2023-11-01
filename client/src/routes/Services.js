@@ -17,7 +17,7 @@ const Services = () => {
       exit={{ opacity: 0, y: 0 }}
     >
       <Container fluid className='bg-dark pt-2 pb-5'>
-        <h1 className='mb-4'>Services We Provide</h1>
+        <h1 className='mb-4'>Our Services</h1>
         <Row className='mb-4 cardRow'>
           {data.map((data, index) => {
             return (

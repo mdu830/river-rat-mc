@@ -61,6 +61,12 @@ h5 {
   font-family: Abel;
   color: rgb(223, 223, 223);
 }
+
+p {
+  font-family: Abel;
+  color: rgba(165, 165, 165, 0.786);
+  font-size: 100%;
+}
 /* Header -------------------------------*/
 
 .titleBar {
@@ -112,6 +118,25 @@ h5 {
 }
 
 #emailIcon {
+  width: 60px;
+  height: auto;
+  filter: drop-shadow(3px 7px 0px rgba(0, 0, 0, 0.25));
+}
+
+#phoneIcon:hover {
+  margin-top: 6px;
+  width: 42px;
+  height: auto;
+  filter: drop-shadow(3px 7px 0px rgba(0, 0, 0, 0.25));
+}
+
+#facebookIcon:hover {
+  width: 54px;
+  height: auto;
+  filter: drop-shadow(3px 7px 0px rgba(0, 0, 0, 0.25));
+}
+
+#emailIcon:hover {
   width: 60px;
   height: auto;
   filter: drop-shadow(3px 7px 0px rgba(0, 0, 0, 0.25));
@@ -207,14 +232,13 @@ filter: none;
 }
 
 .linkLarge:hover {
-  color: rgb(195, 195, 195);
+  color: rgb(0, 64, 255);
   text-decoration: underline;
   font-family: Abel;
 }
 
 .linkLarge:active {
-  color: rgb(89, 91, 156);
-  text-decoration: underline;
+  color: rgb(0, 7, 216);
   font-family: Abel;
 }
 
@@ -300,7 +324,10 @@ filter: none;
 }
 
 /* contact page */
-
+.float-b {
+  bottom: 0;
+  width: 100%;
+}
 /* badges */
 
 #family {

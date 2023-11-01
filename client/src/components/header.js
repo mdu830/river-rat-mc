@@ -34,7 +34,7 @@ function Header(props) {
 
                     <Link className="link row m-3" to={`about/`}>About Us</Link>
 
-                    <Link className="link row m-3" to={`contact/`}>Contact Us</Link>
+                    <Link className="link row m-3" to={`contact/`}>Contact</Link>
 
                 </Collapse>
             </Navbar>
