@@ -17,7 +17,7 @@ const options = {
 const reqLimit = rateLimit({
 
   windowMs: 15 * 60 * 1000,
-  max: 1,
+  max: 2,
   standardHeaders: true,
   legacyHeaders: false
 
@@ -25,15 +25,15 @@ const reqLimit = rateLimit({
 
 app.use(express.static('./client/build', options.index,), reqLimit)
 
-// app.get('/', reqLimit, (req, res) => {
-//   const index = path.join(__dirname, 'client/build', 'index.html');
-//   res.sendFile(index);
-// });
-
-app.get('*', reqLimit, (req, res) => {
+app.get('/', reqLimit, (req, res) => {
   const index = path.join(__dirname, 'client/build', 'index.html');
   res.sendFile(index);
 });
+
+// app.get('*', reqLimit, (req, res) => {
+//   const index = path.join(__dirname, 'client/build', 'index.html');
+//   res.sendFile(index);
+// });
 
 const port = process.env.PORT
 
