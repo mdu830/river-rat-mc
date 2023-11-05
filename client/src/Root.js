@@ -14,7 +14,7 @@ import Contact from './routes/Contact'
 import Faq from './routes/Faq'
 import ScrollReset from './components/ScrollReset';
 
-export default function Root() {
+const Root = React.memo(() => {
 
   const location = useLocation()
 
@@ -36,4 +36,6 @@ export default function Root() {
     </div>
   )
 
-}
+});
+
+export default Root;

@@ -17,12 +17,12 @@ export default React.memo(function Welcome() {
 
       <Row className='m-3'>
         {matches ? <Col  /> : ''}
-        <Col  className=''>
+        {/* <Col  className=''>
           <Link className="btnLink textShadow" to={'faq/'}>
             <Button size='md' id='faqBtn' className='customButton w-100 mb-4 mt-4' >FAQ</Button>
           </Link>
 
-        </Col>
+        </Col> */}
         <Col  className=''>
           <Link className="btnLink textShadow" to={`contact/`}>
             <Button size='md' id='conBtn' className='customButton w-100 mb-4 mt-4'>Contact Us</Button>
