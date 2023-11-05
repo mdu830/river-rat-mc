@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import logo192 from '../assets/images/logo192.png'
 
 
-const About = () => {
+const About = React.memo(() => {
 
   return (
 
@@ -95,6 +95,6 @@ const About = () => {
       </Container>
     </motion.div>
   );
-}
+});
 
 export default About;

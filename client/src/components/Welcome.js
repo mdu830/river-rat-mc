@@ -1,3 +1,4 @@
+import React from 'react';
 import { Container, Button, Row, Col } from 'reactstrap';
 import { Link } from "react-router-dom";
 import { useMediaQuery } from 'usehooks-ts'
@@ -7,7 +8,7 @@ import fullyInsured from '../assets/images/badges/fully-insured.webp'
 import excellentService from '../assets/images/badges/excellent-service.webp'
 
 
-export default function Welcome() {
+export default React.memo(function Welcome() {
 
   const matches = useMediaQuery('(min-width: 585px)')
 
@@ -57,4 +58,4 @@ export default function Welcome() {
 
     </Container>
   )
-}
+});

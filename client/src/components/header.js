@@ -5,7 +5,7 @@ import logo from '../assets/images/logo192.png'
 import logoTxt from '../assets/images/logoTxt.png'
 import '../assets/style.css'
 
-function Header(props) {
+const Header = React.memo((props) => {
 
     const [collapsed, setCollapsed] = useState(true);
 
@@ -40,6 +40,6 @@ function Header(props) {
             </Navbar>
         </>
     )
-}
+});
 
 export default Header;

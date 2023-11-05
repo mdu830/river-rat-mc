@@ -8,7 +8,7 @@ import { motion } from 'framer-motion'
 
 
 
-export default function HomePage() {
+const HomePage = React.memo(() => {
 
   return (
     <>
@@ -37,4 +37,6 @@ export default function HomePage() {
     </>
   )
 
-}
+});
+
+export default HomePage;

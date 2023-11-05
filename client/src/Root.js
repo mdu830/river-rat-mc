@@ -1,5 +1,5 @@
 import './App.css';
-import { React, memo } from 'react';
+import React from 'react';
 import { Routes, Route, useLocation } from "react-router-dom";
 import Header from './components/Header'
 import Footer from './components/Footer';
@@ -14,7 +14,7 @@ import Contact from './routes/Contact'
 import Faq from './routes/Faq'
 import ScrollReset from './components/ScrollReset';
 
-export default memo(function Root() {
+export default function Root() {
 
   const location = useLocation()
 
@@ -29,11 +29,11 @@ export default memo(function Root() {
         <Route ref='gall' path="/gallery" element={<Gallery data={GalleryImg} />} />
         <Route ref='abou' path="/about" element={<About />} />
         <Route ref='cont' path="/contact" element={<Contact />} />
-        <Route ref='faq' path="/faq" element={<Faq />} />
+        {/* <Route ref='faq' path="/faq" element={<Faq />} /> */}
       </Routes>
       <SubFooter />
       <Footer />
     </div>
   )
 
-})
+}

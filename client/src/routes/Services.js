@@ -4,7 +4,7 @@ import { Card, Row, Col, CardHeader, Container } from 'reactstrap';
 import ServiceData from '../components/ServiceData';
 import { motion } from 'framer-motion';
 
-const Services = () => {
+const Services = React.memo(() => {
 
   const data = ServiceData;
 
@@ -49,6 +49,6 @@ const Services = () => {
     </motion.div>
 
   );
-}
+});
 
 export default Services;

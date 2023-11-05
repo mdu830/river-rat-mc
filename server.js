@@ -18,7 +18,6 @@ const reqLimit = rateLimit({
 
   windowMs: 15 * 60 * 1000,
   max: 1,
-  message: 'You have exceeded the requests in 15 hrs limit!',
   standardHeaders: true,
   legacyHeaders: false
 
@@ -41,6 +40,5 @@ const port = process.env.PORT
 app.listen(port, () => {
   
   console.log(`Server listening at http://localhost:${port}`)
-  console.log(`${reqLimit.message}`)
 })
 

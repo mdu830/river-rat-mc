@@ -1,6 +1,6 @@
 import React from 'react';
 
-function SubFooter() {
+const SubFooter = React.memo(() => {
     return(
         <footer className="subFooter">
             
@@ -9,6 +9,6 @@ function SubFooter() {
                 </h3>
         </footer>
     );
-}
+});
 
 export default SubFooter;

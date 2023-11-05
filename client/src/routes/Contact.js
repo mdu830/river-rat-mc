@@ -6,7 +6,7 @@ import emailImg from '../assets/images/icons/email.png'
 import facebookImg from '../assets/images/icons/facebook.png'
 
 
-const Contact = () => {
+const Contact = React.memo(() => {
 
   return (
 
@@ -159,6 +159,6 @@ const Contact = () => {
       </Container>
     </motion.div>
   );
-}
+});
 
 export default Contact;
