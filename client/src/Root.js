@@ -1,5 +1,5 @@
 import './App.css';
-import React from 'react';
+import { React, memo } from 'react';
 import { Routes, Route, useLocation } from "react-router-dom";
 import Header from './components/Header'
 import Footer from './components/Footer';
@@ -14,7 +14,7 @@ import Contact from './routes/Contact'
 import Faq from './routes/Faq'
 import ScrollReset from './components/ScrollReset';
 
-export default function Root() {
+export default memo(function Root() {
 
   const location = useLocation()
 
@@ -36,4 +36,4 @@ export default function Root() {
     </div>
   )
 
-}
+})
