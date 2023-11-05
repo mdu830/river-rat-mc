@@ -12,6 +12,7 @@ const options = {
   maxAge: '1m',
   redirect: false
 }
+
 app.use(express.static('./client/build', options.index))
 
 app.get('/', (req, res) => {
