@@ -34,6 +34,17 @@ const About = React.memo(() => {
 
               <CardHeader>
                 <Row>
+                <CardTitle className='name textShadow mt-4 mb-3 p-1' color='dark'>
+                  <h3>
+                    We are a family owned and operated marine construction company out of Mount Olive North Carolina.
+                    Proudly providing our services across Eastern North Carolina.
+                  </h3>
+                  </CardTitle>
+                </Row>
+              </CardHeader>
+
+              <CardHeader>
+                <Row>
                   <CardTitle className='name textShadow mt-4 mb-3 p-1' color='dark'>
                     <h3>Doug Whaley - Owner</h3>
                   </CardTitle>
@@ -61,12 +72,9 @@ const About = React.memo(() => {
                 <CardHeader>
                   <Col>
                     <CardText className='name textShadow m-4'>
-                      <h3>
-                        We are a family owned and operated marine construction company out of Mount Olive North Carolina.
-                        Proudly providing our services across Eastern North Carolina.
-                      </h3>
+
                       <h4>
-                        Here at River Rat Marine Construction LLC our motivation is our satified customers.
+                        At River Rat Marine Construction LLC our motivation is our satified customers.
                         This is accomplished by our team providing superior workmanship with the use of quality materials at affordable prices.
                         Whether you need repairs or an upgrade or even a new installation, River Rat Marine Construction LLC is here to serve you.
                         No job is too small or too big!
