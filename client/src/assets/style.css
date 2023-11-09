@@ -204,7 +204,17 @@ filter: none;
 
 /* link animation */
 
+.subText {
+  display: inline-block;
+  color: rgb(195, 195, 195);
+  text-decoration: none;
+  font-family: Abel;
+  font-size: larger;
+  padding-right: 1%;
+}
+
 .link {
+  display: inline-block;
   color: rgb(195, 195, 195);
   text-decoration: none;
   font-family: Abel;

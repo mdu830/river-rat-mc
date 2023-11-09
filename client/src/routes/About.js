@@ -18,7 +18,7 @@ const About = React.memo(() => {
     >
       <Container fluid className='bg-dark pt-2 pb-5'>
 
-        <h1 className='mb-5'>About Us</h1>
+        <h1 className='mb-5'>About River Rat Marine Construction</h1>
 
         <motion.div
           transition={{ delay: 0.3 }}
@@ -28,32 +28,48 @@ const About = React.memo(() => {
           key={'about'}
         >
           <div className=' pb-4'>
+
+
             <Card color='dark p-2' className='m-3 custainer'>
-              <Row>
-                <CardHeader>
-                  <Col>
-                    <CardText className='name textShadow m-3'>
+
+              <CardHeader>
+                <Row>
+                  <CardTitle className='name textShadow mt-4 mb-3 p-1' color='dark'>
+                    <h3>Doug Whaley - Owner</h3>
+                  </CardTitle>
+                </Row>
+                <Row >
+                  <Col />
+                  <Col sm>
+                    <img className=' placeHolder' height={'75%'} alt="Sample" src={logo192} />
+                  </Col>
+                  <Col sm='8'>
+                    <CardText className='name textShadow m-1'>
                       <h3>
-                        We are a family owned and operated marine construction company out of Mount Olive North Carolina.
-                        Proudly providing our services across most of Eastern North Carolina.
+                        River Rat Marine Construction LLC was founded in June 2020 by Douglas Whaley.
+                        Doug has been in and around construction most of his life.
+                        Including operating heavy equipment along with expert knowledge of building and repairing structures.
+                        It was Doug's passion for boating and fishing that allowed him the opportunity to work on the water and form River Rat Marine Construction LLC.
                       </h3>
                     </CardText>
                   </Col>
-                </CardHeader>
-              </Row>
+                  <Col />
+                </Row>
+              </CardHeader>
 
               <Row>
                 <CardHeader>
                   <Col>
-                    <CardText className='name textShadow m-3'>
-                      <h3 className=''>Counties We Serve</h3>
+                    <CardText className='name textShadow m-4'>
+                      <h3>
+                        We are a family owned and operated marine construction company out of Mount Olive North Carolina.
+                        Proudly providing our services across Eastern North Carolina.
+                      </h3>
                       <h4>
-                          <li className='float-l'>&#10041; Jones County</li>
-                          <li className='float-l'>&#10041; Pamlico County</li>
-                          <li className='float-l'>&#10041; Carteret County</li>
-                          <li className='float-l'>&#10041; Craven County</li>
-                          <li className='float-l'>&#10041; Onslow County</li>
-                          <li className='float-l'>&#10041; Pender County</li>
+                        Here at River Rat Marine Construction LLC our motivation is our satified customers.
+                        This is accomplished by our team providing superior workmanship with the use of quality materials at affordable prices.
+                        Whether you need repairs or an upgrade or even a new installation, River Rat Marine Construction LLC is here to serve you.
+                        No job is too small or too big!
                       </h4>
                     </CardText>
                   </Col>
@@ -68,24 +84,21 @@ const About = React.memo(() => {
                 key={'doug'}
               >
                 <Row>
-                  <CardTitle className='name textShadow mt-4 mb-3 p-1' color='dark'>
-                    <h3>Doug Whaley - Owner</h3>
-                  </CardTitle>
-                </Row>
-                <Row >
-                  <Col />
-                  <Col sm>
-                    <img className=' placeHolder' height={'75%'} alt="Sample" src={logo192} />
-                  </Col>
-                  <Col sm='8'>
-                    <CardText className='name textShadow m-1'>
+                  {/* <CardHeader> */}
+                  <Col>
+                    <CardText className='name textShadow m-3'>
+                      <h3 className=''>Counties We Serve</h3>
                       <h4>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        <li className='float-l'>&#10041; Jones County</li>
+                        <li className='float-l'>&#10041; Pamlico County</li>
+                        <li className='float-l'>&#10041; Carteret County</li>
+                        <li className='float-l'>&#10041; Craven County</li>
+                        <li className='float-l'>&#10041; Onslow County</li>
+                        <li className='float-l'>&#10041; Pender County</li>
                       </h4>
                     </CardText>
                   </Col>
-                  <Col />
+                  {/* </CardHeader> */}
                 </Row>
                 {/* </div> */}
               </motion.div>
