@@ -21,15 +21,16 @@ const Services = React.memo(() => {
         <Row className='mb-4 cardRow'>
           {data.map((data, index) => {
             return (
-              <motion.div
-                transition={{ delay: 0.2 * index, }}
-                initial={{ opacity: 0, y: -20 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: 0 }}
-                key={data.title}
-              >
-                <Col>
-                  <Card color='dark ' className='m-3 custainer'>
+              <Col lg='6'>
+                <motion.div
+                  transition={{ delay: 0.2 * index, }}
+                  initial={{ opacity: 0, y: -20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: 0 }}
+                  key={data.title}
+                >
+
+                  <Card color='dark h-75' className='m-3 custainer'>
                     <CardHeader className=' textShadow p-2'>
                       <h2 className='pt-2'>{data.title}</h2>
                     </CardHeader >
@@ -37,11 +38,12 @@ const Services = React.memo(() => {
                       <img alt='example' className="sqImg" src={data.Img1} />
                       <img alt='example' className="sqImg" src={data.Img2} />
                     </CardHeader>
-                    <h4 className='p-3 textShadow'>{data.description}</h4>
+                    <h4 className='p-3  textShadow'>{data.description}</h4>
                   </Card>
 
-                </Col>
-              </motion.div>
+                </motion.div>
+              </Col>
+
             )
           })}
         </Row>

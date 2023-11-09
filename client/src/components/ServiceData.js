@@ -2,23 +2,53 @@ import GalleryImg from "./ImgGallery"
 
 const ServiceData = [
     {
-        title: 'Dock & Pier Install/Repair ',
-        description: 'We endeavor to build every Dock & Pier to withstand the harsh ocean elements and severe storms we receive in eastern North Carolina. We use high quality treated wood plank or concrete, with stainless steel fasteners.',
+        title: 'Docks and Piers',
+        description: "Customized, designed and built to your specifications. So you can enjoy a leisurely stroll over the water, fishing, or access to your boathouse.",
         Img1: GalleryImg[4].src,
         Img2: GalleryImg[7].src,
     },
     {
-        title: 'Sea Wall & Bulkhead Install/Repair',
-        description: 'A seawall is the best defense against storm damage, flooding, soil erosion and can extend your usable property. Choose us for custom, built to last, seawall or bulkhead installation.',
+        title: 'Seawalls & Bulkheads',
+        description: "Seawalls or bulkheads help prevent soil erosion during storms while also maintaining your landscape. Available in sloppy V wood or concrete.",
         Img1: GalleryImg[3].src,
         Img2: GalleryImg[8].src
     },
     {
-        title: 'Boat House & Boat Lift Installation',
-        description: 'We are an offical Tide Tamer Boatlift Dealer. Easily load and unload your boat with our Tide Tamer Boat lifts and keep them protected from the harsh weather when they are not being used.',
+        title: 'Boat Dock Repair',
+        description: "Repair or maintain your existing dock due to storm or weather damage. Build a new dock or add an extension to any existing dock.",
         Img1: GalleryImg[1].src,
         Img2: GalleryImg[2].src
-    }
+    },
+    {
+        title: 'Bouthouses & Lifts',
+        description: "Easily load and launch your boat with Tide Tamer boat lifts. While keeping them protected from the harsh weather when they are not being used.",
+        Img1: GalleryImg[3].src,
+        Img2: GalleryImg[8].src
+    },
+    {
+        title: 'Decks',
+        description: "Create an outdoor space to relax, take in the view of the water, entertain family and friends. Available in wood or concrete.",
+        Img1: GalleryImg[3].src,
+        Img2: GalleryImg[8].src
+    },
+    {
+        title: 'Walkways & Stairs',
+        description: "Enable easy access to your deck, dock or waterfront while adding safety and security with stainless steal screws and galvenized fasteners.",
+        Img1: GalleryImg[3].src,
+        Img2: GalleryImg[8].src
+    },
+    {
+        title: 'Rip Rap',
+        description: "Help protect your investment by using loose stones to formand strengthen your seawall for an extra layer of prevention to soil erosion.",
+        Img1: GalleryImg[3].src,
+        Img2: GalleryImg[8].src
+    },
+    {
+        title: 'Site Preparation',
+        description: "Heavy equipment usage for lot clearing including the removal of trees, bushes and rocks. Prepare land by grading and adding drainage for any water run off.",
+        Img1: GalleryImg[3].src,
+        Img2: GalleryImg[8].src
+    },
 ]
 
 export default ServiceData

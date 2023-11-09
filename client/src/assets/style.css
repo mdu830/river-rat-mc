@@ -317,8 +317,8 @@ filter: none;
 
 .sqImg {
   object-fit: cover;
-  width: 340pt;
-  height: 220pt;
+  width: 220pt;
+  height: 120pt;
   padding: 1%;
   overflow: hidden;
 }
@@ -326,6 +326,10 @@ filter: none;
 .cardRow {
   margin-left: 1%;
   margin-right: 1%;
+}
+
+.inline {
+  display: inline-block;
 }
 
 .float-l {
@@ -399,10 +403,28 @@ filter: none;
 
 /* Media Queries */
 
+@media screen and (max-width: 1261px) {
+
+  .sqImg {
+    object-fit: cover;
+    width: 160pt;
+    height: 120pt;
+    padding: 5pt;
+    overflow: hidden;
+  }
+}
+
 @media screen and (max-width: 1101px) {
   .iconSmall {
     width: 0px;
     height: auto;
+  }
+  .sqImg {
+    object-fit: cover;
+    width: 140pt;
+    height: 120pt;
+    padding: 5pt;
+    overflow: hidden;
   }
 }
 
