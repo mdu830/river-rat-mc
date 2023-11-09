@@ -286,11 +286,11 @@ filter: none;
 
 .custainer {
   border: none;
-  border-radius: 12px;
+  border-radius: 3px;
   background: #212529;
   box-shadow:
     5px 5px 6px #181b1e,
-    -5px -5px 6px #2a2f34;
+    -1px -1px 1.2px #2a2f34;
 }
 
 /* error page style ------------------*/
@@ -326,10 +326,6 @@ filter: none;
 .cardRow {
   margin-left: 1%;
   margin-right: 1%;
-}
-
-.inline {
-  display: inline-block;
 }
 
 .float-l {

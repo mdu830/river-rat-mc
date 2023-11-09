@@ -24,9 +24,9 @@ export default React.memo(function Welcome() {
 
         </Col> */}
         <Col  className=''>
-          <Link className="btnLink textShadow" to={`contact/`}>
+          {/* <Link className="btnLink textShadow" to={`contact/`}>
             <Button size='md' id='conBtn' className='customButton w-100 mb-4 mt-4'>Contact Us</Button>
-          </Link>
+          </Link> */}
 
         </Col>
         {matches ? <Col  /> : ''}
