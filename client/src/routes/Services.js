@@ -1,12 +1,17 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import '../assets/style.css'
 import { Card, Row, Col, CardHeader, Container } from 'reactstrap';
 import ServiceData from '../components/ServiceData';
 import { motion } from 'framer-motion';
 
 const Services = React.memo(() => {
+  
+  const [data, setData] = useState(ServiceData);
 
-  const data = ServiceData;
+  useEffect(() => {
+    // setData(ServiceData)
+    console.log(data)
+  },[]);
 
   return (
     <motion.div
@@ -21,7 +26,7 @@ const Services = React.memo(() => {
         <Row className='mb-4 cardRow'>
           {data.map((data, index) => {
             return (
-              <Col lg='6'>
+              <Col lg='6' key={data.key}>
                 <motion.div
                   transition={{ delay: 0.2 * index, }}
                   initial={{ opacity: 0, y: -20 }}

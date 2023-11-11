@@ -55,14 +55,14 @@ const About = React.memo(() => {
                     <img className=' placeHolder' height={'75%'} alt="Sample" src={logo192} />
                   </Col>
                   <Col sm='8'>
-                    <CardText className='name textShadow m-1'>
+                    {/* <CardText className='name textShadow m-1'> */}
                       <h3>
                         River Rat Marine Construction LLC was founded in June 2020 by Douglas Whaley.
                         Doug has been in and around construction most of his life.
                         Including operating heavy equipment along with expert knowledge of building and repairing structures.
                         It was Doug's passion for boating and fishing that allowed him the opportunity to work on the water and form River Rat Marine Construction LLC.
                       </h3>
-                    </CardText>
+                    {/* </CardText> */}
                   </Col>
                   <Col />
                 </Row>
@@ -71,7 +71,7 @@ const About = React.memo(() => {
               <Row>
                 <CardHeader>
                   <Col>
-                    <CardText className='name textShadow m-4'>
+                    {/* <CardText className='name textShadow m-4'> */}
 
                       <h4>
                         At River Rat Marine Construction LLC our motivation is our satified customers.
@@ -79,7 +79,7 @@ const About = React.memo(() => {
                         Whether you need repairs or an upgrade or even a new installation, River Rat Marine Construction LLC is here to serve you.
                         No job is too small or too big!
                       </h4>
-                    </CardText>
+                    {/* </CardText> */}
                   </Col>
                 </CardHeader>
               </Row>
@@ -94,7 +94,7 @@ const About = React.memo(() => {
                 <Row>
                   {/* <CardHeader> */}
                   <Col>
-                    <CardText className='name textShadow m-3'>
+                    {/* <CardText className='name textShadow m-3'> */}
                       <h3 className=''>Counties We Serve</h3>
                       <h4>
                         <li className='float-l'>&#10041; Jones County</li>
@@ -104,7 +104,7 @@ const About = React.memo(() => {
                         <li className='float-l'>&#10041; Onslow County</li>
                         <li className='float-l'>&#10041; Pender County</li>
                       </h4>
-                    </CardText>
+                    {/* </CardText> */}
                   </Col>
                   {/* </CardHeader> */}
                 </Row>
