@@ -22,8 +22,8 @@ const ServiceData = [
     {
         title: 'Decks',
         description: "Create an outdoor space to relax, take in the view of the water, entertain family and friends. Available in wood or concrete.",
-        // Img1: serviceImg[3].src,
-        // Img2: serviceImg[8].src
+        Img1: serviceImg[10].src,
+        Img2: serviceImg[11].src
     },
     {
         title: 'Bouthouses & Lifts',
@@ -34,20 +34,20 @@ const ServiceData = [
     {
         title: 'Walkways & Stairs',
         description: "Enable easy access to your deck, dock or waterfront while adding safety and security with stainless steal screws and galvenized fasteners.",
-        // Img1: serviceImg[3].src,
-        // Img2: serviceImg[8].src
+        Img1: serviceImg[13].src,
+        Img2: serviceImg[14].src
     },
     {
         title: 'Rip Rap',
         description: "Help protect your investment by using loose stones to formand strengthen your seawall for an extra layer of prevention to soil erosion.",
-        // Img1: serviceImg[3].src,
-        // Img2: serviceImg[8].src
+        Img1: serviceImg[15].src,
+        Img2: serviceImg[16].src
     },
     {
         title: 'Site Preparation',
         description: "Heavy equipment usage for lot clearing including the removal of trees, bushes and rocks. Prepare land by grading and adding drainage for any water run off.",
-        // Img1: serviceImg[3].src,
-        // Img2: serviceImg[8].src
+        Img1: serviceImg[17].src,
+        Img2: serviceImg[18].src
     },
 ]
 

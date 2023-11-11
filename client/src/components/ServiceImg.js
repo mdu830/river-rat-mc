@@ -1,13 +1,22 @@
-import imgOne from '../assets/images/services/1000.png'
-import imgTwo from '../assets/images/services/2000.png'
-import imgThree from '../assets/images/services/3000.png'
-import imgFour from '../assets/images/services/4000.png'
-import imgFive from '../assets/images/services/5000.png'
-import imgSix from '../assets/images/services/6000.png'
-import imgSeven from '../assets/images/services/7000.png'
-import imgEight from '../assets/images/services/8000.png'
-import imgNine from '../assets/images/services/9000.png'
-import imgSixPointOne from '../assets/images/services/6001.png'
+import imgOne from '../assets/images/services/1000.webp'
+import imgTwo from '../assets/images/services/2000.webp'
+import imgThree from '../assets/images/services/3000.webp'
+import imgFour from '../assets/images/services/4000.webp'
+import imgFive from '../assets/images/services/5000.webp'
+import imgSix from '../assets/images/services/6000.webp'
+import imgSeven from '../assets/images/services/7000.webp'
+import imgEight from '../assets/images/services/8000.webp'
+import imgNine from '../assets/images/services/9000.webp'
+import imgSixPointOne from '../assets/images/services/6001.webp'
+import deckOne from '../assets/images/services/deck.webp'
+import deckTwo from '../assets/images/services/deck2.webp'
+import walkway from '../assets/images/services/walkway.webp'
+import stairs from '../assets/images/services/stairs.webp'
+import ripRap from '../assets/images/services/rip-rap.webp'
+import ripRap2 from '../assets/images/services/rip-rap-rock.webp'
+import clearing from '../assets/images/services/clearing.webp'
+import drainage from '../assets/images/services/drainage.webp'
+
 
 const serviceImg = [
     {
@@ -71,7 +80,7 @@ const serviceImg = [
         src: imgEight,
         id: 'Seight',
         height: 400,
-        key: 675563225435,
+        key: 675563125435,
         hash: '',
         value: null
     },    
@@ -79,15 +88,87 @@ const serviceImg = [
         src: imgNine,
         id: 'Snine',
         height: 400,
-        key: 98766565435,
+        key: 9876645435,
         hash: '',
-        value: 'isLoaded'
+        value: null
     },
     {
         src: imgSixPointOne,
         id: 'Sndine',
         height: 400,
-        key: 98766565435,
+        key: 98746565435,
+        hash: '',
+        value: null
+    },
+    {
+        src: deckOne,
+        id: 'Snde',
+        height: 400,
+        key: 9876656235,
+        hash: '',
+        value: null
+    },
+    {
+        src: deckTwo,
+        id: 'Snde',
+        height: 400,
+        key: 98766566635,
+        hash: '',
+        value: null
+    },
+    {
+        src: deckTwo,
+        id: 'Snde',
+        height: 400,
+        key: 98766566635,
+        hash: '',
+        value: null
+    },
+    {
+        src: walkway,
+        id: 'Snda',
+        height: 400,
+        key: 987665665335,
+        hash: '',
+        value: null
+    },
+    {
+        src: stairs,
+        id: 'Sndb',
+        height: 400,
+        key: 987622265335,
+        hash: '',
+        value: null
+    },
+    {
+        src: ripRap,
+        id: 'Sndf',
+        height: 400,
+        key: 987692265835,
+        hash: '',
+        value: null
+    },
+    {
+        src: ripRap2,
+        id: 'Sndy',
+        height: 400,
+        key: 98769228885835,
+        hash: '',
+        value: null
+    },
+    {
+        src: clearing,
+        id: 'Sndr',
+        height: 400,
+        key: 987692284325835,
+        hash: '',
+        value: null
+    },
+    {
+        src: drainage,
+        id: 'Sndz',
+        height: 400,
+        key: 98769221904325835,
         hash: '',
         value: 'isLoaded'
     },
