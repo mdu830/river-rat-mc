@@ -25,6 +25,8 @@ const reqLimit = rateLimit({
 
 app.use(express.static('./client/build', options.index,), reqLimit)
 
+app.set('trust proxy', '127.0.0.1');
+
 app.get('/', reqLimit, (req, res) => {
   const index = path.join(__dirname, 'client/build', 'index.html');
 
