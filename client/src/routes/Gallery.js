@@ -40,7 +40,7 @@ const Gallery = React.memo(props => {
       key={'animGall'}
     >
       <Container fluid className='pt-2  pb-5 '>
-        <h1 className='mb-5'>Gallery</h1>
+        <h1 className='mb-5'>Photo Gallery</h1>
         <Row>
           {
             !isLoaded
