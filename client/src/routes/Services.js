@@ -5,13 +5,9 @@ import ServiceData from '../components/ServiceData';
 import { motion } from 'framer-motion';
 
 const Services = React.memo(() => {
-  
-  const [data, setData] = useState(ServiceData);
 
-  useEffect(() => {
-  
-    // console.log(data)
-  },[]);
+
+  const [data, setData] = useState(ServiceData);
 
   return (
     <motion.div

@@ -30,11 +30,24 @@ app.set('trust proxy', '127.0.0.1');
 app.get('/', reqLimit, (req, res) => {
   const index = path.join(__dirname, 'client/build', 'index.html');
 
-  const ip = req.ip; // trust proxy sets ip to the remote client (not to the ip of the last reverse proxy server)
-  if (ip.substr(0,7) == '::ffff:') { // fix for if you have both ipv4 and ipv6
-    ip = ip.substr(7);
-  }
   res.json({"ip": ip, "protocol": req.protocol, "headers": req.headers['x-forwarded-for']});
+
+  res.sendFile(index);
+});
+
+app.get('/Services', reqLimit, (req, res) => {
+  const index = path.join(__dirname, 'client/build', 'index.html');
+
+  res.json({"ip": ip, "protocol": req.protocol, "headers": req.headers['x-forwarded-for']});
+  
+  res.sendFile(index);
+});
+
+app.get('/Gallery', reqLimit, (req, res) => {
+  const index = path.join(__dirname, 'client/build', 'index.html');
+
+  res.json({"ip": ip, "protocol": req.protocol, "headers": req.headers['x-forwarded-for']});
+  
   res.sendFile(index);
 });
 
