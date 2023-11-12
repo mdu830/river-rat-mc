@@ -23,7 +23,7 @@ const reqLimit = rateLimit({
 
 });
 
-app.use(express.static('./client/build', options.index,), reqLimit)
+app.use(express.static('./client/build', options.index,))
 
 app.set('trust proxy', '127.0.0.1');
 

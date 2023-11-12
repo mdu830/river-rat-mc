@@ -1,12 +1,12 @@
-import imgOne from '../assets/images/gallery/1000.png'
-import imgTwo from '../assets/images/gallery/2000.png'
-import imgThree from '../assets/images/gallery/3000.png'
-import imgFour from '../assets/images/gallery/4000.png'
-import imgFive from '../assets/images/gallery/5000.png'
-import imgSix from '../assets/images/gallery/6000.png'
-import imgSeven from '../assets/images/gallery/7000.png'
-import imgEight from '../assets/images/gallery/8000.png'
-import imgNine from '../assets/images/gallery/9000.png'
+import imgOne from '../assets/images/gallery/1000.webp'
+import imgTwo from '../assets/images/gallery/2000.webp'
+import imgThree from '../assets/images/gallery/3000.webp'
+import imgFour from '../assets/images/gallery/4000.webp'
+import imgFive from '../assets/images/gallery/5000.webp'
+import imgSix from '../assets/images/gallery/6000.webp'
+import imgSeven from '../assets/images/gallery/7000.webp'
+import imgEight from '../assets/images/gallery/8000.webp'
+import imgNine from '../assets/images/gallery/9000.webp'
 
 const GalleryImg = [
     {
