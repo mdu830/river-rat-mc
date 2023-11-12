@@ -9,8 +9,8 @@ const Services = React.memo(() => {
   const [data, setData] = useState(ServiceData);
 
   useEffect(() => {
-    // setData(ServiceData)
-    console.log(data)
+  
+    // console.log(data)
   },[]);
 
   return (
