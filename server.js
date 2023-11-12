@@ -35,15 +35,7 @@ app.get('/', reqLimit, (req, res) => {
   res.sendFile(index);
 });
 
-app.get('/Services', reqLimit, (req, res) => {
-  const index = path.join(__dirname, 'client/build', 'index.html');
-
-  res.json({"ip": ip, "protocol": req.protocol, "headers": req.headers['x-forwarded-for']});
-  
-  res.sendFile(index);
-});
-
-app.get('/Gallery', reqLimit, (req, res) => {
+app.get('/static/media/', reqLimit, (req, res) => {
   const index = path.join(__dirname, 'client/build', 'index.html');
 
   res.json({"ip": ip, "protocol": req.protocol, "headers": req.headers['x-forwarded-for']});
