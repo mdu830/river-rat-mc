@@ -1,15 +1,24 @@
 import React, { useEffect, useState } from 'react';
 import '../assets/style.css'
-import { Card, Row, Col, CardHeader, Container } from 'reactstrap';
+import { Card, Row, Col, CardHeader, Container, Spinner } from 'reactstrap';
 import ServiceData from '../components/ServiceData';
 import { motion } from 'framer-motion';
 
 const Services = React.memo(() => {
 
 
-  const [data, setData] = useState(ServiceData);
+  const [data, setData] = useState(false);
+
+  useEffect(() => {
+    setData(ServiceData)
+  }, [])
+
+  useEffect(() => {
+    console.log(data)
+  }, [data])
 
   return (
+
     <motion.div
       className='page'
       transition={{ delay: 0.2, }}
@@ -18,9 +27,16 @@ const Services = React.memo(() => {
       exit={{ opacity: 0, y: 0 }}
     >
       <Container fluid className='bg-dark pt-2 pb-5'>
-        <h1 className='mb-4'>Services We Provide</h1>
+        <h1 className='mb-4'>River Rat Marine Construction Services</h1>
         <Row className='mb-4 cardRow'>
-          {data.map((data, index) => {
+          {
+          !data
+          ?
+          <Col className='pt-5'>
+            <Spinner color='light' size={'sm'} />
+          </Col>
+          :
+          data.map((data, index) => {
             return (
               <Col lg='6' key={data.key}>
                 <motion.div

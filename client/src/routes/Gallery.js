@@ -9,7 +9,7 @@ import { motion } from 'framer-motion'
 const Gallery = React.memo(props => {
 
   const [isLoaded, setLoaded] = useState(false)
-  const imgAry = props.data
+  const [imgAry, setImgAry] = useState(props.data)
 
   useEffect(() => {
     imgAry.map((data) => {
@@ -26,7 +26,9 @@ const Gallery = React.memo(props => {
       }
       return 
     })
-  }, [imgAry])
+    console.log(imgAry)
+
+  }, [])
 
   return (
     <motion.div

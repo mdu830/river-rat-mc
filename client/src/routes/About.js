@@ -29,92 +29,131 @@ const About = React.memo(() => {
         >
           <div className=' pb-4'>
 
-
-            <Card color='dark p-2' className='m-3 custainer'>
-
-              <CardHeader>
-                <Row>
+            <Card color='dark p-4' className='m-4 custainer'>
+              <Row>
                 <CardTitle className='name textShadow mt-4 mb-3 p-1' color='dark'>
                   <h3>
-                    We are a family owned and operated marine construction company out of Mount Olive North Carolina.
+                    We are a family owned marine construction company out of Mount Olive North Carolina.
                     Proudly providing our services across Eastern North Carolina.
                   </h3>
-                  </CardTitle>
-                </Row>
-              </CardHeader>
+                </CardTitle>
+              </Row>
+            </Card>
 
-              <CardHeader>
-                <Row>
-                  <CardTitle className='name textShadow mt-4 mb-3 p-1' color='dark'>
-                    <h3>Doug Whaley - Owner</h3>
-                  </CardTitle>
-                </Row>
-                <Row >
-                  <Col />
-                  <Col sm>
-                    <img className=' placeHolder' height={'75%'} alt="Sample" src={logo192} />
-                  </Col>
-                  <Col sm='8'>
-                    {/* <CardText className='name textShadow m-1'> */}
-                      <h3>
-                        River Rat Marine Construction LLC was founded in June 2020 by Douglas Whaley.
-                        Doug has been in and around construction most of his life.
-                        Including operating heavy equipment along with expert knowledge of building and repairing structures.
-                        It was Doug's passion for boating and fishing that allowed him the opportunity to work on the water and form River Rat Marine Construction LLC.
-                      </h3>
-                    {/* </CardText> */}
-                  </Col>
-                  <Col />
-                </Row>
-              </CardHeader>
+            <Card color='dark p-2 pb-2' className='m-4 mt-5 custainer'>
 
               <Row>
                 <CardHeader>
-                  <Col>
-                    {/* <CardText className='name textShadow m-4'> */}
-
-                      <h4>
-                        At River Rat Marine Construction LLC our motivation is our satified customers.
-                        This is accomplished by our team providing superior workmanship with the use of quality materials at affordable prices.
-                        Whether you need repairs or an upgrade or even a new installation, River Rat Marine Construction LLC is here to serve you.
-                        No job is too small or too big!
-                      </h4>
-                    {/* </CardText> */}
-                  </Col>
+                  <CardTitle className='name textShadow' color='dark'>
+                    <h2>Owner and Operator | Doug Whaley</h2>
+                  </CardTitle>
                 </CardHeader>
+
+              </Row>
+              <Row className='pt-5 p-1'>
+                <Col />
+                <Col sm className=''>
+                  <img className='mb-5 p-1 placeHolder' height={'80%'} alt="Sample" src={logo192} />
+                </Col>
+                <Col sm='8' className='pt-1 p-3'>
+                  <h4>
+                    River Rat Marine Construction LLC was founded in June 2020 by Douglas Whaley.
+                  </h4>
+                  <h4>
+                    Doug has been in and around construction most of his life.
+                    Including operating heavy equipment along with expert knowledge of building and repairing structures.
+                  </h4>
+                  <h4>
+                    It was Doug's passion for boating and fishing that allowed him the opportunity to work on the water and form River Rat Marine Construction LLC.
+                  </h4>
+                </Col>
+                <Col />
+              </Row>
+            </Card>
+
+            <Card color='dark p-2' className='m-4 mt-5 custainer'>
+
+              <Row>
+                <CardHeader>
+                  <CardTitle className='name textShadow ' color='dark'>
+                    <h2>Our Core Values</h2>
+                  </CardTitle>
+                </CardHeader>
+
               </Row>
 
-              <motion.div
-                transition={{ delay: 0.4 }}
-                initial={{ opacity: 0, y: -20 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: 20 }}
-                key={'doug'}
-              >
-                <Row>
-                  {/* <CardHeader> */}
-                  <Col>
-                    {/* <CardText className='name textShadow m-3'> */}
-                      <h3 className=''>Counties We Serve</h3>
-                      <h4>
-                        <li className='float-l'>&#10041; Jones County</li>
-                        <li className='float-l'>&#10041; Pamlico County</li>
-                        <li className='float-l'>&#10041; Carteret County</li>
-                        <li className='float-l'>&#10041; Craven County</li>
-                        <li className='float-l'>&#10041; Onslow County</li>
-                        <li className='float-l'>&#10041; Pender County</li>
-                      </h4>
-                    {/* </CardText> */}
-                  </Col>
-                  {/* </CardHeader> */}
-                </Row>
-                {/* </div> */}
-              </motion.div>
+              <Row className='pt-4 p-2'>
+                <Col>
+                  <h4>
+                    At River Rat Marine Construction LLC our motivation is our satified customers.
+                    This is accomplished by our team providing superior workmanship with the use of quality materials at affordable prices.
+                    Whether you need repairs, an upgrade or even a new installation, River Rat Marine Construction LLC is here to serve you.
+                    No job is too small or too big!
+                  </h4>
+                </Col>
+              </Row>
+
             </Card>
+
+
+            <motion.div
+              transition={{ delay: 0.4 }}
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: 20 }}
+              key={'doug'}
+            >
+              <Row>
+
+                <Col md>
+                  <Card color='dark p-3' className='m-4 custainer' >
+
+                    <Row>
+                      <CardHeader>
+                        <CardTitle className='name textShadow ' color='dark'>
+                          <h2>Counties We Serve</h2>
+                        </CardTitle>
+                      </CardHeader>
+                    </Row>
+                    <h4 className='p-3'>
+                      <li className='float-l'>&#10041; Jones County</li>
+                      <li className='float-l'>&#10041; Pamlico County</li>
+                      <li className='float-l'>&#10041; Carteret County</li>
+                      <li className='float-l'>&#10041; Craven County</li>
+                      <li className='float-l'>&#10041; Onslow County</li>
+                      <li className='float-l'>&#10041; Pender County</li>
+                    </h4>
+                  </Card>
+
+                </Col>
+                <Col md>
+                  <Card color='dark p-3 pb-1' className='m-4 custainer'>
+                    <Row>
+                      <CardHeader>
+                        <CardTitle className='name textShadow ' color='dark'>
+                          <h2>Hours of Operation</h2>
+                        </CardTitle>
+                      </CardHeader>
+                    </Row >
+                    <h4 className=' '>
+                      <li className='float-l'>Monday - Friday </li>
+                      <li className='float-l'>|</li>
+                      <li className='float-l'>8:00am - 5:00pm</li>
+                    </h4>
+                    <h4 className=' p-4'>
+                      <li className='float-l'>Saturday & Sunday</li>
+                      <li className='float-l'>|</li>
+                      <li className='float-l'>Closed</li>
+                    </h4>
+                  </Card>
+
+                </Col>
+              </Row>
+            </motion.div>
           </div>
         </motion.div>
-      </Container>
-    </motion.div>
+      </Container >
+    </motion.div >
   );
 });
 
