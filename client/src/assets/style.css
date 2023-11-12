@@ -332,11 +332,14 @@ filter: none;
 }
 
 .sqImg {
+  border-radius: 2px;
+  border: 1px solid rgba(140, 140, 241, 0.182) ;
   object-fit: cover;
   width: 220pt;
   height: 120pt;
   padding: 1%;
   overflow: hidden;
+
 }
 
 .cardRow {
@@ -403,8 +406,8 @@ filter: none;
 /* Gallery */
 
 .galImg {
-  border-radius: 5px;
-  border: 2px rgb(232, 232, 232);
+  border: 1px solid rgba(140, 140, 241, 0.182) ;
+  
 }
 
 .placeHolder {
