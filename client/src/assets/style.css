@@ -47,7 +47,7 @@ h1 {
 }
 
 #welcomeH2 {
-  padding: 10%;
+  font-size: 120%;
 }
 
 h2 {
@@ -55,10 +55,12 @@ h2 {
   font-family: Abel;
   color: rgb(205, 206, 179);
   text-shadow:
-  -1px -1px 0 rgba(255, 255, 255, 0),
-  1px 1px 0 rgba(0, 0, 0, .25),
-  3px 3px 3px rgba(0, 0, 0, .25);
+  /* -2px -2px 0 rgba(255, 255, 255, 0),
+  2px 2px 0 rgba(0, 0, 0, .25),
+  6px 6px 6px rgba(0, 0, 0, .25); */
 
+  5px 5px 6px #181b1e,
+  -1px -1px 1.2px #2a2f34;
 }
 
 h3 {
@@ -487,6 +489,12 @@ filter: none;
 
   h2 {
     font-size: 150%;
+  }
+
+  h4 {
+    font-size: 14pt;
+    font-family: Abel;
+    color: rgb(223, 223, 223);
   }
 
   .icon {

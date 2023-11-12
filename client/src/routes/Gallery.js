@@ -28,7 +28,7 @@ const Gallery = React.memo(props => {
     })
     console.log(imgAry)
 
-  }, [])
+  }, [imgAry])
 
   return (
     <motion.div

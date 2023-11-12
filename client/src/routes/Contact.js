@@ -88,9 +88,9 @@ const Contact = React.memo(() => {
               <Card className='bg-dark custainer p-3 mb-4'>
 
                 <Form>
-                  <div className='name textShadow pb-2'>
+                  <h4 className='name textShadow pb-2'>
                     Send Us A Message
-                  </div>
+                  </h4>
                   <Row className='m-1'>
                     <Col md={{ size: 8, offset: 2 }}>
                       <FormGroup>

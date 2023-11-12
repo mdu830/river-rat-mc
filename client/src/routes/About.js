@@ -27,7 +27,7 @@ const About = React.memo(() => {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 20 }}
-            key={'about'}
+            key={'overview'}
           >
             <div color='dark p-4' className='m-4 '>
               <Row>
@@ -46,7 +46,7 @@ const About = React.memo(() => {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 20 }}
-            key={'about'}
+            key={'doug & rrmc'}
           >
             <Card color='dark p-2 pb-2' className='m-4 mt-5 custainer'>
 
@@ -85,7 +85,7 @@ const About = React.memo(() => {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 20 }}
-            key={'about'}
+            key={'core values'}
           >
             <Card color='dark p-2' className='m-4 mt-5 custainer'>
 
@@ -103,6 +103,9 @@ const About = React.memo(() => {
                   <h4>
                     At River Rat Marine Construction LLC our motivation is our satified customers.
                     This is accomplished by our team providing superior workmanship with the use of quality materials at affordable prices.
+                  </h4>
+                  
+                  <h4>
                     Whether you need repairs, an upgrade or even a new installation, River Rat Marine Construction LLC is here to serve you.
                     No job is too small or too big!
                   </h4>
@@ -118,7 +121,7 @@ const About = React.memo(() => {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 20 }}
-            key={'doug'}
+            key={'counties'}
           >
             <Row>
 
