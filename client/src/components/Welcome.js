@@ -1,6 +1,6 @@
 import React from 'react';
-import { Container, Button, Row, Col } from 'reactstrap';
-import { Link } from "react-router-dom";
+import { Container, Row, Col } from 'reactstrap';
+// import { Link } from "react-router-dom";
 import { useMediaQuery } from 'usehooks-ts'
 import { motion } from 'framer-motion'
 import familyOwned from '../assets/images/badges/family-owned.webp'
@@ -15,24 +15,7 @@ export default React.memo(function Welcome() {
   return (
     <Container fluid className=" bg-dark border-top pt-2">
 
-      <Row className='m-3'>
-        {matches ? <Col  /> : ''}
-        {/* <Col  className=''>
-          <Link className="btnLink textShadow" to={'faq/'}>
-            <Button size='md' id='faqBtn' className='customButton w-100 mb-4 mt-4' >FAQ</Button>
-          </Link>
-
-        </Col> */}
-        <Col  className=''>
-          {/* <Link className="btnLink textShadow" to={`contact/`}>
-            <Button size='md' id='conBtn' className='customButton w-100 mb-4 mt-4'>Contact Us</Button>
-          </Link> */}
-
-        </Col>
-        {matches ? <Col  /> : ''}
-      </Row>
-
-      <h1 id='welcomeH1' className='textShadow'>Welcome to River Rat Marine Construction</h1>
+      <h1 id={matches ? 'welcomeH1' : 'wlecomeH2'} className='textShadow'>Welcome to River Rat Marine Construction</h1>
 
       <motion.div
         transition={{ delay: 0.9 }}
@@ -41,7 +24,7 @@ export default React.memo(function Welcome() {
         exit={{ opacity: 0, y: 0 }}
         key={'AnimBage1'}
       >
-        <Row className='mb-5'>
+        <Row className='mb-4'>
           <Col  />
           <Col  >
             <img id='family' alt='' className='mt-4 p-1' src={familyOwned} />
