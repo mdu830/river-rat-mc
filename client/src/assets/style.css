@@ -33,18 +33,28 @@ body {
 h1 {
   margin-top: 10%;
   font-family: Abel;
-  color: rgb(223, 223, 223);
+  color: rgb(187, 186, 144);
   text-shadow:
-    -1px -1px 0 rgba(255, 255, 255, 0),
-    1px 1px 0 rgba(0, 0, 0, .25),
-    3px 3px 3px rgba(0, 0, 0, .25);
+    -2px -2px 0 rgba(255, 255, 255, 0),
+    2px 2px 0 rgba(0, 0, 0, .25),
+    6px 6px 6px rgba(0, 0, 0, .25);
 
+}
+
+#welcomeH1 {
+  margin-top: 0;
+  margin: 4%;
 }
 
 h2 {
   font-size: 25pt;
   font-family: Abel;
-  color: rgb(223, 223, 223);
+  color: rgb(205, 206, 179);
+  text-shadow:
+  -1px -1px 0 rgba(255, 255, 255, 0),
+  1px 1px 0 rgba(0, 0, 0, .25),
+  3px 3px 3px rgba(0, 0, 0, .25);
+
 }
 
 h3 {
@@ -513,6 +523,23 @@ filter: none;
     height: 130pt;
     padding: 5pt;
     overflow: hidden;
+  }
+
+  .subText {
+    display: inline-block;
+    color: rgb(195, 195, 195);
+    text-decoration: none;
+    font-family: Abel;
+    font-size: medium;
+    padding-right: 1%;
+  }
+  
+  .link {
+    display: inline-block;
+    color: rgb(195, 195, 195);
+    text-decoration: none;
+    font-family: Abel;
+    font-size: medium;
   }
 
 }

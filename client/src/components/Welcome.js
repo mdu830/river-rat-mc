@@ -32,7 +32,7 @@ export default React.memo(function Welcome() {
         {matches ? <Col  /> : ''}
       </Row>
 
-      <h3 className='textShadow'>Welcome to River Rat Marine Construction</h3>
+      <h1 id='welcomeH1' className='textShadow'>Welcome to River Rat Marine Construction</h1>
 
       <motion.div
         transition={{ delay: 0.9 }}

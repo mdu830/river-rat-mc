@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, CardText, CardTitle, Col, Row, CardHeader, Card } from 'reactstrap';
+import { Container, CardTitle, Col, Row, CardHeader, Card } from 'reactstrap';
 import { motion } from 'framer-motion';
 import logo192 from '../assets/images/logo192.png'
 
@@ -20,15 +20,15 @@ const About = React.memo(() => {
 
         <h1 className='mb-5'>About River Rat Marine Construction</h1>
 
-        <motion.div
-          transition={{ delay: 0.3 }}
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: 20 }}
-          key={'about'}
-        >
-          <div className=' pb-4'>
 
+        <div className=' pb-4'>
+          <motion.div
+            transition={{ delay: 0.3 }}
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 20 }}
+            key={'about'}
+          >
             <Card color='dark p-4' className='m-4 custainer'>
               <Row>
                 <CardTitle className='name textShadow mt-4 mb-3 p-1' color='dark'>
@@ -39,7 +39,15 @@ const About = React.memo(() => {
                 </CardTitle>
               </Row>
             </Card>
+          </motion.div>
 
+          <motion.div
+            transition={{ delay: 0.4 }}
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 20 }}
+            key={'about'}
+          >
             <Card color='dark p-2 pb-2' className='m-4 mt-5 custainer'>
 
               <Row>
@@ -70,7 +78,15 @@ const About = React.memo(() => {
                 <Col />
               </Row>
             </Card>
+          </motion.div>
 
+          <motion.div
+            transition={{ delay: 0.5 }}
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 20 }}
+            key={'about'}
+          >
             <Card color='dark p-2' className='m-4 mt-5 custainer'>
 
               <Row>
@@ -94,64 +110,64 @@ const About = React.memo(() => {
               </Row>
 
             </Card>
+          </motion.div>
 
 
-            <motion.div
-              transition={{ delay: 0.4 }}
-              initial={{ opacity: 0, y: -20 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: 20 }}
-              key={'doug'}
-            >
-              <Row>
+          <motion.div
+            transition={{ delay: 0.6 }}
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 20 }}
+            key={'doug'}
+          >
+            <Row>
 
-                <Col md>
-                  <Card color='dark p-3' className='m-4 custainer' >
+              <Col md>
+                <Card color='dark p-3' className='m-4 custainer' >
 
-                    <Row>
-                      <CardHeader>
-                        <CardTitle className='name textShadow ' color='dark'>
-                          <h2>Counties We Serve</h2>
-                        </CardTitle>
-                      </CardHeader>
-                    </Row>
-                    <h4 className='p-3'>
-                      <li className='float-l'>&#10041; Jones County</li>
-                      <li className='float-l'>&#10041; Pamlico County</li>
-                      <li className='float-l'>&#10041; Carteret County</li>
-                      <li className='float-l'>&#10041; Craven County</li>
-                      <li className='float-l'>&#10041; Onslow County</li>
-                      <li className='float-l'>&#10041; Pender County</li>
-                    </h4>
-                  </Card>
+                  <Row>
+                    <CardHeader>
+                      <CardTitle className='name textShadow ' color='dark'>
+                        <h2>Counties We Serve</h2>
+                      </CardTitle>
+                    </CardHeader>
+                  </Row>
+                  <h4 className='p-3'>
+                    <li className='float-l'>&#10041; Jones County</li>
+                    <li className='float-l'>&#10041; Pamlico County</li>
+                    <li className='float-l'>&#10041; Carteret County</li>
+                    <li className='float-l'>&#10041; Craven County</li>
+                    <li className='float-l'>&#10041; Onslow County</li>
+                    <li className='float-l'>&#10041; Pender County</li>
+                  </h4>
+                </Card>
 
-                </Col>
-                <Col md>
-                  <Card color='dark p-3 pb-1' className='m-4 custainer'>
-                    <Row>
-                      <CardHeader>
-                        <CardTitle className='name textShadow ' color='dark'>
-                          <h2>Hours of Operation</h2>
-                        </CardTitle>
-                      </CardHeader>
-                    </Row >
-                    <h4 className=' '>
-                      <li className='float-l'>Monday - Friday </li>
-                      <li className='float-l'>|</li>
-                      <li className='float-l'>8:00am - 5:00pm</li>
-                    </h4>
-                    <h4 className=' p-4'>
-                      <li className='float-l'>Saturday & Sunday</li>
-                      <li className='float-l'>|</li>
-                      <li className='float-l'>Closed</li>
-                    </h4>
-                  </Card>
+              </Col>
+              <Col md>
+                <Card color='dark p-3 pb-1' className='m-4 custainer'>
+                  <Row>
+                    <CardHeader>
+                      <CardTitle className='name textShadow ' color='dark'>
+                        <h2>Hours of Operation</h2>
+                      </CardTitle>
+                    </CardHeader>
+                  </Row >
+                  <h4 className=' '>
+                    <li className='float-l'>Monday - Friday </li>
+                    <li className='float-l'>|</li>
+                    <li className='float-l'>8:00am - 5:00pm</li>
+                  </h4>
+                  <h4 className=' p-4'>
+                    <li className='float-l'>Saturday & Sunday</li>
+                    <li className='float-l'>|</li>
+                    <li className='float-l'>Closed</li>
+                  </h4>
+                </Card>
 
-                </Col>
-              </Row>
-            </motion.div>
-          </div>
-        </motion.div>
+              </Col>
+            </Row>
+          </motion.div>
+        </div>
       </Container >
     </motion.div >
   );
