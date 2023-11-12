@@ -29,16 +29,16 @@ const About = React.memo(() => {
             exit={{ opacity: 0, y: 20 }}
             key={'about'}
           >
-            <Card color='dark p-4' className='m-4 custainer'>
+            <div color='dark p-4' className='m-4 '>
               <Row>
                 <CardTitle className='name textShadow mt-4 mb-3 p-1' color='dark'>
-                  <h3>
+                  <h2>
                     We are a family owned marine construction company out of Mount Olive North Carolina.
-                    Proudly providing our services across Eastern North Carolina.
-                  </h3>
+                    Proudly providing our services across eastern North Carolina.
+                  </h2>
                 </CardTitle>
               </Row>
-            </Card>
+            </div>
           </motion.div>
 
           <motion.div
@@ -152,12 +152,12 @@ const About = React.memo(() => {
                       </CardTitle>
                     </CardHeader>
                   </Row >
-                  <h4 className=' '>
+                  <h4 className='pt-3'>
                     <li className='float-l'>Monday - Friday </li>
                     <li className='float-l'>|</li>
                     <li className='float-l'>8:00am - 5:00pm</li>
                   </h4>
-                  <h4 className=' p-4'>
+                  <h4 className='p-2'>
                     <li className='float-l'>Saturday & Sunday</li>
                     <li className='float-l'>|</li>
                     <li className='float-l'>Closed</li>
