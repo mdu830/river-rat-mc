@@ -41,7 +41,7 @@ export default React.memo(function Welcome() {
         exit={{ opacity: 0, y: 0 }}
         key={'AnimBage1'}
       >
-        <Row className='mb-4'>
+        <Row className='mb-5'>
           <Col  />
           <Col  >
             <img id='family' alt='' className='mt-4 p-1' src={familyOwned} />
