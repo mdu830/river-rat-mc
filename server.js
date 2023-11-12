@@ -27,11 +27,22 @@ app.use(express.static('./client/build', options.index,), reqLimit)
 
 app.get('/', reqLimit, (req, res) => {
   const index = path.join(__dirname, 'client/build', 'index.html');
+
+  // const ip = req.ip; // trust proxy sets ip to the remote client (not to the ip of the last reverse proxy server)
+  // if (ip.substr(0,7) == '::ffff:') { // fix for if you have both ipv4 and ipv6
+  //   ip = ip.substr(7);
+  // }
+  // res.json({"ip": ip, "protocol": req.protocol, "headers": req.headers['x-forwarded-for']});
   res.sendFile(index);
 });
 
 app.get('*', reqLimit, (req, res) => {
   const index = path.join(__dirname, 'client/build', 'index.html');
+  const ip = req.ip; // trust proxy sets ip to the remote client (not to the ip of the last reverse proxy server)
+  if (ip.substr(0,7) == '::ffff:') { // fix for if you have both ipv4 and ipv6
+    ip = ip.substr(7);
+  }
+  res.json({"ip": ip, "protocol": req.protocol, "headers": req.headers['x-forwarded-for']});
   res.sendFile(index);
 });
 
