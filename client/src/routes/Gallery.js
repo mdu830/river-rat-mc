@@ -9,26 +9,33 @@ import { motion } from 'framer-motion'
 const Gallery = React.memo(props => {
 
   const [isLoaded, setLoaded] = useState(false)
-  const [imgAry, setImgAry] = useState(props.data)
+  const [imgAry, setImgAry] = useState(false)
 
-  useEffect(() => {
-    imgAry.map((data) => {
+  const imgs = props.data
+
+  async function cacheImages(srcArray) {
+    const res = await srcArray.map((data) => {
       const img = new Image()
 
       img.src = data.src
       img.key = data.key
       img.id = data.id
       img.val = data.value
-
       img.onload = () => {
-        if (img.val = 'isloaded')
+        if (img.value = 'isloaded')
           setLoaded(true)
       }
-      return 
+      return img
     })
-    console.log(imgAry)
+    setImgAry(res)
 
-  }, [imgAry])
+  }
+
+  useEffect(() => {
+    cacheImages(imgs)
+  }, [])
+
+
 
   return (
     <motion.div
