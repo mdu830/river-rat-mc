@@ -35,6 +35,7 @@ const Gallery = React.memo(props => {
     cacheImages(imgs)
   }, [])
 
+  console.log(imgAry)
 
 
   return (
