@@ -3,9 +3,6 @@ import '../assets/style.css'
 import { Container, Col, Row, Spinner } from 'reactstrap';
 import { motion } from 'framer-motion'
 
-
-
-
 const Gallery = React.memo(props => {
 
   const [isLoaded, setLoaded] = useState(false)
@@ -34,9 +31,7 @@ const Gallery = React.memo(props => {
   useEffect(() => {
     cacheImages(imgs)
   }, [])
-
-  console.log(imgAry)
-
+  // console.log(imgAry)
 
   return (
     <motion.div
