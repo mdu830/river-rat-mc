@@ -36,7 +36,7 @@ const Gallery = React.memo(props => {
   return (
     <motion.div
       className='bg-dark page'
-      transition={{ delay: 0.2 }}
+      transition={{ delay: 0.1 }}
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: 20 }}
@@ -57,7 +57,7 @@ const Gallery = React.memo(props => {
                 return (
                   <Col md='4' className='mb-5' key={img.key}>
                     <motion.div
-                      transition={{ delay: 0.3 * index, }}
+                      transition={{ delay: 0.2 * index, }}
                       initial={{ opacity: 0, y: 0 }}
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0, y: 0 }}
