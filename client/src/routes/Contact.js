@@ -18,7 +18,7 @@ const Contact = React.memo(() => {
       exit={{ opacity: 0, y: 20 }}
       key={'animCont'}
     >
-      <Container fluid className='bg-dark pt-2  pb-5 customContainer align-items-center'>
+      <Container fluid className=' pt-2  pb-5 customContainer align-items-center'>
         <h1 className='mb-5'>Contact Us</h1>
 
         <Row className=''>
@@ -73,8 +73,6 @@ const Contact = React.memo(() => {
             </motion.div>
           </Col>
         </Row>
-
-
 
         <Row className='mt-3'>
           <Col md={{ size: 8, offset: 2 }}>
@@ -143,19 +141,6 @@ const Contact = React.memo(() => {
             </motion.div>
           </Col>
         </Row>
-        <div className='float-b'>
-          <Row>
-            <Col sm>
-              <p>Address: 202 Jeff Outlaw Rd Mount Olive, NC 28365</p>
-              <p>Phone: (919) 920- 9213</p>
-            </Col>
-            
-            <Col sm>
-              <p>Email: pam@riverratmarineconstruction.com</p>
-              <p>Facebook: https://www.facebook.com/riverratmarineconstruction</p>
-            </Col>
-          </Row>
-        </div>
       </Container>
     </motion.div>
   );

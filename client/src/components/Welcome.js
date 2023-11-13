@@ -13,7 +13,7 @@ export default React.memo(function Welcome() {
   const matches = useMediaQuery('(min-width: 585px)')
 
   return (
-    <Container fluid className=" bg-dark border-top pt-2">
+    <Container fluid className="border-top pt-2">
 
       <h1 id={matches ? 'welcomeH1' : 'wlecomeH2'} className='textShadow'>Welcome to River Rat Marine Construction</h1>
 

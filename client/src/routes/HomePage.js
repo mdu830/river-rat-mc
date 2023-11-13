@@ -13,7 +13,7 @@ const HomePage = React.memo(() => {
   return (
     <>
       {/* all the other elements */}
-      <div className="bg-dark page" >
+      <div className=" page" >
         <motion.div
           transition={{ delay: 0.6 }}
           initial={{ opacity: 0, y: 0 }}

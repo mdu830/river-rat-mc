@@ -42,7 +42,7 @@ const Services = React.memo((props) => {
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: 0 }}
     >
-      <Container fluid className='bg-dark pt-2 pb-5'>
+      <Container fluid className='pt-2 pb-5'>
         <h1 className='mb-4'>River Rat Marine Construction Services</h1>
         <Row className='mb-4 cardRow'>
           {

@@ -35,7 +35,7 @@ const Gallery = React.memo(props => {
 
   return (
     <motion.div
-      className='bg-dark page'
+      className=' page'
       transition={{ delay: 0.1 }}
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
