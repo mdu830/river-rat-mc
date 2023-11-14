@@ -32,7 +32,7 @@ const About = React.memo(() => {
           >
             <div color='dark p-4' className='m-4 '>
               <Row>
-                <CardTitle className='name textShadow mt-4 mb-3 p-1' color='dark'>
+                <CardTitle className='name textShadow  mb-3 p-1' color='dark'>
                   <h2>
                     We are a family owned marine construction company out of Mount Olive North Carolina.
                     Proudly providing our services across eastern North Carolina.
@@ -124,7 +124,7 @@ const About = React.memo(() => {
             exit={{ opacity: 0, y: 20 }}
             key={'counties'}
           >
-            <Row>
+            <Row className='mb-4'>
 
               <Col md>
                 <Card color='dark p-2' className='mt-5 m-2 custainer' >
