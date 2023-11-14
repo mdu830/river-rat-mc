@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import '../assets/style.css'
 import { Card, Row, Col, CardHeader, Container, Spinner } from 'reactstrap';
 import { motion } from 'framer-motion';
+import PageFooter from '../components/PageFooter';
 
 const Services = React.memo((props) => {
 
@@ -79,6 +80,9 @@ const Services = React.memo((props) => {
 
                 )
               })}
+        </Row>
+        <Row>
+          <PageFooter className="float-bottom"/>
         </Row>
       </Container>
     </motion.div>

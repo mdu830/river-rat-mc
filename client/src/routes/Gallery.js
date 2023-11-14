@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import '../assets/style.css'
 import { Container, Col, Row, Spinner } from 'reactstrap';
 import { motion } from 'framer-motion'
+import PageFooter from '../components/PageFooter';
+
 
 const Gallery = React.memo(props => {
 
@@ -76,6 +78,9 @@ const Gallery = React.memo(props => {
                 )
               })
           }
+        </Row>
+        <Row>
+          <PageFooter className="float-bottom"/>
         </Row>
       </Container>
     </motion.div>

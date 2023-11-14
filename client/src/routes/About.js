@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, CardTitle, Col, Row, CardHeader, Card } from 'reactstrap';
 import { motion } from 'framer-motion';
 import logo192 from '../assets/images/logo192.png'
+import PageFooter from '../components/PageFooter';
 
 
 const About = React.memo(() => {
@@ -104,7 +105,7 @@ const About = React.memo(() => {
                     At River Rat Marine Construction LLC our motivation is our satified customers.
                     This is accomplished by our team providing superior workmanship with the use of quality materials at affordable prices.
                   </h4>
-                  
+
                   <h4>
                     Whether you need repairs, an upgrade or even a new installation, River Rat Marine Construction LLC is here to serve you.
                     No job is too small or too big!
@@ -171,6 +172,9 @@ const About = React.memo(() => {
             </Row>
           </motion.div>
         </div>
+        <Row>
+          <PageFooter className="float-bottom"/>
+        </Row>
       </Container >
     </motion.div >
   );
