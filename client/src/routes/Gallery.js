@@ -50,7 +50,7 @@ const Gallery = React.memo(props => {
           {
             !isLoaded
               ?
-              <Col className='pt-5'>
+              <Col className='p-5 mb-5'>
                 <Spinner color='light' size={'sm'} />
               </Col>
               :
