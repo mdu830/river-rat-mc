@@ -1,9 +1,10 @@
 import React from 'react';
-import { Container, Card, Form, Row, Col, FormGroup, Input, Button } from 'reactstrap';
+import { Container, Row, Col } from 'reactstrap';
 import { motion } from 'framer-motion'
 import phoneImg from '../assets/images/icons/phone.png'
 import emailImg from '../assets/images/icons/email.png'
 import facebookImg from '../assets/images/icons/facebook.png'
+import EmailForm from '../components/emailForm';
 
 
 const Contact = React.memo(() => {
@@ -75,73 +76,7 @@ const Contact = React.memo(() => {
             </Col>
           </Row>
 
-          <Row className='mt-3'>
-            <Col md={{ size: 8, offset: 2 }}>
-              <motion.div
-                transition={{ delay: 0.5 }}
-                initial={{ opacity: 0, y: -20 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: 20 }}
-                key={'animEmail'}
-              >
-                <Card className='bg-dark custainer p-3 mb-4'>
-
-                  <Form>
-                    <h4 className='name textShadow pb-2'>
-                      Send Us A Message
-                    </h4>
-                    <Row className='m-1'>
-                      <Col md={{ size: 8, offset: 2 }}>
-                        <FormGroup>
-                          <Input
-                            className='input'
-                            id="exampleName"
-                            name="Name"
-                            placeholder="Name"
-                            type=""
-                          />
-                        </FormGroup>
-                      </Col>
-                    </Row>
-
-                    <Row className='m-1'>
-                      <Col md={{ size: 8, offset: 2 }}>
-                        <FormGroup>
-                          <Input
-                            className='input'
-                            id="exampleEmail"
-                            name="email"
-                            placeholder="Email Address"
-                            type="email"
-                          />
-                        </FormGroup>
-                      </Col>
-                    </Row>
-
-                    <Row className='m-1'>
-                      <Col md={{ size: 8, offset: 2 }}>
-                        <FormGroup>
-                          <Input
-                            className='input'
-                            id="exampleText"
-                            name="Message"
-                            placeholder="Message"
-                            type="textarea"
-                          />
-                        </FormGroup>
-                      </Col>
-                    </Row>
-                    <Button
-                      id='submitBtn'
-                      className='customButton'
-                    >
-                      Submit
-                    </Button>
-                  </Form>
-                </Card>
-              </motion.div>
-            </Col>
-          </Row>
+          <EmailForm />
         </Container>
       </div>
     </motion.div>
