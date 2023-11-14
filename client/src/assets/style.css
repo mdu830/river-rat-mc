@@ -319,7 +319,7 @@ p {
   border-radius: 2px;
   border: 1px solid rgba(140, 140, 241, 0.182);
   object-fit: cover;
-  width: 220pt;
+  width: 240pt;
   height: 120pt;
   padding: 1%;
   overflow: hidden;
@@ -425,7 +425,7 @@ p {
 
   .sqImg {
     object-fit: cover;
-    width: 160pt;
+    width: 177pt;
     height: 120pt;
     padding: 5pt;
     overflow: hidden;
@@ -440,7 +440,7 @@ p {
 
   .sqImg {
     object-fit: cover;
-    width: 140pt;
+    width: 156pt;
     height: 120pt;
     padding: 5pt;
     overflow: hidden;
@@ -475,18 +475,18 @@ p {
 
   .sqImg {
     object-fit: cover;
-    width: 220pt;
+    width: 250pt;
     height: 140pt;
     padding: 7pt;
     overflow: hidden;
   }
 
     .pgFooter {
-    font-size: small;
+    font-size: 16px;
   }
 
   .IconSmall {
-    width: 30px;
+    width: 35px;
     height: auto;
     display: inline-block;
     filter: contrast(15%);
@@ -499,6 +499,14 @@ p {
     bottom: 0;
     width: 100%;
     height: 20%;
+  }
+
+  .sqImg {
+    object-fit: cover;
+    width: 180pt;
+    height: 140pt;
+    padding: 7pt;
+    overflow: hidden;
   }
 
 
@@ -569,8 +577,8 @@ p {
 
   .sqImg {
     object-fit: cover;
-    width: 100pt;
-    height: 130pt;
+    width: 110pt;
+    height: 100pt;
     padding: 5pt;
     overflow: hidden;
   }

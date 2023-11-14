@@ -49,7 +49,7 @@ const About = React.memo(() => {
             exit={{ opacity: 0, y: 20 }}
             key={'doug & rrmc'}
           >
-            <Card color='dark p-2 pb-2' className='m-4 mt-5 custainer'>
+            <Card color='dark p-2 pb-2' className='m-2 mt-3 custainer'>
 
               <Row>
                 <CardHeader>
@@ -88,7 +88,7 @@ const About = React.memo(() => {
             exit={{ opacity: 0, y: 20 }}
             key={'core values'}
           >
-            <Card color='dark p-2' className='m-4 mt-5 custainer'>
+            <Card color='dark p-2' className='m-2 mt-5 custainer'>
 
               <Row>
                 <CardHeader>
@@ -127,7 +127,7 @@ const About = React.memo(() => {
             <Row>
 
               <Col md>
-                <Card color='dark p-3' className='m-4 custainer' >
+                <Card color='dark p-2' className='mt-5 m-2 custainer' >
 
                   <Row>
                     <CardHeader>
@@ -148,7 +148,7 @@ const About = React.memo(() => {
 
               </Col>
               <Col md>
-                <Card color='dark p-3 pb-1' className='m-4 custainer'>
+                <Card color='dark p-2 pb-1' className='mt-5 m-2 custainer'>
                   <Row>
                     <CardHeader>
                       <CardTitle className='name textShadow ' color='dark'>
@@ -173,7 +173,7 @@ const About = React.memo(() => {
           </motion.div>
         </div>
         <Row>
-          <PageFooter className="float-bottom"/>
+          <PageFooter className="float-b"/>
         </Row>
       </Container >
     </motion.div >

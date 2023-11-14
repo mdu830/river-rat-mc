@@ -69,7 +69,7 @@ const Gallery = React.memo(props => {
                         className='custainer galImg'
                         src={img.src}
                         id={img.id}
-                        width={'90%'}
+                        width={'95%'}
                         height={'auto'}
                         alt='thumbnail'
                       />

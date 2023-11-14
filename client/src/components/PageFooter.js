@@ -4,9 +4,6 @@ import emailImg from '../assets/images/icons/mail50.png'
 import facebookImg from '../assets/images/icons/facebook50.png'
 import pinImg from '../assets/images/icons/location50.png'
 
-{/* 'https://www.facebook.com/profile.php?id=100084151166191' new facebook page (link will change)
-    'https://www.facebook.com/riverratmarineconstruction/' old facebook page */}
-
 const PageFooter = () => {
 
     return (

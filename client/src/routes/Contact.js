@@ -23,7 +23,7 @@ const Contact = React.memo(() => {
           <h1 className='mb-5'>Contact Us</h1>
 
           <Row className=''>
-            <Col className='m-2'>
+            <Col className=''>
               <motion.div
                 transition={{ delay: 0.2 }}
                 initial={{ opacity: 0, y: -20 }}
@@ -40,7 +40,7 @@ const Contact = React.memo(() => {
               </motion.div>
             </Col>
 
-            <Col className='m-2'>
+            <Col className=''>
               <motion.div
                 transition={{ delay: 0.3 }}
                 initial={{ opacity: 0, y: -20 }}
@@ -57,7 +57,7 @@ const Contact = React.memo(() => {
               </motion.div>
             </Col>
 
-            <Col className='m-2'>
+            <Col className=''>
               <motion.div
                 transition={{ delay: 0.4 }}
                 initial={{ opacity: 0, y: -20 }}
