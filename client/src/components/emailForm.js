@@ -61,7 +61,7 @@ const EmailForm = () => {
                                     </FormGroup>
                                 </Col>
                             </Row>
-                            <Button id='submitBtn' className='customButton'> Submit </Button>
+                            <Button id='submitBtn' disabled className='customButton'> Submit </Button>
                         </form>
                     </Card>
                 </motion.div>
