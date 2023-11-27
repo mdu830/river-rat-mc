@@ -340,9 +340,8 @@ width: 100%;
 }
 
 .pgFooter {
-  border-top: solid 1px rgba(24, 27, 30, 0.909);
-  /* border-bottom: solid 1px rgba(24, 27, 30, 0.125); */
-  background-color: rgba(108, 108, 108, 0.179);
+  border-top: solid 2px rgba(24, 27, 30, 0.909);
+  background-color: rgba(108, 108, 108, 0.053);
   font-family: Abel;
   color: rgba(180, 180, 180, 0.585);
   padding-bottom: 25px;
