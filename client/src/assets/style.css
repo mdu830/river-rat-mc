@@ -340,11 +340,11 @@ width: 100%;
 }
 
 .pgFooter {
-  border-top: solid 1px rgba(24, 27, 30, 0.802);
-  border-bottom: solid 1px rgba(24, 27, 30, 0.125);
-  background-color: rgb(37, 42, 49);
+  border-top: solid 1px rgba(24, 27, 30, 0.909);
+  /* border-bottom: solid 1px rgba(24, 27, 30, 0.125); */
+  background-color: rgba(108, 108, 108, 0.179);
   font-family: Abel;
-  color: rgba(180, 180, 180, 0.671);
+  color: rgba(180, 180, 180, 0.585);
   padding-bottom: 25px;
   
 }
@@ -354,6 +354,7 @@ width: 100%;
   height: auto;
   display: inline-block;
   filter: contrast(15%);
+  
 }
 
 /* badges */
