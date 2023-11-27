@@ -1,11 +1,12 @@
 import React from 'react';
-import { Container, Row, Col } from 'reactstrap';
+import { Container, Row, Col, CardTitle } from 'reactstrap';
 // import { Link } from "react-router-dom";
 import { useMediaQuery } from 'usehooks-ts'
 import { motion } from 'framer-motion'
 import familyOwned from '../assets/images/badges/family-owned.webp'
 import fullyInsured from '../assets/images/badges/fully-insured.webp'
 import excellentService from '../assets/images/badges/excellent-service.webp'
+import PageFooter from '../components/PageFooter'
 
 
 export default React.memo(function Welcome() {
@@ -24,7 +25,7 @@ export default React.memo(function Welcome() {
         exit={{ opacity: 0, y: 0 }}
         key={'AnimBage1'}
       >
-        <Row className='mb-4'>
+        <Row className='mb-3'>
           <Col  />
           <Col  >
             <img id='family' alt='' className='mt-4 p-1' src={familyOwned} />
@@ -37,8 +38,22 @@ export default React.memo(function Welcome() {
           </Col>
           <Col  />
         </Row>
+        <motion.div
+            transition={{ delay: 0.3 }}
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 20 }}
+            key={'overview'}
+          >
+            <div color='dark p-4' className='m-4 '>
+              <Row>
+              </Row>
+            </div>
+          </motion.div>
       </motion.div>
-
+      <Row className=''>
+        <PageFooter className="d-flex align-items-end" />
+      </Row>
     </Container>
   )
 });

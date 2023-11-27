@@ -2,8 +2,7 @@ import React, { useEffect, useState } from 'react';
 import '../assets/style.css'
 import { Container, Col, Row, Spinner } from 'reactstrap';
 import { motion } from 'framer-motion'
-import PageFooter from '../components/PageFooter';
-
+import PageFooter from '../components/PageFooter.js';
 
 const Gallery = React.memo(props => {
 
@@ -44,7 +43,7 @@ const Gallery = React.memo(props => {
       exit={{ opacity: 0, y: 20 }}
       key={'animGall'}
     >
-      <Container fluid className='pt-2  pb-5 '>
+      <Container fluid className='pt-2'>
         <h1 className='mb-5'>Photo Gallery</h1>
         <Row>
           {
@@ -80,7 +79,7 @@ const Gallery = React.memo(props => {
           }
         </Row>
         <Row>
-          <PageFooter className="float-bottom"/>
+          <PageFooter className='float-bottom' />
         </Row>
       </Container>
     </motion.div>

@@ -8,16 +8,18 @@ const EmailForm = () => {
     const form = useRef();
 
     const sendEmail = (e) => {
-      e.preventDefault(); // prevents the page from reloading when you hit “Send”
-   
-      emailjs.sendForm('service_7qd1uo9', 'template_sq3yxpb', form.current, 'FNIBweH7_5vKNQ6q8')
-        .then((result) => {
-            // show the user a success message
-            console.log(result)
-        }, (error) => {
-            // show the user an error
-            console.log(error)
-        });
+        e.preventDefault(); // prevents the page from reloading when you hit “Send”
+
+        console.log(form.current.email.value)
+
+        // emailjs.sendForm('service_7qd1uo9', 'template_sq3yxpb', form.current, 'FNIBweH7_5vKNQ6q8')
+        //     .then((result) => {
+        //         // show the user a success message
+        //         console.log(result)
+        //     }, (error) => {
+        //         // show the user an error
+        //         console.log(error)
+        //     });
     };
 
     return (
@@ -47,7 +49,7 @@ const EmailForm = () => {
                             <Row className='m-1'>
                                 <Col md={{ size: 8, offset: 2 }}>
                                     <FormGroup>
-                                        <Input className='input' name="email" placeholder="Email Address" type="text" />
+                                        <Input className='input' name='email' placeholder="Email Address" type="email"  />
                                     </FormGroup>
                                 </Col>
                             </Row>
@@ -59,7 +61,7 @@ const EmailForm = () => {
                                     </FormGroup>
                                 </Col>
                             </Row>
-                            <Button disabled id='submitBtn' className='customButton'> Submit </Button>
+                            <Button id='submitBtn' className='customButton'> Submit </Button>
                         </form>
                     </Card>
                 </motion.div>

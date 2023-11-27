@@ -1,17 +1,17 @@
 import React from 'react';
 
-const SubFooter = React.memo(() => {
+const SubHeader = React.memo(() => {
     return (
-        <footer className="subFooter">
+        <footer className="subHeader">
 
             <h3 className='subText'>
                 Call Us Today To Request A Free Quote!   
             </h3>
-            <h3 className='link' onClick={() => window.location = 'tel:+19199209213'}>
+            <h3 className='subText subLink' onClick={() => window.location = 'tel:+19199209213'}>
                 (919)920-9213
             </h3>
         </footer>
     );
 });
 
-export default SubFooter;
+export default SubHeader;

@@ -10,7 +10,7 @@ const ServiceData = [
     },
     {
         title: 'Seawalls & Bulkheads',
-        description: "Seawalls or bulkheads help prevent soil erosion during storms while also maintaining your landscape. Available in sloppy V wood or concrete.",
+        description: "Seawalls or bulkheads help prevent soil erosion during storms while also maintaining your landscape. Available in Sloppy V Wood or Vinyl.",
         Img1: serviceImg[9].src,
         Img2: serviceImg[8].src, 
         key: 5568,
@@ -24,7 +24,7 @@ const ServiceData = [
     },
     {
         title: 'Decks',
-        description: "Create an outdoor space to relax, take in the view of the water, entertain family and friends. Available in wood or concrete.",
+        description: "Create an outdoor space to relax, take in the view of the water, entertain family and friends. Available in wood.",
         Img1: serviceImg[10].src,
         Img2: serviceImg[11].src,
         key: 5598,
@@ -45,7 +45,7 @@ const ServiceData = [
     },
     {
         title: 'Rip Rap',
-        description: "Help protect your investment by using loose stones to formand strengthen your seawall for an extra layer of prevention to soil erosion.",
+        description: "Help protect your investment by using loose stones to form and strengthen your seawall for an extra layer of prevention to soil erosion.",
         Img1: serviceImg[15].src, 
         Img2: serviceImg[16].src,
         key: 9988,

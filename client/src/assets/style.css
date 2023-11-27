@@ -43,7 +43,7 @@ h1 {
 
 #welcomeH1 {
   margin-top: 1%;
-  padding: 2%;
+  padding: 1.5%;
 }
 
 #welcomeH2 {
@@ -203,16 +203,6 @@ p {
 }
 
 /* link animation */
-
-.subText {
-  display: inline-block;
-  color: rgb(195, 195, 195);
-  text-decoration: none;
-  font-family: Abel;
-  font-size: larger;
-  padding-right: 1%;
-}
-
 .link {
   display: inline-block;
   color: rgb(195, 195, 195);
@@ -339,11 +329,8 @@ p {
 /* contact page */
 
 .float-bottom {
-  position: absolute bottom;
+  /* position: absolute bottom; */
   bottom: 0;
-  width: 100%;
-  height: 12%;
-
 }
 
 .pgFooter {
@@ -352,6 +339,7 @@ p {
   background-color: rgb(37, 42, 49);
   font-family: Abel;
   color: rgba(180, 180, 180, 0.671);
+  padding-bottom: 25px;
 }
 
 .IconSmall {
@@ -380,16 +368,46 @@ p {
 
 /* Footer */
 
-.subFooter {
-  background-color: rgba(21, 20, 20, 0.638);
+.subHeader {
+  background-color: rgba(21, 20, 20, 0.431);
   position: fixed;
   z-index: 2;
-  bottom: 0;
-  margin-bottom: 20px;
+  Top: 0;
+  margin-top: 76px;
+  padding-top: 3px;
   width: 100%;
-  height: auto;
+  height: 4.5%;
   box-shadow:
     -2px -2px 4px rgba(21, 20, 20, 0.751);
+}
+
+.subText {
+  display: inline-block;
+  color: rgb(195, 195, 195);
+  text-decoration: none;
+  font-family: Abel;
+  font-size: 150%;
+  padding-right: 1%;
+}
+
+.subLink {
+  display: inline-block;
+  color: rgb(195, 195, 195);
+  text-decoration: none;
+  font-family: Abel;
+  font-size: 150%;
+}
+
+.subLink:hover {
+  color: rgba(195, 195, 195, 0.552);
+  text-decoration: underline;
+  font-family: Abel;
+}
+
+.subLink:active {
+  color: rgb(89, 91, 156);
+  text-decoration: underline;
+  font-family: Abel;
 }
 
 .footer {
@@ -427,6 +445,21 @@ p {
   .sqImg {
     object-fit: cover;
     width: 177pt;
+    height: 120pt;
+    padding: 5pt;
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .iconSmall {
+    width: 0px;
+    height: auto;
+  }
+
+  .sqImg {
+    object-fit: cover;
+    width: 156pt;
     height: 120pt;
     padding: 5pt;
     overflow: hidden;
@@ -482,7 +515,8 @@ p {
     overflow: hidden;
   }
 
-    .pgFooter {
+
+  .pgFooter {
     font-size: 16px;
   }
 
@@ -584,13 +618,26 @@ p {
     overflow: hidden;
   }
 
+  .subHeader {
+    background-color: rgba(21, 20, 20, 0.533);
+    position: fixed;
+    z-index: 2;
+    Top: 0;
+    margin-top: 58px;
+    padding-top: 1px;
+    width: 100%;
+    height: 3.6%;
+    box-shadow:
+      -2px -2px 4px rgba(21, 20, 20, 0.751);
+  }
+
+
   .subText {
-    display: inline-block;
-    color: rgb(195, 195, 195);
-    text-decoration: none;
-    font-family: Abel;
-    font-size: medium;
-    padding-right: 1%;
+    font-size: 110%;
+  }
+
+  .subLink {
+    font-size: 110%;
   }
 
   .link {

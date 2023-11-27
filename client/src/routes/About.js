@@ -17,30 +17,11 @@ const About = React.memo(() => {
       exit={{ opacity: 0, y: 20 }}
       key={'animAbou'}
     >
-      <Container fluid className='pt-2 pb-5'>
+      <Container fluid className='pt-2'>
 
         <h1 className='mb-5'>About River Rat Marine Construction</h1>
 
-
         <div className=' pb-4'>
-          <motion.div
-            transition={{ delay: 0.3 }}
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: 20 }}
-            key={'overview'}
-          >
-            <div color='dark p-4' className='m-4 '>
-              <Row>
-                <CardTitle className='name textShadow  mb-3 p-1' color='dark'>
-                  <h2>
-                    We are a family owned marine construction company out of Mount Olive North Carolina.
-                    Proudly providing our services across eastern North Carolina.
-                  </h2>
-                </CardTitle>
-              </Row>
-            </div>
-          </motion.div>
 
           <motion.div
             transition={{ delay: 0.4 }}
@@ -49,6 +30,12 @@ const About = React.memo(() => {
             exit={{ opacity: 0, y: 20 }}
             key={'doug & rrmc'}
           >
+            <CardTitle className='name textShadow  mb-3 p-1' color='dark'>
+              <h3>
+                We are a family owned marine construction company out of Mount Olive North Carolina.
+                Proudly providing our services across Eastern North Carolina.
+              </h3>
+            </CardTitle>
             <Card color='dark p-2 pb-2' className='m-2 mt-3 custainer'>
 
               <Row>
@@ -173,7 +160,7 @@ const About = React.memo(() => {
           </motion.div>
         </div>
         <Row>
-          <PageFooter className="float-b"/>
+          <PageFooter className="float-b" />
         </Row>
       </Container >
     </motion.div >
