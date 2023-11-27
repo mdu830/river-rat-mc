@@ -6,9 +6,14 @@ import emailImg from '../assets/images/icons/email.png'
 import facebookImg from '../assets/images/icons/facebook.png'
 import EmailForm from '../components/emailForm';
 import PageFooter from '../components/PageFooter';
+import { useMediaQuery } from 'usehooks-ts'
+
 
 
 const Contact = React.memo(() => {
+
+  const matches = useMediaQuery('(min-width: 881px)')
+
 
   return (
 
@@ -78,9 +83,16 @@ const Contact = React.memo(() => {
           </Row>
 
           <EmailForm />
-          <Row className='welcomeCont'>
-            <PageFooter className="" />
-          </Row>
+          {
+            matches
+              ?
+              <Row className='welcomeCont'>
+                <PageFooter className="" />
+              </Row>
+              :
+              <div />
+          }
+
         </Container>
       </div>
     </motion.div>
