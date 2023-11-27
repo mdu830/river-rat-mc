@@ -82,7 +82,7 @@ const Services = React.memo((props) => {
               })}
         </Row>
         <Row>
-          <PageFooter className="float-bottom" />
+          <PageFooter/>
         </Row>
       </Container>
     </motion.div>

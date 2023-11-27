@@ -23,13 +23,6 @@ const ServiceData = [
         key: 5578,
     },
     {
-        title: 'Decks',
-        description: "Create an outdoor space to relax, take in the view of the water, entertain family and friends. Available in wood.",
-        Img1: serviceImg[10].src,
-        Img2: serviceImg[11].src,
-        key: 5598,
-    },
-    {
         title: 'Bouthouses & Lifts',
         description: "Easily load and launch your boat with Tide Tamer boat lifts. While keeping them protected from the harsh weather when they are not being used.",
         Img1: serviceImg[0].src,
@@ -56,6 +49,13 @@ const ServiceData = [
         Img1: serviceImg[17].src, 
         Img2: serviceImg[18].src,
         key: 9978,
+    },
+    {
+        title: 'Decks',
+        description: "Create an outdoor space to relax, take in the view of the water, entertain family and friends. Available in wood.",
+        Img1: serviceImg[10].src,
+        Img2: serviceImg[11].src,
+        key: 5598,
     },
 ]
 

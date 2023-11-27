@@ -34,6 +34,7 @@ const HomePage = React.memo(() => {
           key={'AnimCar'}
         >
           <Welcome />
+          {/* <PageFooter/> */}
         </motion.div>
       </div >
     </>

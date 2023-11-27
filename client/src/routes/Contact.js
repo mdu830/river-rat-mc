@@ -5,6 +5,7 @@ import phoneImg from '../assets/images/icons/phone.png'
 import emailImg from '../assets/images/icons/email.png'
 import facebookImg from '../assets/images/icons/facebook.png'
 import EmailForm from '../components/emailForm';
+import PageFooter from '../components/PageFooter';
 
 
 const Contact = React.memo(() => {
@@ -77,6 +78,9 @@ const Contact = React.memo(() => {
           </Row>
 
           <EmailForm />
+          <Row className='welcomeCont'>
+            <PageFooter className="" />
+          </Row>
         </Container>
       </div>
     </motion.div>

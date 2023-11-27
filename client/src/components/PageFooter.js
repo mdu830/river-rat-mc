@@ -2,7 +2,7 @@ import React from "react";
 import { Col, Row } from "reactstrap";
 import emailImg from '../assets/images/icons/mail50.png'
 import facebookImg from '../assets/images/icons/facebook50.png'
-// import pinImg from '../assets/images/icons/location50.png'
+import pinImg from '../assets/images/icons/location50.png'
 
 const PageFooter = () => {
 
@@ -18,7 +18,7 @@ const PageFooter = () => {
                     /River-Rat-Marine-Construction
                 </Col>
                 <Col className="p-1" md='4'>
-                    {/* <img className='IconSmall p-2' alt='Email' src={pinImg}></img> */}
+                    <img className='IconSmall p-2' alt='Email' src={pinImg}></img>
                     202 Jeff Outlaw Rd, Mt Olive, NC 28365
                 </Col>
             </Row>
