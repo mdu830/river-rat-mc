@@ -116,7 +116,7 @@ p {
   top: 0;
   left: 0;
   margin-left: 40%;
-  margin-top: 6%;
+  margin-top: 90px;
   opacity: .87;
 
 }
@@ -292,7 +292,6 @@ p {
 .carousel {
   max-width: 100%;
   height: auto;
-
 }
 
 /* Services Page */
@@ -329,8 +328,9 @@ p {
 /* contact page */
 
 .float-bottom {
-  /* position: absolute bottom; */
+  position: absolute bottom;
   bottom: 0;
+  width: auto;
 }
 
 .pgFooter {
@@ -645,7 +645,6 @@ p {
     color: rgb(195, 195, 195);
     text-decoration: none;
     font-family: Abel;
-    font-size: medium;
   }
 
 }
@@ -683,7 +682,7 @@ p {
     top: 0;
     left: 0;
     margin-left: 30%;
-    margin-top: 2%;
+    margin-top: 23px;
   }
 
 }

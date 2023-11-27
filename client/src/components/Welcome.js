@@ -14,7 +14,7 @@ export default React.memo(function Welcome() {
   const matches = useMediaQuery('(min-width: 585px)')
 
   return (
-    <Container fluid className="border-top pt-2">
+    <Container fluid className="border-top pt-3">
 
       <h1 id={matches ? 'welcomeH1' : 'wlecomeH2'} className='textShadow'>Welcome to River Rat Marine Construction</h1>
 
@@ -51,9 +51,9 @@ export default React.memo(function Welcome() {
             </div>
           </motion.div>
       </motion.div>
-      <Row className=''>
+      {/* <Row className=''>
         <PageFooter className="d-flex align-items-end" />
-      </Row>
+      </Row> */}
     </Container>
   )
 });

@@ -2,6 +2,8 @@ import React from 'react';
 import '../assets/style.css'
 import Banner from '../components/Banner';
 import Welcome from '../components/Welcome';
+import PageFooter from '../components/PageFooter';
+import { Row } from 'reactstrap';
 import { motion } from 'framer-motion'
 
 

@@ -17,7 +17,7 @@ const About = React.memo(() => {
       exit={{ opacity: 0, y: 20 }}
       key={'animAbou'}
     >
-      <Container fluid className='pt-2'>
+      <Container fluid className='pt-5'>
 
         <h1 className='mb-5'>About River Rat Marine Construction</h1>
 
