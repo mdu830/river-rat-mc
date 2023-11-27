@@ -20,7 +20,7 @@ const Contact = React.memo(() => {
       key={'animCont'}
     >
       <div>
-        <Container fluid className=' pt-2  pb-5 customContainer align-items-center'>
+        <Container fluid className=' pt-5  pb-5 customContainer align-items-center'>
           <h1 className='mb-5'>Contact Us</h1>
 
           <Row className=''>
