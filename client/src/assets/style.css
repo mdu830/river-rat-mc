@@ -341,7 +341,7 @@ width: 100%;
 
 .pgFooter {
   border-top: solid 2px rgba(24, 27, 30, 0.909);
-  background-color: rgba(108, 108, 108, 0.053);
+  background-color: rgba(108, 108, 108, 0.179);
   font-family: Abel;
   color: rgba(180, 180, 180, 0.585);
   padding-bottom: 25px;
@@ -376,7 +376,7 @@ width: 100%;
 /* Footer */
 
 .subHeader {
-  background-color: rgba(21, 20, 20, 0.431);
+  background-color: rgba(21, 20, 20, 0.713);
   position: fixed;
   z-index: 2;
   Top: 0;
@@ -628,7 +628,6 @@ width: 100%;
   }
 
   .subHeader {
-    background-color: rgba(21, 20, 20, 0.533);
     position: fixed;
     z-index: 2;
     Top: 0;
