@@ -40,7 +40,7 @@ export default React.memo(function Welcome() {
         </Row>
       </motion.div>
       <Row className='welcomeCont'>
-        <PageFooter className="" />
+        {/* <PageFooter className="" /> */}
       </Row>
     </Container>
   )

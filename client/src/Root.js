@@ -33,7 +33,7 @@ const Root = React.memo(() => {
         <Route ref='cont' path="/contact" element={<Contact />} />
         {/* <Route ref='faq' path="/faq" element={<Faq />} /> */}
       </Routes>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   )
 
