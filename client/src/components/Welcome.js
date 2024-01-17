@@ -6,7 +6,7 @@ import { motion } from 'framer-motion'
 import familyOwned from '../assets/images/badges/family-owned.webp'
 import fullyInsured from '../assets/images/badges/fully-insured.webp'
 import excellentService from '../assets/images/badges/excellent-service.webp'
-import PageFooter from './PageFooter';
+// import PageFooter from './PageFooter';
 
 
 export default React.memo(function Welcome() {

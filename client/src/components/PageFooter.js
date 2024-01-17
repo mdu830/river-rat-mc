@@ -2,7 +2,7 @@ import React from "react";
 import { Col, Row } from "reactstrap";
 import emailImg from '../assets/images/icons/mail50.png'
 import facebookImg from '../assets/images/icons/facebook50.png'
-import pinImg from '../assets/images/icons/location50.png'
+// import pinImg from '../assets/images/icons/location50.png'
 
 const PageFooter = () => {
 

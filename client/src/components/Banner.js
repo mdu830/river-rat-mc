@@ -1,5 +1,4 @@
 // this needs useRef unless the error is inside of carousel
-
 import React, { useState, useEffect, useRef } from 'react';
 import { Carousel, CarouselItem } from 'reactstrap';
 import logo from '../assets/images/logo512.png'

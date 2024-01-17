@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
-import { Card, Form, Row, Col, FormGroup, Input, Button } from 'reactstrap';
+import { Card, Row, Col, FormGroup, Input, Button } from 'reactstrap';
 import { motion } from 'framer-motion';
-import emailjs from '@emailjs/browser'
+// import emailjs from '@emailjs/browser'
 
 const EmailForm = () => {
 
